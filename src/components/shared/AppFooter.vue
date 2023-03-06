@@ -1,10 +1,12 @@
 <script>
 import feather from 'feather-icons';
-import FooterCopyright from './FooterCopyright.vue';
+// import FooterCopyright from './FooterCopyright.vue';
 import { socialLinks } from '../../data/socialLinks';
 
 export default {
-	components: { FooterCopyright },
+	components: { 
+		// FooterCopyright 
+		},
 	data() {
 		return {
 			socials: socialLinks,
@@ -50,7 +52,7 @@ export default {
 			</div>
 
 			<!-- Footer copyright -->
-			<FooterCopyright />
+			<!-- <FooterCopyright /> -->
 		</div>
 	</div>
 </template>
