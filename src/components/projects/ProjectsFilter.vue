@@ -1,20 +1,38 @@
 <script>
+import { useI18n } from "vue-i18n";
+// import i18n from '../../i18n';
+// const { t } = i18n.global;
 export default {
+    setup() {
+        const { t } = useI18n({
+            inheritLocale: true,
+            useScope: "global",
+        });
+
+        
+
+        return { t };
+    },
 	props: {
+		
 		select: {
 			type: String,
 			default: 'projects',
 			required: true,
 		},
 		selectOptions: {
+			
 			type: Array,
 			default: () => [
+				// t('Ecommerce'),
+				// t('Elearn'),
+				// t('Business Website'),
+				// t('Blogs'),
+				// t('Portfolio'),
 				'Laravel Application',
-				'Vue JS Application',
-				'Html Design',
-				'Laravel API',
-				'Laravel VueJS Inertia',
-				'Wordpress',
+				'Laravel Vue Application',
+				'Wordpress site',
+				'Vue App',
 			],
 		},
 	},
@@ -40,7 +58,7 @@ export default {
 				dark:text-ternary-light
 			"
 	>
-		<option value class="text-sm sm:text-md">All Projects</option>
+		<option value class="text-sm sm:text-md">{{t("All Projects")}}</option>
 		<option
 			v-for="option in selectOptions"
 			:key="option"

@@ -1,16 +1,23 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router';
+import store from "@/store";
 import './assets/css/app.css';
 import BackToTop from 'vue-backtotop';
+import i18n from './i18n'
 
 const feather = require('feather-icons');
 feather.replace();
 
-createApp(App)
+const app = createApp(App);
+app.use(i18n)
 	.use(router)
-	.use(BackToTop)
-	.mount('#app');
+	.use(store)
+	.use(BackToTop);
+
+app.config.devtools = true;
+window.i18n = i18n;
+app.mount('#app');
 
 const appTheme = localStorage.getItem('theme');
 

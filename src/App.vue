@@ -2,8 +2,16 @@
 import feather from 'feather-icons';
 import AppHeader from './components/shared/AppHeader';
 import AppFooter from './components/shared/AppFooter';
-
-export default {
+import { defineComponent } from 'vue'
+import { useI18n } from 'vue-i18n'
+export default defineComponent({
+  setup() {
+    const { t } = useI18n({
+      inheritLocale: true,
+      useScope: 'global'
+    })
+    return { t }
+  },
 	components: {
 		AppHeader,
 		AppFooter,
@@ -11,22 +19,22 @@ export default {
 	data: () => {
 		return {
 			appTheme: localStorage.getItem('theme'),
+			appLang: localStorage.getItem('lang'),
 		};
 	},
 	mounted() {
 		feather.replace();
 	},
 	updated() {
-		feather.replace();
+		feather.replace(); 
 	},
-};
+});
 </script>
 
 <template>
 	<div :class="appTheme" class="pt-0.5">
 		<!-- App header -->
 		<AppHeader />
-
 		<!-- Render active component contents with vue transition -->
 		<transition name="fade" mode="out-in">
 			<router-view :theme="appTheme" />
@@ -56,7 +64,7 @@ export default {
 }
 
 .vue-back-to-top {
-	@apply p-2 bg-indigo-500 hover:bg-indigo-600 text-white transition
+	@apply p-2 bg-blue-500 hover:bg-blue-600 text-white transition
         duration-500
         ease-in-out
         transform

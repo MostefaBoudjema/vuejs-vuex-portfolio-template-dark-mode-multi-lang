@@ -3,7 +3,16 @@ import feather from 'feather-icons';
 import Button from './reusable/Button.vue';
 import FormInput from './reusable/FormInput.vue';
 import FormTextarea from './reusable/FormTextarea.vue';
-export default {
+import { defineComponent } from 'vue'
+import { useI18n } from 'vue-i18n'
+export default defineComponent({
+  setup() {
+    const { t } = useI18n({
+      inheritLocale: true,
+      useScope: 'global'
+    })
+    return { t }
+  },
 	props: ['showModal', 'modal', 'categories'],
 	components: { Button, FormInput, FormTextarea },
 	data() {
@@ -16,7 +25,7 @@ export default {
 		feather.replace();
 	},
 	methods: {},
-};
+});
 </script>
 
 <template>
@@ -46,7 +55,7 @@ export default {
 								<h5
 									class="text-primary-dark dark:text-primary-light text-xl"
 								>
-									What project are you looking for?
+									{{t('What project are you looking for?')}}
 								</h5>
 								<button
 									class="px-4 text-primary-dark dark:text-primary-light"
@@ -58,12 +67,12 @@ export default {
 							<div class="modal-body p-5 w-full h-full">
 								<form class="max-w-xl m-4 text-left">
 									<FormInput
-										label="Full Name"
+										:label="$t('Full Name')"
 										inputIdentifier="name"
 										class="mb-2"
 									/>
 									<FormInput
-										label="Email"
+										:label="$t('Email')"
 										inputIdentifier="email"
 										inputType="email"
 									/>
@@ -72,7 +81,7 @@ export default {
 										<label
 											class="block mb-2 text-lg text-primary-dark dark:text-primary-light"
 											for="project"
-											>Project Type</label
+											>{{$t('Project Type')}}</label
 										>
 										<select
 											class="w-full px-5 py-3 border-1 border-gray-200 dark:border-secondary-dark rounded-md text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
@@ -93,14 +102,14 @@ export default {
 									</div>
 
 									<FormTextarea
-										label="Details"
+										:label="$t('Details')"
 										textareaIdentifier="details"
 									/>
 
 									<div class="mt-7 pb-4 sm:pb-1">
 										<Button
-											title="Send Request1"
-											class="px-4 sm:px-6 py-2 sm:py-2.5 text-white bg-indigo-500 hover:bg-indigo-600 rounded-md focus:ring-1 focus:ring-indigo-900 duration-500"
+											:title="$t('Send Request')"
+											class="px-4 sm:px-6 py-2 sm:py-2.5 text-white bg-blue-500 hover:bg-blue-600 rounded-md focus:ring-1 focus:ring-blue-900 duration-500"
 											type="submit"
 											aria-label="Submit Request"
 										/>
@@ -111,8 +120,8 @@ export default {
 								class="modal-footer mt-2 sm:mt-0 py-5 px-8 border0-t text-right"
 							>
 								<Button
-									title="Close"
-									class="px-4 sm:px-6 py-2 bg-gray-600 text-primary-light hover:bg-ternary-dark dark:bg-gray-200 dark:text-secondary-dark dark:hover:bg-primary-light rounded-md focus:ring-1 focus:ring-indigo-900 duration-500"
+									:title="$t('Close')"
+									class="px-4 sm:px-6 py-2 bg-gray-600 text-primary-light hover:bg-ternary-dark dark:bg-gray-200 dark:text-secondary-dark dark:hover:bg-primary-light rounded-md focus:ring-1 focus:ring-blue-900 duration-500"
 									@click="showModal()"
 									aria-label="Close Modal"
 								/>

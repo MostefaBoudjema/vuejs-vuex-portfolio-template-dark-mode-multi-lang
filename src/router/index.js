@@ -7,63 +7,203 @@ const routes = [
 		name: 'Home',
 		component: Home,
 		meta: {
-			title: 'Mostfa - Home',
+			title: 'WebPress Annaba - Home',
 		},
 	},
 	{
 		path: '/about',
 		name: 'About',
-		// route level code-splitting
+
 		// this generates a separate chunk (about.[hash].js) for this route
-		// which is lazy-loaded when the route is visited.
+
 		component: () =>
 			import(/* webpackChunkName: "about" */ '../views/About.vue'),
 		meta: {
-			title: 'Mostfa - About',
+			title: 'WebPress Annaba - About',
 		},
 	},
 	{
 		path: '/projects',
 		name: 'Projects',
-		// route level code-splitting
-		// this generates a separate chunk (projects.[hash].js) for this route
-		// which is lazy-loaded when the route is visited.
+
+
+
 		component: () =>
 			import(/* webpackChunkName: "projects" */ '../views/Projects.vue'),
 		meta: {
-			title: 'Mostfa - Projects',
+			title: 'WebPress Annaba - Projects',
+		},
+	},
+
+	{
+		path: '/projects/LaravelVueEcommercePhone',
+		name: 'LaravelVueEcommercePhone',
+		
+		id: '1',
+
+
+
+		component: () =>
+			import(
+				/* webpackChunkName: "projects" */ '../views/OneProjectTemplate.vue'
+			),
+		meta: {
+			title: 'WebPress Annaba - Phones Store',
 		},
 	},
 	{
-		path: '/projects/single-project',
-		name: 'Single Project',
-		// route level code-splitting
-		// this generates a separate chunk (projects.[hash].js) for this route
-		// which is lazy-loaded when the route is visited.
+		path: '/projects/LaravelVotingSystem',
+		name: 'LaravelVotingSystem',
+		
+		id: '2',
+
+
+
 		component: () =>
 			import(
-				/* webpackChunkName: "projects" */ '../views/SingleProject.vue'
+				/* webpackChunkName: "projects" */ '../views/OneProjectTemplate.vue'
 			),
 		meta: {
-			title: 'Mostfa - Single Project',
+			title: 'WebPress Annaba - Phones Blog',
+		},
+	},
+	{
+		path: '/projects/LaravelExpenseManager',
+		name: 'LaravelExpenseManager',
+		
+		id: '3',
+
+
+
+		component: () =>
+			import(
+				/* webpackChunkName: "projects" */ '../views/OneProjectTemplate.vue'
+			),
+		meta: {
+			title: 'WebPress Annaba - Business',
+		},
+	},
+	{
+		path: '/projects/PhonesStore',
+		name: 'PhonesStore',
+		
+		id: '1',
+
+
+
+		component: () =>
+			import(
+				/* webpackChunkName: "projects" */ '../views/OneProjectTemplate.vue'
+			),
+		meta: {
+			title: 'WebPress Annaba - Phones Store',
+		},
+	},
+	{
+		path: '/projects/Blog',
+		name: 'Blog',
+		
+		id: '2',
+
+
+
+		component: () =>
+			import(
+				/* webpackChunkName: "projects" */ '../views/OneProjectTemplate.vue'
+			),
+		meta: {
+			title: 'WebPress Annaba - Phones Blog',
+		},
+	},
+	{
+		path: '/projects/Business',
+		name: 'Business',
+		
+		id: '3',
+
+
+
+		component: () =>
+			import(
+				/* webpackChunkName: "projects" */ '../views/OneProjectTemplate.vue'
+			),
+		meta: {
+			title: 'WebPress Annaba - Business',
+		},
+	},
+	{
+		path: '/projects/Portfolio',
+		name: 'Portfolio',
+		
+		id: '4',
+
+
+
+		component: () =>
+			import(
+				/* webpackChunkName: "projects" */ '../views/OneProjectTemplate.vue'
+			),
+		meta: {
+			title: 'WebPress Annaba - Portfolio',
+		},
+	},
+	{
+		path: '/projects/Elearn',
+		name: 'Elearn',
+		
+		id: '5',
+
+
+
+		component: () =>
+			import(
+				/* webpackChunkName: "projects" */ '../views/OneProjectTemplate.vue'
+			),
+		meta: {
+			title: 'WebPress Annaba - Elearn',
+		},
+	},
+	{
+		path: '/projects/ClothesStore',
+		name: 'ClothesStore',
+		
+		id: '6',
+
+
+
+		component: () =>
+			import(
+				/* webpackChunkName: "projects" */ '../views/OneProjectTemplate.vue'
+			),
+		meta: {
+			title: 'WebPress Annaba - Clothes Store',
 		},
 	},
 	{
 		path: '/contact',
 		name: 'Contact',
-		// route level code-splitting
-		// this generates a separate chunk (projects.[hash].js) for this route
-		// which is lazy-loaded when the route is visited.
+
+
+
 		component: () =>
 			import(/* webpackChunkName: "projects" */ '../views/Contact.vue'),
 		meta: {
-			title: 'Mostfa - Contact',
+			title: 'WebPress Annaba - Contact',
+		},
+	},
+	{
+		path: '/:pathMatch(.*)*',
+		name: '404',
+		component: () =>
+			import(/* webpackChunkName: "projects" */ '../views/PathNotFound.vue'),
+		meta: {
+			title: '404 Page Not found',
 		},
 	},
 ];
 
 const router = createRouter({
-	history: createWebHistory(process.env.BASE_URL),
+	history: createWebHistory(process.env.VUE_APP_BASE_URL),
 	routes,
 	scrollBehavior() {
 		document.getElementById('app').scrollIntoView();
@@ -74,7 +214,7 @@ export default router;
 
 /**
  * Below code will display the component/active page title
- * Powered by: Nangialai Mostfa
+ * Powered by: Nangialai WebPress Annaba
  */
 
 // This callback runs before every route change, including on page load.

@@ -13,22 +13,22 @@ export default { components: { Button, FormInput, FormTextarea } };
 			<p
 				class="font-general-medium text-primary-dark dark:text-primary-light text-2xl mb-8"
 			>
-				Contact Form
+				{{$t('Contact Form')}}
 			</p>
 			<form action="#" class="font-general-regular space-y-7">
-				<FormInput label="Full Name" inputIdentifier="name" />
+				<FormInput :label="$t('Full Name')" inputIdentifier="name" />
 				<FormInput
-					label="Email"
+					:label="$t('Email')"
 					inputIdentifier="email"
 					inputType="email"
 				/>
-				<FormInput label="Subject" inputIdentifier="subject" />
-				<FormTextarea label="Message" textareaIdentifier="message" />
+				<FormInput :label="$t('Subject')" inputIdentifier="subject" />
+				<FormTextarea :label="$t('Message')" textareaIdentifier="message" />
 
 				<div>
 					<Button
-						title="Send Message"
-						class="px-4 py-2.5 text-white tracking-wider bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 rounded-lg duration-500"
+						:title="$t('Send Message')"
+						class="px-4 py-2.5 text-white tracking-wider bg-blue-500 hover:bg-blue-600 focus:ring-1 focus:ring-blue-900 rounded-lg duration-500"
 						type="submit"
 						aria-label="Send Message"
 					/>

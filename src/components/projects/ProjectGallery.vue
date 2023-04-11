@@ -13,7 +13,7 @@ export default {
 		>
 			<img
 				:src="projectImage.img"
-				class="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
+				class="rounded-xl cursor-pointer shadow-lg sm:shadow-none  h-70 w-96" 
 				alt="{{ projectImage.title }}"
 			/>
 		</div>

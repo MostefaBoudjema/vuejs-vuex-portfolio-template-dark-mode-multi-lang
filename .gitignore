@@ -1,7 +1,7 @@
 .DS_Store
 node_modules
+_BAK
 /dist
-
 
 # local env files
 .env.local
@@ -22,3 +22,6 @@ pnpm-debug.log*
 *.sln
 *.sw?
 vuejs-tailwindcss-portfolio-main.zip
+_ToDo.html
+public/favicon - Copie.png
+.env
