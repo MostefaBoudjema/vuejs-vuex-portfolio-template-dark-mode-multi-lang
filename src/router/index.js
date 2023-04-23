@@ -7,7 +7,7 @@ const routes = [
 		name: 'Home',
 		component: Home,
 		meta: {
-			title: 'WebPress Annaba - Home',
+			title: 'Mostfa Boudjema - Home',
 		},
 	},
 	{
@@ -19,7 +19,7 @@ const routes = [
 		component: () =>
 			import(/* webpackChunkName: "about" */ '../views/About.vue'),
 		meta: {
-			title: 'WebPress Annaba - About',
+			title: 'Mostfa Boudjema - About',
 		},
 	},
 	{
@@ -31,7 +31,7 @@ const routes = [
 		component: () =>
 			import(/* webpackChunkName: "projects" */ '../views/Projects.vue'),
 		meta: {
-			title: 'WebPress Annaba - Projects',
+			title: 'Mostfa Boudjema - Projects',
 		},
 	},
 
@@ -48,7 +48,7 @@ const routes = [
 				/* webpackChunkName: "projects" */ '../views/OneProjectTemplate.vue'
 			),
 		meta: {
-			title: 'WebPress Annaba - Phones Store',
+			title: 'Mostfa Boudjema - Phones Store',
 		},
 	},
 	{
@@ -64,7 +64,7 @@ const routes = [
 				/* webpackChunkName: "projects" */ '../views/OneProjectTemplate.vue'
 			),
 		meta: {
-			title: 'WebPress Annaba - Phones Blog',
+			title: 'Mostfa Boudjema - Phones Blog',
 		},
 	},
 	{
@@ -80,7 +80,7 @@ const routes = [
 				/* webpackChunkName: "projects" */ '../views/OneProjectTemplate.vue'
 			),
 		meta: {
-			title: 'WebPress Annaba - Business',
+			title: 'Mostfa Boudjema - Business',
 		},
 	},
 	{
@@ -96,7 +96,7 @@ const routes = [
 				/* webpackChunkName: "projects" */ '../views/OneProjectTemplate.vue'
 			),
 		meta: {
-			title: 'WebPress Annaba - Phones Store',
+			title: 'Mostfa Boudjema - Phones Store',
 		},
 	},
 	{
@@ -112,7 +112,7 @@ const routes = [
 				/* webpackChunkName: "projects" */ '../views/OneProjectTemplate.vue'
 			),
 		meta: {
-			title: 'WebPress Annaba - Phones Blog',
+			title: 'Mostfa Boudjema - Phones Blog',
 		},
 	},
 	{
@@ -128,7 +128,7 @@ const routes = [
 				/* webpackChunkName: "projects" */ '../views/OneProjectTemplate.vue'
 			),
 		meta: {
-			title: 'WebPress Annaba - Business',
+			title: 'Mostfa Boudjema - Business',
 		},
 	},
 	{
@@ -144,7 +144,7 @@ const routes = [
 				/* webpackChunkName: "projects" */ '../views/OneProjectTemplate.vue'
 			),
 		meta: {
-			title: 'WebPress Annaba - Portfolio',
+			title: 'Mostfa Boudjema - Portfolio',
 		},
 	},
 	{
@@ -160,7 +160,7 @@ const routes = [
 				/* webpackChunkName: "projects" */ '../views/OneProjectTemplate.vue'
 			),
 		meta: {
-			title: 'WebPress Annaba - Elearn',
+			title: 'Mostfa Boudjema - Elearn',
 		},
 	},
 	{
@@ -176,7 +176,20 @@ const routes = [
 				/* webpackChunkName: "projects" */ '../views/OneProjectTemplate.vue'
 			),
 		meta: {
-			title: 'WebPress Annaba - Clothes Store',
+			title: 'Mostfa Boudjema - Clothes Store',
+		},
+	},
+	{
+		path: '/projects/tamtamtools',
+		name: 'tamtamtools',		
+		id: '7',
+
+		component: () =>
+			import(
+				/* webpackChunkName: "projects" */ '../views/OneProjectTemplate.vue'
+			),
+		meta: {
+			title: 'Mostfa Boudjema - Tamtam Tools',
 		},
 	},
 	{
@@ -188,7 +201,7 @@ const routes = [
 		component: () =>
 			import(/* webpackChunkName: "projects" */ '../views/Contact.vue'),
 		meta: {
-			title: 'WebPress Annaba - Contact',
+			title: 'Mostfa Boudjema - Contact',
 		},
 	},
 	{
@@ -214,7 +227,7 @@ export default router;
 
 /**
  * Below code will display the component/active page title
- * Powered by: Nangialai WebPress Annaba
+ * Powered by: Nangialai Mostfa Boudjema
  */
 
 // This callback runs before every route change, including on page load.
