@@ -57,7 +57,7 @@ export default {
             <a
                 class="text-lg text-center text-link d-flex"
                 v-if="project.outer_link != '#'"
-                :href="project.outer_link"
+                :href="project.outer_link" target="_blank"
             >
                 <!-- {{ t("Check it") }} -->
 

@@ -1,7 +1,7 @@
 <script>
 import feather from "feather-icons";
 import ProjectHeader from "../components/projects/ProjectHeader.vue";
-import ProjectGallery from "../components/projects/ProjectGallery.vue";
+// import ProjectGallery from "../components/projects/ProjectGallery.vue";
 import ProjectInfo from "../components/projects/ProjectInfo.vue";
 import ProjectRelatedProjects from "../components/projects/ProjectRelatedProjects.vue";
 
@@ -23,7 +23,7 @@ export default defineComponent({
     },
     components: {
         ProjectHeader,
-        ProjectGallery,
+        // ProjectGallery,
         ProjectInfo,
         ProjectRelatedProjects,
     },
@@ -50,7 +50,6 @@ export default defineComponent({
             return projects[this.pageid].img;
         },
         singleProjectHeaderMethod() {
-
             return projects[this.pageid].singleProjectHeader;
         },
         projectImagesMethod() {
@@ -60,32 +59,23 @@ export default defineComponent({
             return projects[this.pageid].projectInfo;
         },
     },
-    methods: {
-    },
+    methods: {},
 });
 </script>
 
 <template>
-    <div class="container mx-auto mt-10 sm:mt-20 flex-wrap">
+    <div class="container mx-auto sm:mt-20 flex-wrap">
         <!-- Project header -->
-        <ProjectHeader :singleProjectHeader="singleProjectHeaderMethod" :img="ImgMethod" />
+        <ProjectHeader
+            :singleProjectHeader="singleProjectHeaderMethod"
+            :imgList="projectImagesMethod"
+        />
         <!-- Project information -->
         <ProjectInfo :projectInfo="projectInfoMethod" />
         <div class="block sm:flex gap-0 sm:gap-10 mt-14">
-            <div class="w-full sm:w-4/5 text-left mt-10 sm:mt-0">
-                <!-- Project gallery -->
-                <p
-                    class="font-general-regular text-primary-dark dark:text-primary-light text-3xl font-bold mb-10 sm:mb-14 text-left mt-12 pt-12"
-                >
-                    {{ t("Projects Screenshots") }}
-                </p>
-                <ProjectGallery :projectImages="projectImagesMethod" />
-            </div>
+            <!-- Project related projects -->
+            <ProjectRelatedProjects :relatedProject="relatedProject" />
 
-            <div class="w-full sm:w-1/5 text-left mt-10 ml-10 sm:mt-0 flex-row">
-                <!-- Project related projects -->
-                <ProjectRelatedProjects :relatedProject="relatedProject" />
-            </div>
         </div>
     </div>
 </template>

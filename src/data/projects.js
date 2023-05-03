@@ -252,7 +252,7 @@ const projects = [
 		category: 'Laravel Vue Application',
 		outer_link: '#',
 		link: 'LaravelVueEcommercePhone',
-		img: require('@/assets/images/ui-project-2.jpg'),
+		img: require('@/assets/images/LaravelVueEcommercePhone/A.png'),
 		singleProjectHeader: {
 			singleProjectTitle: t("Laravel Vue Ecommerce Phone"),
 			singleProjectDate: "26 Jul 2021",
@@ -262,32 +262,56 @@ const projects = [
 			{
 				id: 1,
 				title: "Project Image",
-				img: require("@/assets/images/LaravelVueEcommercePhone/1.webp"),
+				img: require("@/assets/images/LaravelVueEcommercePhone/A (1).png"),
 			},
 			{
 				id: 2,
 				title: "Project Image",
-				img: require("@/assets/images/LaravelVueEcommercePhone/2.webp"),
+				img: require("@/assets/images/LaravelVueEcommercePhone/A (2).png"),
 			},
 			{
 				id: 3,
 				title: "Project Image",
-				img: require("@/assets/images/LaravelVueEcommercePhone/3.webp"),
+				img: require("@/assets/images/LaravelVueEcommercePhone/A (3).png"),
 			},
 			{
 				id: 4,
 				title: "Project Image",
-				img: require("@/assets/images/LaravelVueEcommercePhone/4.webp"),
+				img: require("@/assets/images/LaravelVueEcommercePhone/A (4).png"),
 			},
 			{
 				id: 5,
 				title: "Project Image",
-				img: require("@/assets/images/LaravelVueEcommercePhone/5.webp"),
+				img: require("@/assets/images/LaravelVueEcommercePhone/A (5).png"),
 			},
 			{
 				id: 6,
 				title: "Project Image",
-				img: require("@/assets/images/LaravelVueEcommercePhone/6.webp"),
+				img: require("@/assets/images/LaravelVueEcommercePhone/A (6).png"),
+			},
+			{
+				id: 7,
+				title: "Project Image",
+				img: require("@/assets/images/LaravelVueEcommercePhone/A (7).png"),
+			}, {
+				id: 1,
+				title: "Project Image",
+				img: require("@/assets/images/LaravelVueEcommercePhone/B (1).png"),
+			},
+			{
+				id: 2,
+				title: "Project Image",
+				img: require("@/assets/images/LaravelVueEcommercePhone/B (2).png"),
+			},
+			{
+				id: 3,
+				title: "Project Image",
+				img: require("@/assets/images/LaravelVueEcommercePhone/B (3).png"),
+			},
+			{
+				id: 4,
+				title: "Project Image",
+				img: require("@/assets/images/LaravelVueEcommercePhone/B (4).png"),
 			},
 		],
 		projectInfo: {
@@ -1387,7 +1411,7 @@ const projects = [
 				},
 			],
 		},
-	},	
+	},
 ];
 
 export default projects;

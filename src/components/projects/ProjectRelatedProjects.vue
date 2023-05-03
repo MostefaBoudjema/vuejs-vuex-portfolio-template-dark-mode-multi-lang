@@ -9,8 +9,6 @@ export default {
             useScope: "global",
         });
 
-        
-
         return { t };
     },
     computed: {
@@ -23,7 +21,7 @@ export default {
             }
 
             // Take the first 4 items from the shuffled array
-            return shuffled.slice(0, 2);
+            return shuffled.slice(0, 4);
         },
     },
     methods: {
@@ -33,16 +31,15 @@ export default {
 </script>
 
 <template>
-    <div
-        class="mt-10 pt-10 sm:pt-14 sm:mt-20 border-primary-light dark:border-secondary-dark"
-    >
+    <div class="border-primary-light dark:border-secondary-dark">
         <p
             class="font-general-regular text-primary-dark dark:text-primary-light text-3xl font-bold mb-10 sm:mb-14 text-left"
         >
             {{ relatedProject.relatedProjectsHeading }}
         </p>
 
-        <div class="grid grid-cols-1 mt-6 sm:gap-10">
+            <div class="grid grid-cols-1 sm:grid-cols-4 sm:gap-10 mt-12">
+            <!-- <div class="grid grid-cols-1 mt-6 sm:gap-10"> -->
             <div v-for="item in randomItems" :key="item.id">
                 <router-link
                     :to="{ name: item.link }"
@@ -53,7 +50,6 @@ export default {
                         class="rounded-xl cursor-pointer h-70 w-96"
                         :alt="item.title"
                 /></router-link>
-                <!-- <h3 class="dark:text-white pt-1">{{ t(item.title) }}</h3> -->
                 <h3 class="dark:text-white text-center pt-2">
                     {{ item.title }}
                 </h3>
