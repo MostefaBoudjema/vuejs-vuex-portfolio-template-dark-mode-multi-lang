@@ -9,32 +9,36 @@ export default {
 
 <template>
     <div>
-        <div class="flex">
-            <div class="">
-                <p
-                    class="font-general-medium text-left text-3xl sm:text-4xl font-bold text-primary-dark dark:text-primary-light mt-7 sm:mt-7 mb-7"
-                >
-                    {{ singleProjectHeader.singleProjectTitle }}
-                </p>
-                <div class="flex mt-10 mr-10">
-                    <i
-                        data-feather="clock"
-                        class="w-4 h-4 text-ternary-dark dark:text-ternary-light"
-                    ></i>
-                    <span
-                        class="font-general-medium ml-2 leading-none text-primary-dark dark:text-primary-light"
-                        >{{ singleProjectHeader.singleProjectDate }}</span
+        <div class="inline-block sm:flex">
+            <div>
+                <div class="">
+                    <p
+                        class="font-general-medium text-left text-3xl sm:text-4xl font-bold text-primary-dark dark:text-primary-light mt-7 sm:mt-7 mb-7"
                     >
+                        {{ singleProjectHeader.singleProjectTitle }}
+                    </p>
                 </div>
-                <div class="flex mt-10">
-                    <i
-                        data-feather="tag"
-                        class="w-4 h-4 text-ternary-dark dark:text-ternary-light"
-                    ></i>
-                    <span
-                        class="font-general-medium ml-2 leading-none text-primary-dark dark:text-primary-light"
-                        >{{ singleProjectHeader.singleProjectTag }}</span
-                    >
+                <div class="flex sm:block justify-center">
+                    <div class="flex mt-10 mr-10">
+                        <i
+                            data-feather="clock"
+                            class="w-4 h-4 text-ternary-dark dark:text-ternary-light"
+                        ></i>
+                        <span
+                            class="font-general-medium ml-2 leading-none text-primary-dark dark:text-primary-light"
+                            >{{ singleProjectHeader.singleProjectDate }}</span
+                        >
+                    </div>
+                    <div class="flex mt-10">
+                        <i
+                            data-feather="tag"
+                            class="w-4 h-4 text-ternary-dark dark:text-ternary-light"
+                        ></i>
+                        <span
+                            class="font-general-medium ml-2 leading-none text-primary-dark dark:text-primary-light"
+                            >{{ singleProjectHeader.singleProjectTag }}</span
+                        >
+                    </div>
                 </div>
             </div>
             <slide :imgList="imgList" />

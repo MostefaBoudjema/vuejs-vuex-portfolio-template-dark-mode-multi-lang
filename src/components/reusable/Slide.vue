@@ -36,6 +36,8 @@
             </div>
         </transition-group>
         <div class="Carousel-controls">
+            <div></div>
+            <div></div>
             <svg
                 @click="prev"
                 width="48"
@@ -75,6 +77,8 @@
                 <polyline points="12 16 16 12 12 8"></polyline>
                 <line x1="8" y1="12" x2="16" y2="12"></line>
             </svg>
+            <div></div>
+            <div></div>
         </div>
     </div>
 </template>
@@ -158,7 +162,16 @@ export default {
     /* margin: auto; */
     margin-left: 3rem;
     margin-right: 3rem;
-    width: 780px;
+    /* width: 780px; */
+    width: 100%;
+}
+@media only screen and (max-width: 640px) {
+  .Carousel {
+    margin-top: 2rem;
+    
+    margin-left: 1rem;
+    margin-right: 2rem;
+  }
 }
 .Carousel_chunk {
     display: flex;
@@ -210,7 +223,7 @@ export default {
 .Carousel-controls svg {
     cursor: pointer;
 }
-svg{
+svg {
     fill: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
