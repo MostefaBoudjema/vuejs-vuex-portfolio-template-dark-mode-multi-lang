@@ -11,7 +11,7 @@ export default {
     <div>
         <div class="inline-block sm:flex">
             <div>
-                <div class="">
+                <div class="flex justify-center">
                     <p
                         class="font-general-medium text-left text-3xl sm:text-4xl font-bold text-primary-dark dark:text-primary-light mt-7 sm:mt-7 mb-7"
                     >
