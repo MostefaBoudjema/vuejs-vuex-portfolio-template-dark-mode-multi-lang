@@ -193,6 +193,19 @@ const routes = [
 		},
 	},
 	{
+		path: '/projects/iauto',
+		name: 'iauto',		
+		id: '8',
+
+		component: () =>
+			import(
+				/* webpackChunkName: "projects" */ '../views/OneProjectTemplate.vue'
+			),
+		meta: {
+			title: 'Mostfa Boudjema - iauto',
+		},
+	},
+	{
 		path: '/contact',
 		name: 'Contact',
 

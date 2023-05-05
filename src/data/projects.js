@@ -12,7 +12,7 @@ const projects = [
 		singleProjectHeader: {
 			singleProjectTitle: t("Image Generator OpenAI"),
 			singleProjectDate: "02 Apr 2023",
-			singleProjectTag: t("UI / Frontend"),
+			singleProjectTag: t("Frontend / API"),
 		},
 		projectImages: [
 			{
@@ -129,12 +129,12 @@ const projects = [
 		title: 'Business Website',
 		category: 'Laravel Application',
 		outer_link: 'https://tamtamtools.com/',
-		img: require('@/assets/images/tamtamtools/1.png'),
+		img: require('@/assets/images/tamtamtools/0.png'),
 		link: 'tamtamtools',
 		singleProjectHeader: {
 			singleProjectTitle: t("Image Generator OpenAI"),
 			singleProjectDate: "02 Apr 2023",
-			singleProjectTag: t("UI / Frontend"),
+			singleProjectTag: t(" Frontend / Backend"),
 		},
 		projectImages: [
 			{
@@ -256,7 +256,7 @@ const projects = [
 		singleProjectHeader: {
 			singleProjectTitle: t("Laravel Vue Ecommerce Phone"),
 			singleProjectDate: "26 Jul 2021",
-			singleProjectTag: t("UI / Frontend"),
+			singleProjectTag: t(" Frontend / Backend"),
 		},
 		projectImages: [
 			{
@@ -679,7 +679,7 @@ const projects = [
 		singleProjectHeader: {
 			singleProjectTitle: t("Blog"),
 			singleProjectDate: "08 Mar 2020",
-			singleProjectTag: t("UI / Frontend"),
+			singleProjectTag: t(" Frontend / Backend"),
 		},
 		projectImages: [
 			{
@@ -1172,7 +1172,7 @@ const projects = [
 		singleProjectHeader: {
 			singleProjectTitle: t("Laravel Expense Manager"),
 			singleProjectDate: "26 Jul 2021",
-			singleProjectTag: t("UI / Frontend"),
+			singleProjectTag: t(" Frontend / Backend"),
 		},
 		projectImages: [
 			{
@@ -1295,7 +1295,7 @@ const projects = [
 		singleProjectHeader: {
 			singleProjectTitle: t("Laravel Voting System"),
 			singleProjectDate: "26 Jul 2021",
-			singleProjectTag: t("UI / Frontend"),
+			singleProjectTag: t(" Frontend / Backend"),
 		},
 		projectImages: [
 			{
@@ -1317,6 +1317,144 @@ const projects = [
 				id: 4,
 				title: "Project Image",
 				img: require("@/assets/images/LaravelVotingSystem/4.webp"),
+			},
+		],
+		projectInfo: {
+			clientHeading: t("About Client"),
+			companyInfos: [
+				{
+					id: 1,
+					title: t("Name"),
+					details: t("Company Ltd"),
+				},
+				{
+					id: 2,
+					title: t("Services"),
+					details: t("Phone store services"),
+				},
+				{
+					id: 3,
+					title: t("Website"),
+					details: "https://company.com",
+				},
+				{
+					id: 4,
+					title: t("Phone"),
+					details: "555 8888 888",
+				},
+			],
+			objectivesHeading: t("Objective"),
+			objectivesDetails: t("Objective1"),
+			technologies: [
+				{
+					title: t("Tools & Technologies"),
+					techs: [
+						"HTML",
+						"CSS",
+						"JavaScript",
+						"Vue.js",
+						"TailwindCSS",
+						"AdobeXD",
+					],
+				},
+			],
+			projectDetailsHeading: t("Challenge"),
+			projectDetails: [
+				{
+					id: 1,
+					details: t("details1"),
+				},
+				{
+					id: 2,
+					details: t("details2"),
+				},
+				{
+					id: 3,
+					details: t("details3"),
+				},
+				{
+					id: 4,
+					details: t("details4"),
+				},
+			],
+			socialSharingsHeading: t("Share This"),
+			socialSharings: [
+				{
+					id: 1,
+					name: "Twitter",
+					icon: "twitter",
+					url: "https://twitter.com/",
+				},
+				{
+					id: 2,
+					name: "Instagram",
+					icon: "instagram",
+					url: "https://instagram.com/",
+				},
+				{
+					id: 3,
+					name: "Facebook",
+					icon: "facebook",
+					url: "https://facebook.com/",
+				},
+				{
+					id: 4,
+					name: "LinkedIn",
+					icon: "linkedin",
+					url: "https://linkedin.com/",
+				},
+				{
+					id: 5,
+					name: "Youtube",
+					icon: "youtube",
+					url: "https://www.youtube.com/",
+				},
+			],
+		},
+	},
+
+	{
+		id: 11,
+		title: 'iAuto Business Website',
+		category: 'Laravel Vue Application',
+		outer_link: 'https://iauto.no/',
+		img: require('@/assets/images/iauto/0.png'),
+		link: 'iauto',
+		singleProjectHeader: {
+			singleProjectTitle: t("iAuto Business Website"),
+			singleProjectDate: "04 mai 2023",
+			singleProjectTag: t(" Frontend / Backend"),
+		},
+		projectImages: [
+			{
+				id: 1,
+				title: "Project Image",
+				img: require("@/assets/images/iauto/1.png"),
+			},
+			{
+				id: 2,
+				title: "Project Image",
+				img: require("@/assets/images/iauto/2.png"),
+			},
+			{
+				id: 3,
+				title: "Project Image",
+				img: require("@/assets/images/iauto/3.png"),
+			},
+			{
+				id: 4,
+				title: "Project Image",
+				img: require("@/assets/images/iauto/4.png"),
+			},
+			{
+				id: 5,
+				title: "Project Image",
+				img: require("@/assets/images/iauto/5.png"),
+			},
+			{
+				id: 6,
+				title: "Project Image",
+				img: require("@/assets/images/iauto/6.png"),
 			},
 		],
 		projectInfo: {
