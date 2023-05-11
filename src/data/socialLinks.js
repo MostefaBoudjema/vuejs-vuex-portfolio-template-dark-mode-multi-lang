@@ -17,4 +17,16 @@ export const socialLinks = [
 		icon: 'linkedin',
 		url: 'https://www.linkedin.com/in/mostefa-boudjema',
 	},
+	{
+		id: 4,
+		name: 'Telegram',
+		icon: 'navigation',
+		url: 'https://t.me/mostefa28',
+	},
+	{
+		id: 5,
+		name: 'Whatsapp',
+		icon: 'phone',
+		url: 'https://wa.me/2130793632289',
+	},
 ];

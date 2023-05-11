@@ -23,7 +23,7 @@ export default {
         });
         return {
             projects,
-            projectsHeading: t("Projects Portfolio"),
+            projectsHeading: t("Projects I worked On"),
             selectedCategory: "",
             searchProject: "",
         };
