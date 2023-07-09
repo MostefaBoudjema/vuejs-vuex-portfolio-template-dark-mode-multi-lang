@@ -23,7 +23,7 @@ export default {
 				},
 				{
 					id: 3,
-					name: '0793 63 22 89',
+					name: '0793 69 22 89',
 					icon: 'phone',
 				},
 			],
