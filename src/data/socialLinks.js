@@ -27,6 +27,6 @@ export const socialLinks = [
 		id: 5,
 		name: 'Whatsapp',
 		icon: 'phone',
-		url: 'https://wa.me/2130793632289',
+		url: 'https://wa.me/2130793692289',
 	},
 ];
