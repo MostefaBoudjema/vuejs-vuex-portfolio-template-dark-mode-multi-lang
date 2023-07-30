@@ -6,7 +6,7 @@ const projects = [
 		id: 0,
 		title: 'Image Generator OpenAI',
 		category: 'Vue App',
-		outer_link: 'https://vue3-openai-image-generator.vercel.app/',
+		outer_link: '#',
 		img: require('@/assets/images/ImageGeneratorOpenAI/1.png'),
 		link: 'LaravelVotingSystem',
 		singleProjectHeader: {
