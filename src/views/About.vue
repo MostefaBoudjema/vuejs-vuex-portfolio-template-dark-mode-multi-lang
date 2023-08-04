@@ -2,6 +2,7 @@
 import AboutMe from '@/components/about/AboutMe';
 import AboutCounter from '@/components/about/AboutCounter';
 import AboutClients from '@/components/about/AboutClients';
+import AboutEmplymentHistory from '@/components/about/AboutEmplymentHistory';
 import AboutsSkills from '@/components/about/AboutsSkills.vue';
 import feather from 'feather-icons';
 
@@ -12,6 +13,7 @@ export default {
 		AboutCounter,
 		AboutClients,
 		AboutsSkills,
+		AboutEmplymentHistory,
 	},
 	data: () => {
 		return {};
@@ -35,6 +37,9 @@ export default {
 
 		<!-- About counter -->
 		<AboutCounter />
+
+		<!-- Abouts Skills -->
+			<AboutEmplymentHistory />
 
 		<!-- Abouts Skills -->
 			<AboutsSkills />
