@@ -48,7 +48,7 @@ export default {
                 <counter
                     ref="counter"
                     :startAmount="0"
-                    :endAmount="13"
+                    :endAmount="17"
                     :duration="1"
                     suffix="k+"
                     :autoinit="true"
