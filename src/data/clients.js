@@ -5,19 +5,19 @@ const clients = [
     {
         id: 1,
         title: 'Fiverr',
-        link: '#',
+        link: '',
         img: require('@/assets/images/brands/fiverr_color.png'),
     },
     {
         id: 2,
         title: 'Upwork',
-        link: '#',
+        link: '',
         img: require('@/assets/images/brands/upwork_color.png'),
     },
     {
         id: 3,
         title: 'Freelancer',
-        link: '#',
+        link: '',
         img: require('@/assets/images/brands/freelancer_color.png'),
     },
     {
