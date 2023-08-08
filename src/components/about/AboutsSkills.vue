@@ -44,6 +44,16 @@ export default {
             <button
                 class="m-3 px-4 sm:px-6 py-2 sm:py-2.5 text-red-500 bg-transparent border border-red-500 hover:border-red-600 rounded-md focus:ring-1 focus:ring-red-900">npm</button>
             <button
+                class="m-3 px-4 sm:px-6 py-2 sm:py-2.5 text-green-500 bg-transparent border border-green-500 hover:border-green-600 rounded-md focus:ring-1 focus:ring-green-900">Node.js</button>
+            <button
+                class="m-3 px-4 sm:px-6 py-2 sm:py-2.5 text-purple-500 bg-transparent border border-purple-500 hover:border-purple-600 rounded-md focus:ring-1 focus:ring-purple-900">Webpack</button>
+            <button
+                class="m-3 px-4 sm:px-6 py-2 sm:py-2.5 text-blue-500 bg-transparent border border-blue-500 hover:border-blue-600 rounded-md focus:ring-1 focus:ring-blue-900">Vite</button>
+            <button
+                class="m-3 px-4 sm:px-6 py-2 sm:py-2.5 text-green-500 bg-transparent border border-green-500 hover:border-green-600 rounded-md focus:ring-1 focus:ring-green-900">SPA</button>
+            <button
+                class="m-3 px-4 sm:px-6 py-2 sm:py-2.5 text-blue-500 bg-transparent border border-blue-500 hover:border-blue-600 rounded-md focus:ring-1 focus:ring-blue-900">TypeScript</button>
+            <button
                 class="m-3 px-4 sm:px-6 py-2 sm:py-2.5 text-lime-500 bg-transparent border border-lime-500 hover:border-lime-600 rounded-md focus:ring-1 focus:ring-lime-900">
                 Architecture MVC</button>
             <button
@@ -83,6 +93,10 @@ export default {
             <button
                 class="m-3 px-4 sm:px-6 py-2 sm:py-2.5 text-rose-500 bg-transparent border border-rose-500 hover:border-rose-600 rounded-md focus:ring-1 focus:ring-rose-900">Frontend
                 Developement</button>
+            <button
+                class="m-3 px-4 sm:px-6 py-2 sm:py-2.5 text-teal-500 bg-transparent border border-teal-500 hover:border-teal-600 rounded-md focus:ring-1 focus:ring-teal-900">
+                Apache
+            </button>
         </div>
         <!-- <CustomButton :title="$t('React')" color="blue"/> -->
     </div>
