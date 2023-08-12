@@ -33,6 +33,7 @@ export default {
 				'Laravel Vue Application',
 				'Wordpress site',
 				'Vue App',
+				'React App',
 			],
 		},
 	},

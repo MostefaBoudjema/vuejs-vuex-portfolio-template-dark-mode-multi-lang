@@ -163,6 +163,17 @@ const routes=[
 		},
 	},
 	{
+		path: '/projects/movie-db',
+		name: 'movie-db', id: '10',
+		component: () =>
+			import(
+				'../views/OneProjectTemplate.vue'
+			),
+		meta: {
+			title: generateMetaTitle('Movie db'),
+		},
+	},
+	{
 		path: '/contact',
 		name: 'Contact',
 		component: () =>

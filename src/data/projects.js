@@ -1550,6 +1550,133 @@ const projects = [
 			],
 		},
 	},
+	{
+		id: 10,
+		title: 'Popular Movie DB Website',
+		category: 'React App',
+		outer_link: 'https://popular-moviedb.vercel.app/',
+		img: require('@/assets/images/movie-db/0.png'),
+		link: 'movie-db',
+		singleProjectHeader: {
+			singleProjectTitle: t("Popular Movie DB Website"),
+			singleProjectDate: "09 august 2023",
+			singleProjectTag: t("Frontend"),
+		},
+		projectImages: [
+			{
+				id: 1,
+				title: "Project Image",
+				img: require("@/assets/images/movie-db/1.png"),
+			},
+			{
+				id: 2,
+				title: "Project Image",
+				img: require("@/assets/images/movie-db/2.png"),
+			},
+			{
+				id: 3,
+				title: "Project Image",
+				img: require("@/assets/images/movie-db/3.png"),
+			},
+			{
+				id: 4,
+				title: "Project Image",
+				img: require("@/assets/images/movie-db/4.png"),
+			},
+			
+		],
+		projectInfo: {
+			clientHeading: t("About Client"),
+			companyInfos: [
+				{
+					id: 1,
+					title: t("Name"),
+					details: t("Company Ltd"),
+				},
+				{
+					id: 2,
+					title: t("Services"),
+					details: t("Phone store services"),
+				},
+				{
+					id: 3,
+					title: t("Website"),
+					details: "https://company.com",
+				},
+				{
+					id: 4,
+					title: t("Phone"),
+					details: "555 8888 888",
+				},
+			],
+			objectivesHeading: t("Objective"),
+			objectivesDetails: t("Objective1"),
+			technologies: [
+				{
+					title: t("Tools & Technologies"),
+					techs: [
+						"HTML",
+						"CSS",
+						"JavaScript",
+						"React.js",
+						"Bootstrap5",
+					],
+				},
+			],
+			projectDetailsHeading: t("Challenge"),
+			projectDetails: [
+				{
+					id: 1,
+					details: t("details1"),
+				},
+				{
+					id: 2,
+					details: t("details2"),
+				},
+				{
+					id: 3,
+					details: t("details3"),
+				},
+				{
+					id: 4,
+					details: t("details4"),
+				},
+			],
+			socialSharingsHeading: t("Share This"),
+			socialSharings: [
+				{
+					id: 1,
+					name: "Twitter",
+					icon: "twitter",
+					url: "https://twitter.com/",
+				},
+				{
+					id: 2,
+					name: "Instagram",
+					icon: "instagram",
+					url: "https://instagram.com/",
+				},
+				{
+					id: 3,
+					name: "Facebook",
+					icon: "facebook",
+					url: "https://facebook.com/",
+				},
+				{
+					id: 4,
+					name: "LinkedIn",
+					icon: "linkedin",
+					url: "https://linkedin.com/",
+				},
+				{
+					id: 5,
+					name: "Youtube",
+					icon: "youtube",
+					url: "https://www.youtube.com/",
+				},
+			],
+		},
+	},
 ];
 
 export default projects;
