@@ -80,6 +80,75 @@
     "All Projects": "All Projects",
     "More Projects": "More Projects",
     "Follow me": "Follow me",
-    "Hi, Iam Mostfa": "Hi, Iam Mostfa",
+    
+    "details0A": "This is an image generation web application built with Vue 3 that allows users to generate images through OpenAI's DALL-E API. The app has a simple and clean UI with a text input field where users can type a text prompt describing the image they want to generate.",
+    "details0B": "When the user enters a prompt and clicks the 'Generate Image' button, a request is sent to the OpenAI API with the user's prompt. The app then displays the AI-generated image in the UI once it is received from the API.",
+    "details0C": "Some key technical details:    Vue 3 is used as the front-end framework to build the UI and handle reactivity and components. Features like the Composition API and fragments are leveraged.    The OpenAI API key is stored securely and calls are made to the endpoint for image generation. Appropriate headers and parameters are included in the API request.    The generated image data is displayed in the UI by binding the API response to an image element.    Loading states and error handling are implemented to account for API results.    Styling is done using CSS and TailwindCSS to create the clean and responsive UI.",
+    "details0D": "So in summary, it's a simple Vue 3 app that provides an easy interface for users to get AI-generated images from OpenAI's DALL-E using their API. The focus is on the frontend and Vue 3 integrations with OpenAI.",
+    "Objective0": "The main objective of this image generation web application is to provide an accessible frontend interface using Vue 3 for users to leverage AI image creation through OpenAI's DALL-E API. By handling the API integration and reactive data binding in Vue 3, it aims to enable easy AI-powered image generation based on user text prompts. The app serves as a demonstration of integrating external APIs into a Vue 3 codebase, displaying reactive data, and implementing core Vue 3 concepts like components, Composition API, and more. It focuses on the front-end Vue 3 code to deliver a seamless user experience for AI image creation rather than being a feature-complete product. Overall, it mainly serves as an educational tool to explore Vue 3 development and AI image generation in a straightforward application.",
+    
+    
+    "details1A": "det1",
+    "details1B": "det2",
+    "details1C": "det3",
+    "details1D": "det4",
+    // "Objective1": "obj1",
+    
+    
+    "details2A": "det1",
+    "details2B": "det2",
+    "details2C": "det3",
+    "details2D": "det4",
+    "Objective2": "obj1",
+    
+    
+    "details3A": "det1",
+    "details3B": "det2",
+    "details3C": "det3",
+    "details3D": "det4",
+    "Objective3": "obj1",
+    
+    
+    "details4A": "det1",
+    "details4B": "det2",
+    "details4C": "det3",
+    "details4D": "det4",
+    "Objective4": "obj1",
+    
+    
+    "details5A": "det1",
+    "details5B": "det2",
+    "details5C": "det3",
+    "details5D": "det4",
+    "Objective5": "obj1",
+    
+    
+    "details6A": "det1",
+    "details6B": "det2",
+    "details6C": "det3",
+    "details6D": "det4",
+    "Objective6": "obj1",
+    
+    
+    "details7A": "det1",
+    "details7B": "det2",
+    "details7C": "det3",
+    "details7D": "det4",
+    "Objective7": "obj1",
+    
+    
+    "details8A": "det1",
+    "details8B": "det2",
+    "details8C": "det3",
+    "details8D": "det4",
+    "Objective8": "obj1",
+    
+    
+    "details9A": "det1",
+    "details9B": "det2",
+    "details9C": "det3",
+    "details9D": "det4",
+    "Objective9": "obj1",
+    
     "Job Title": "a Laravel Vue JS developer"
 }

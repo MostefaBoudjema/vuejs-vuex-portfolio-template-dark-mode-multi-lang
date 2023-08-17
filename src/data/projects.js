@@ -47,16 +47,11 @@ const projects = [
 				{
 					id: 3,
 					title: t("Website"),
-					details: "https://company.com",
-				},
-				{
-					id: 4,
-					title: t("Phone"),
-					details: "555 8888 888",
+					details: "https://openai.com",
 				},
 			],
 			objectivesHeading: t("Objective"),
-			objectivesDetails: t("Objective1"),
+			objectivesDetails: t("Objective0"),
 			technologies: [
 				{
 					title: t("Tools & Technologies"),
@@ -66,7 +61,7 @@ const projects = [
 						"JavaScript",
 						"Vue.js",
 						"TailwindCSS",
-						"AdobeXD",
+						"API",
 					],
 				},
 			],
@@ -74,19 +69,19 @@ const projects = [
 			projectDetails: [
 				{
 					id: 1,
-					details: t("details1"),
+					details: t("details0A"),
 				},
 				{
 					id: 2,
-					details: t("details2"),
+					details: t("details0B"),
 				},
 				{
 					id: 3,
-					details: t("details3"),
+					details: t("details0C"),
 				},
 				{
 					id: 4,
-					details: t("details4"),
+					details: t("details0D"),
 				},
 			],
 			socialSharingsHeading: t("Share This"),
@@ -544,7 +539,7 @@ const projects = [
 				},
 			],
 		},
-		//relatedProject,
+		
 	},
 	{
 		id: 4,
@@ -667,7 +662,7 @@ const projects = [
 				},
 			],
 		},
-		//relatedProject,
+		
 	},
 	{
 		id: 5,
@@ -790,7 +785,7 @@ const projects = [
 				},
 			],
 		},
-		//relatedProject,
+		
 	},
 	{
 		id: 6,
@@ -913,7 +908,7 @@ const projects = [
 				},
 			],
 		},
-		//relatedProject,
+		
 	},
 	{
 		id: 7,
@@ -1036,7 +1031,7 @@ const projects = [
 				},
 			],
 		},
-		//relatedProject,
+		
 	},
 	{
 		id: 8,
@@ -1159,259 +1154,8 @@ const projects = [
 				},
 			],
 		},
-		//relatedProject,
+		
 	},
-
-	// {
-	// 	id: 9,
-	// 	title: 'Laravel Expense Manager',
-	// 	category: 'Laravel Application',
-	// 	link: 'LaravelExpenseManager',
-	// 	outer_link: '#',
-	// 	img: require('@/assets/images/LaravelExpenseManager/1.webp'),
-	// 	singleProjectHeader: {
-	// 		singleProjectTitle: t("Laravel Expense Manager"),
-	// 		singleProjectDate: "26 Jul 2021",
-	// 		singleProjectTag: t(" Frontend / Backend"),
-	// 	},
-	// 	projectImages: [
-	// 		{
-	// 			id: 1,
-	// 			title: "Project Image",
-	// 			img: require("@/assets/images/LaravelExpenseManager/1.webp"),
-	// 		},
-	// 		{
-	// 			id: 2,
-	// 			title: "Project Image",
-	// 			img: require("@/assets/images/LaravelExpenseManager/2.webp"),
-	// 		},
-	// 		{
-	// 			id: 3,
-	// 			title: "Project Image",
-	// 			img: require("@/assets/images/LaravelExpenseManager/3.webp"),
-	// 		},
-	// 	],
-	// 	projectInfo: {
-	// 		clientHeading: t("About Client"),
-	// 		companyInfos: [
-	// 			{
-	// 				id: 1,
-	// 				title: t("Name"),
-	// 				details: t("Company Ltd"),
-	// 			},
-	// 			{
-	// 				id: 2,
-	// 				title: t("Services"),
-	// 				details: t("Phone store services"),
-	// 			},
-	// 			{
-	// 				id: 3,
-	// 				title: t("Website"),
-	// 				details: "https://company.com",
-	// 			},
-	// 			{
-	// 				id: 4,
-	// 				title: t("Phone"),
-	// 				details: "555 8888 888",
-	// 			},
-	// 		],
-	// 		objectivesHeading: t("Objective"),
-	// 		objectivesDetails: t("Objective1"),
-	// 		technologies: [
-	// 			{
-	// 				title: t("Tools & Technologies"),
-	// 				techs: [
-	// 					"HTML",
-	// 					"CSS",
-	// 					"JavaScript",
-	// 					"Vue.js",
-	// 					"TailwindCSS",
-	// 					"AdobeXD",
-	// 				],
-	// 			},
-	// 		],
-	// 		projectDetailsHeading: t("Challenge"),
-	// 		projectDetails: [
-	// 			{
-	// 				id: 1,
-	// 				details: t("details1"),
-	// 			},
-	// 			{
-	// 				id: 2,
-	// 				details: t("details2"),
-	// 			},
-	// 			{
-	// 				id: 3,
-	// 				details: t("details3"),
-	// 			},
-	// 			{
-	// 				id: 4,
-	// 				details: t("details4"),
-	// 			},
-	// 		],
-	// 		socialSharingsHeading: t("Share This"),
-	// 		socialSharings: [
-	// 			{
-	// 				id: 1,
-	// 				name: "Twitter",
-	// 				icon: "twitter",
-	// 				url: "https://twitter.com/",
-	// 			},
-	// 			{
-	// 				id: 2,
-	// 				name: "Instagram",
-	// 				icon: "instagram",
-	// 				url: "https://instagram.com/",
-	// 			},
-	// 			{
-	// 				id: 3,
-	// 				name: "Facebook",
-	// 				icon: "facebook",
-	// 				url: "https://facebook.com/",
-	// 			},
-	// 			{
-	// 				id: 4,
-	// 				name: "LinkedIn",
-	// 				icon: "linkedin",
-	// 				url: "https://linkedin.com/",
-	// 			},
-	// 			{
-	// 				id: 5,
-	// 				name: "Youtube",
-	// 				icon: "youtube",
-	// 				url: "https://www.youtube.com/",
-	// 			},
-	// 		],
-	// 	},
-	// },
-
-	// {
-	// 	id: 10,
-	// 	title: 'Laravel Voting System',
-	// 	category: 'Laravel Application',
-	// 	outer_link: '#',
-	// 	img: require('@/assets/images/LaravelVotingSystem/1.webp'),
-	// 	link: 'LaravelVotingSystem',
-	// 	singleProjectHeader: {
-	// 		singleProjectTitle: t("Laravel Voting System"),
-	// 		singleProjectDate: "26 Jul 2021",
-	// 		singleProjectTag: t(" Frontend / Backend"),
-	// 	},
-	// 	projectImages: [
-	// 		{
-	// 			id: 1,
-	// 			title: "Project Image",
-	// 			img: require("@/assets/images/LaravelVotingSystem/1.webp"),
-	// 		},
-	// 		{
-	// 			id: 2,
-	// 			title: "Project Image",
-	// 			img: require("@/assets/images/LaravelVotingSystem/2.webp"),
-	// 		},
-	// 		{
-	// 			id: 3,
-	// 			title: "Project Image",
-	// 			img: require("@/assets/images/LaravelVotingSystem/3.webp"),
-	// 		},
-	// 		{
-	// 			id: 4,
-	// 			title: "Project Image",
-	// 			img: require("@/assets/images/LaravelVotingSystem/4.webp"),
-	// 		},
-	// 	],
-	// 	projectInfo: {
-	// 		clientHeading: t("About Client"),
-	// 		companyInfos: [
-	// 			{
-	// 				id: 1,
-	// 				title: t("Name"),
-	// 				details: t("Company Ltd"),
-	// 			},
-	// 			{
-	// 				id: 2,
-	// 				title: t("Services"),
-	// 				details: t("Phone store services"),
-	// 			},
-	// 			{
-	// 				id: 3,
-	// 				title: t("Website"),
-	// 				details: "https://company.com",
-	// 			},
-	// 			{
-	// 				id: 4,
-	// 				title: t("Phone"),
-	// 				details: "555 8888 888",
-	// 			},
-	// 		],
-	// 		objectivesHeading: t("Objective"),
-	// 		objectivesDetails: t("Objective1"),
-	// 		technologies: [
-	// 			{
-	// 				title: t("Tools & Technologies"),
-	// 				techs: [
-	// 					"HTML",
-	// 					"CSS",
-	// 					"JavaScript",
-	// 					"Vue.js",
-	// 					"TailwindCSS",
-	// 					"AdobeXD",
-	// 				],
-	// 			},
-	// 		],
-	// 		projectDetailsHeading: t("Challenge"),
-	// 		projectDetails: [
-	// 			{
-	// 				id: 1,
-	// 				details: t("details1"),
-	// 			},
-	// 			{
-	// 				id: 2,
-	// 				details: t("details2"),
-	// 			},
-	// 			{
-	// 				id: 3,
-	// 				details: t("details3"),
-	// 			},
-	// 			{
-	// 				id: 4,
-	// 				details: t("details4"),
-	// 			},
-	// 		],
-	// 		socialSharingsHeading: t("Share This"),
-	// 		socialSharings: [
-	// 			{
-	// 				id: 1,
-	// 				name: "Twitter",
-	// 				icon: "twitter",
-	// 				url: "https://twitter.com/",
-	// 			},
-	// 			{
-	// 				id: 2,
-	// 				name: "Instagram",
-	// 				icon: "instagram",
-	// 				url: "https://instagram.com/",
-	// 			},
-	// 			{
-	// 				id: 3,
-	// 				name: "Facebook",
-	// 				icon: "facebook",
-	// 				url: "https://facebook.com/",
-	// 			},
-	// 			{
-	// 				id: 4,
-	// 				name: "LinkedIn",
-	// 				icon: "linkedin",
-	// 				url: "https://linkedin.com/",
-	// 			},
-	// 			{
-	// 				id: 5,
-	// 				name: "Youtube",
-	// 				icon: "youtube",
-	// 				url: "https://www.youtube.com/",
-	// 			},
-	// 		],
-	// 	},
-	// },
 
 	{
 		id: 9,
