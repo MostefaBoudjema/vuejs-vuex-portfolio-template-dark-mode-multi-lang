@@ -45,8 +45,8 @@ const routes=[
 		},
 	},
 	{
-		path: '/projects/LaravelVotingSystem',
-		name: 'LaravelVotingSystem',
+		path: '/projects/ai-image-generation',
+		name: 'ai-image-generation',
 		id: '2',
 		component: () =>
 			import(
@@ -56,18 +56,18 @@ const routes=[
 			title: generateMetaTitle('Phones Blog'),
 		},
 	},
-	{
-		path: '/projects/LaravelExpenseManager',
-		name: 'LaravelExpenseManager',
-		id: '3',
-		component: () =>
-			import(
-				'../views/OneProjectTemplate.vue'
-			),
-		meta: {
-			title: generateMetaTitle('Business'),
-		},
-	},
+	// {
+	// 	path: '/projects/LaravelExpenseManager',
+	// 	name: 'LaravelExpenseManager',
+	// 	id: '3',
+	// 	component: () =>
+	// 		import(
+	// 			'../views/OneProjectTemplate.vue'
+	// 		),
+	// 	meta: {
+	// 		title: generateMetaTitle('Business'),
+	// 	},
+	// },
 	{
 		path: '/projects/PhonesStore',
 		name: 'PhonesStore',

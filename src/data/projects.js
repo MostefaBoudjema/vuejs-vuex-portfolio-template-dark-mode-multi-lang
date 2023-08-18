@@ -1,35 +1,41 @@
 import i18n from '../i18n';
-const { t } = i18n.global;
+const { t }=i18n.global;
 
-const projects = [
+const projects=[
 	{
 		id: 0,
-		title: 'Image Generator OpenAI',
-		category: 'Vue App',
-		outer_link: '#',
-		img: require('@/assets/images/ImageGeneratorOpenAI/1.png'),
-		link: 'LaravelVotingSystem',
+		title: 'Popular Movie DB Website',
+		category: 'React App',
+		outer_link: 'https://popular-moviedb.vercel.app/',
+		img: require('@/assets/images/movie-db/0.png'),
+		link: 'movie-db',
 		singleProjectHeader: {
-			singleProjectTitle: t("Image Generator OpenAI"),
-			singleProjectDate: "02 Apr 2023",
-			singleProjectTag: t("Frontend / API"),
+			singleProjectTitle: t("Popular Movie DB Website"),
+			singleProjectDate: "09 august 2023",
+			singleProjectTag: t("Frontend"),
 		},
 		projectImages: [
 			{
 				id: 1,
 				title: "Project Image",
-				img: require("@/assets/images/ImageGeneratorOpenAI/1.png"),
+				img: require("@/assets/images/movie-db/1.png"),
 			},
 			{
 				id: 2,
 				title: "Project Image",
-				img: require("@/assets/images/ImageGeneratorOpenAI/2.png"),
+				img: require("@/assets/images/movie-db/2.png"),
 			},
 			{
 				id: 3,
 				title: "Project Image",
-				img: require("@/assets/images/ImageGeneratorOpenAI/3.png"),
+				img: require("@/assets/images/movie-db/3.png"),
 			},
+			{
+				id: 4,
+				title: "Project Image",
+				img: require("@/assets/images/movie-db/4.png"),
+			},
+
 		],
 		projectInfo: {
 			clientHeading: t("About Client"),
@@ -37,7 +43,7 @@ const projects = [
 				{
 					id: 1,
 					title: t("Name"),
-					details: t("Company Ltd"),
+					details: t("MovieDb"),
 				},
 				{
 					id: 2,
@@ -47,8 +53,9 @@ const projects = [
 				{
 					id: 3,
 					title: t("Website"),
-					details: "https://openai.com",
+					details: "https://popular-moviedb.vercel.app/",
 				},
+
 			],
 			objectivesHeading: t("Objective"),
 			objectivesDetails: t("Objective0"),
@@ -59,9 +66,8 @@ const projects = [
 						"HTML",
 						"CSS",
 						"JavaScript",
-						"Vue.js",
-						"TailwindCSS",
-						"API",
+						"React.js",
+						"Bootstrap5",
 					],
 				},
 			],
@@ -127,7 +133,7 @@ const projects = [
 		img: require('@/assets/images/tamtamtools/0.png'),
 		link: 'tamtamtools',
 		singleProjectHeader: {
-			singleProjectTitle: t("Image Generator OpenAI"),
+			singleProjectTitle: t("Tamtam Tools"),
 			singleProjectDate: "02 Apr 2023",
 			singleProjectTag: t(" Frontend / Backend"),
 		},
@@ -154,7 +160,248 @@ const projects = [
 				{
 					id: 1,
 					title: t("Name"),
-					details: t("Company Ltd"),
+					details: t("Tamtam tools Ltd"),
+				},
+				{
+					id: 2,
+					title: t("Services"),
+					details: t("Campaign generation services"),
+				},
+				{
+					id: 3,
+					title: t("Website"),
+					details: "https://tamtamtools.com/",
+				},
+			],
+			objectivesHeading: t("Objective"),
+			objectivesDetails: t("Objective1"),
+			technologies: [
+				{
+					title: t("Tools & Technologies"),
+					techs: [
+						"Laravel",
+						"PHP",
+						"JavaScript",
+						"Jquery",
+						"CSS",
+						"HTML",
+						"Bootstrap",
+					],
+				},
+			],
+			projectDetailsHeading: t("Challenge"),
+			projectDetails: [
+				{
+					id: 1,
+					details: t("details1A"),
+				},
+				{
+					id: 2,
+					details: t("details1B"),
+				},
+				{
+					id: 3,
+					details: t("details1C"),
+				},
+				{
+					id: 4,
+					details: t("details1D"),
+				},
+			],
+			socialSharingsHeading: t("Share This"),
+			socialSharings: [
+				{
+					id: 1,
+					name: "Instagram",
+					icon: "instagram",
+					url: "https://www.instagram.com/tamtamgestioncreativa",
+				},
+				{
+					id: 2,
+					name: "Facebook",
+					icon: "facebook",
+					url: "https://www.facebook.com/profile.php?id=100086499687468",
+				},
+				{
+					id: 3,
+					name: "LinkedIn",
+					icon: "linkedin",
+					url: "https://www.linkedin.com/company/tamtamtools",
+				},
+			],
+		},
+	},
+
+	{
+		id: 2,
+		title: 'Elearn',
+		category: 'Wordpress site',
+		outer_link: 'https://websitedemos.net/online-courses-02/',
+		link: 'Elearn',
+		img: require('@/assets/images/Elearn/1.webp'),
+		singleProjectHeader: {
+			singleProjectTitle: t("Elearn"),
+			singleProjectDate: "16 Jan 2023",
+			singleProjectTag: t("UI / Frontend"),
+		},
+		projectImages: [
+			{
+				id: 1,
+				title: "Project Image",
+				img: require("@/assets/images/Elearn/1.webp"),
+			},
+			{
+				id: 2,
+				title: "Project Image",
+				img: require("@/assets/images/Elearn/2.webp"),
+			},
+			{
+				id: 3,
+				title: "Project Image",
+				img: require("@/assets/images/Elearn/3.webp"),
+			},
+		],
+		projectInfo: {
+			clientHeading: t("About Client"),
+			companyInfos: [
+				{
+					id: 1,
+					title: t("Name"),
+					details: t("eLearn"),
+				},
+				{
+					id: 2,
+					title: t("Services"),
+					details: t("UI Design & Frontend Development"),
+				},
+				{
+					id: 3,
+					title: t("Website"),
+					details: "https://websitedemos.net/online-courses-02/",
+				},
+
+			],
+			objectivesHeading: t("Objective"),
+			objectivesDetails: t("Objective2"),
+			technologies: [
+				{
+					title: t("Tools & Technologies"),
+					techs: [
+						"HTML",
+						"CSS",
+						"JavaScript",
+						"Wordpress",
+						"PHP",
+					],
+				},
+			],
+			projectDetailsHeading: t("Challenge"),
+			projectDetails: [
+				{
+					id: 1,
+					details: t("details2A"),
+				},
+				{
+					id: 2,
+					details: t("details2B"),
+				},
+				{
+					id: 3,
+					details: t("details2C"),
+				},
+				{
+					id: 4,
+					details: t("details2D"),
+				},
+			],
+			socialSharingsHeading: t("Share This"),
+			socialSharings: [
+				{
+					id: 1,
+					name: "Twitter",
+					icon: "twitter",
+					url: "https://twitter.com/",
+				},
+				{
+					id: 2,
+					name: "Instagram",
+					icon: "instagram",
+					url: "https://instagram.com/",
+				},
+				{
+					id: 3,
+					name: "Facebook",
+					icon: "facebook",
+					url: "https://facebook.com/",
+				},
+				{
+					id: 4,
+					name: "LinkedIn",
+					icon: "linkedin",
+					url: "https://linkedin.com/",
+				},
+				{
+					id: 5,
+					name: "Youtube",
+					icon: "youtube",
+					url: "https://www.youtube.com/",
+				},
+			],
+		},
+
+	},
+
+	{
+		id: 3,
+		title: 'iAuto Business Website',
+		category: 'Laravel Vue Application',
+		outer_link: 'https://iauto.no/',
+		img: require('@/assets/images/iauto/0.png'),
+		link: 'iauto',
+		singleProjectHeader: {
+			singleProjectTitle: t("iAuto Business Website"),
+			singleProjectDate: "04 mai 2023",
+			singleProjectTag: t(" Frontend / Backend"),
+		},
+		projectImages: [
+			{
+				id: 1,
+				title: "Project Image",
+				img: require("@/assets/images/iauto/1.png"),
+			},
+			{
+				id: 2,
+				title: "Project Image",
+				img: require("@/assets/images/iauto/2.png"),
+			},
+			{
+				id: 3,
+				title: "Project Image",
+				img: require("@/assets/images/iauto/3.png"),
+			},
+			{
+				id: 4,
+				title: "Project Image",
+				img: require("@/assets/images/iauto/4.png"),
+			},
+			{
+				id: 5,
+				title: "Project Image",
+				img: require("@/assets/images/iauto/5.png"),
+			},
+			{
+				id: 6,
+				title: "Project Image",
+				img: require("@/assets/images/iauto/6.png"),
+			},
+		],
+		projectInfo: {
+			clientHeading: t("About Client"),
+			companyInfos: [
+				{
+					id: 1,
+					title: t("Name"),
+					details: t("iAuto"),
 				},
 				{
 					id: 2,
@@ -164,26 +411,23 @@ const projects = [
 				{
 					id: 3,
 					title: t("Website"),
-					details: "https://company.com",
+					details: "https://iauto.no/",
 				},
-				{
-					id: 4,
-					title: t("Phone"),
-					details: "555 8888 888",
-				},
+
 			],
 			objectivesHeading: t("Objective"),
-			objectivesDetails: t("Objective1"),
+			objectivesDetails: t("Objective3"),
 			technologies: [
 				{
 					title: t("Tools & Technologies"),
 					techs: [
+						"Laravel",
+						"Vue.js",
+						"PHP",
+						"Bootstrap",
 						"HTML",
 						"CSS",
 						"JavaScript",
-						"Vue.js",
-						"TailwindCSS",
-						"AdobeXD",
 					],
 				},
 			],
@@ -191,19 +435,19 @@ const projects = [
 			projectDetails: [
 				{
 					id: 1,
-					details: t("details1"),
+					details: t("details3A"),
 				},
 				{
 					id: 2,
-					details: t("details2"),
+					details: t("details3B"),
 				},
 				{
 					id: 3,
-					details: t("details3"),
+					details: t("details3C"),
 				},
 				{
 					id: 4,
-					details: t("details4"),
+					details: t("details3D"),
 				},
 			],
 			socialSharingsHeading: t("Share This"),
@@ -242,7 +486,603 @@ const projects = [
 		},
 	},
 	{
-		id: 2,
+		id: 4,
+		title: 'Business',
+		category: 'Wordpress site',
+		outer_link: 'https://websitedemos.net/kathryn-ebook-author-02/',
+		link: 'Business',
+		img: require('@/assets/images/Business/1.webp'),
+		singleProjectHeader: {
+			singleProjectTitle: t("Business"),
+			singleProjectDate: "18 Sep 2017",
+			singleProjectTag: t("UI / Frontend"),
+		},
+		projectImages: [
+			{
+				id: 1,
+				title: "Project Image",
+				img: require("@/assets/images/Business/1.webp"),
+			},
+			{
+				id: 2,
+				title: "Project Image",
+				img: require("@/assets/images/Business/2.webp"),
+			},
+			{
+				id: 3,
+				title: "Project Image",
+				img: require("@/assets/images/Business/3.webp"),
+			},
+		],
+		projectInfo: {
+			clientHeading: t("About Client"),
+			companyInfos: [
+				{
+					id: 1,
+					title: t("Name"),
+					details: t("eBook"),
+				},
+				{
+					id: 2,
+					title: t("Services"),
+					details: t("UI Design & Frontend Development"),
+				},
+				{
+					id: 3,
+					title: t("Website"),
+					details: "https://websitedemos.net/kathryn-ebook-author-02/",
+				},
+
+			],
+			objectivesHeading: t("Objective"),
+			objectivesDetails: t("Objective4"),
+			technologies: [
+				{
+					title: t("Tools & Technologies"),
+					techs: [
+						"Wordpress",
+						"PHP",
+						"HTML",
+						"CSS",
+						"JavaScript",
+						"jQuery",
+					],
+				},
+			],
+			projectDetailsHeading: t("Challenge"),
+			projectDetails: [
+				{
+					id: 1,
+					details: t("details4A"),
+				},
+				{
+					id: 2,
+					details: t("details4B"),
+				},
+				{
+					id: 3,
+					details: t("details4C"),
+				},
+				{
+					id: 4,
+					details: t("details4D"),
+				},
+			],
+			socialSharingsHeading: t("Share This"),
+			socialSharings: [
+				{
+					id: 1,
+					name: "Twitter",
+					icon: "twitter",
+					url: "https://twitter.com/",
+				},
+				{
+					id: 2,
+					name: "Instagram",
+					icon: "instagram",
+					url: "https://instagram.com/",
+				},
+				{
+					id: 3,
+					name: "Facebook",
+					icon: "facebook",
+					url: "https://facebook.com/",
+				},
+				{
+					id: 4,
+					name: "LinkedIn",
+					icon: "linkedin",
+					url: "https://linkedin.com/",
+				},
+				{
+					id: 5,
+					name: "Youtube",
+					icon: "youtube",
+					url: "https://www.youtube.com/",
+				},
+			],
+		},
+
+	},
+	{
+		id: 5,
+		title: 'Blog',
+		category: 'Vue App',
+		outer_link: 'https://saadaahnews.com/',
+		link: 'Blog',
+		img: require('@/assets/images/Blog/1.webp'),
+		singleProjectHeader: {
+			singleProjectTitle: t("Blog"),
+			singleProjectDate: "08 Mar 2020",
+			singleProjectTag: t(" Frontend / Backend"),
+		},
+		projectImages: [
+			{
+				id: 1,
+				title: "Project Image",
+				img: require("@/assets/images/Blog/1.webp"),
+			},
+			{
+				id: 2,
+				title: "Project Image",
+				img: require("@/assets/images/Blog/2.webp"),
+			},
+			{
+				id: 3,
+				title: "Project Image",
+				img: require("@/assets/images/Blog/3.webp"),
+			},
+		],
+		projectInfo: {
+			clientHeading: t("About Client"),
+			companyInfos: [
+				{
+					id: 1,
+					title: t("Name"),
+					details: t("Saadaah News"),
+				},
+				{
+					id: 2,
+					title: t("Services"),
+					details: t("Blog Services"),
+				},
+				{
+					id: 3,
+					title: t("Website"),
+					details: "https://saadaahnews.com/",
+				},
+
+			],
+			objectivesHeading: t("Objective"),
+			objectivesDetails: t("Objective5"),
+			technologies: [
+				{
+					title: t("Tools & Technologies"),
+					techs: [
+						"Vue.js",
+						"JavaScript",
+						"TailwindCSS",
+						"HTML",
+						"CSS",
+					],
+				},
+			],
+			projectDetailsHeading: t("Challenge"),
+			projectDetails: [
+				{
+					id: 1,
+					details: t("details5A"),
+				},
+				{
+					id: 2,
+					details: t("details5B"),
+				},
+				{
+					id: 3,
+					details: t("details5C"),
+				},
+				{
+					id: 4,
+					details: t("details5D"),
+				},
+				{
+					id: 4,
+					details: t("details5E"),
+				},
+			],
+			socialSharingsHeading: t("Share This"),
+			socialSharings: [
+				{
+					id: 1,
+					name: "Twitter",
+					icon: "twitter",
+					url: "https://twitter.com/",
+				},
+				{
+					id: 2,
+					name: "Instagram",
+					icon: "instagram",
+					url: "https://instagram.com/",
+				},
+				{
+					id: 3,
+					name: "Facebook",
+					icon: "facebook",
+					url: "https://facebook.com/",
+				},
+				{
+					id: 4,
+					name: "LinkedIn",
+					icon: "linkedin",
+					url: "https://linkedin.com/",
+				},
+				{
+					id: 5,
+					name: "Youtube",
+					icon: "youtube",
+					url: "https://www.youtube.com/",
+				},
+			],
+		},
+
+	},
+	{
+		id: 6,
+		title: 'Clothes Store',
+		category: 'Wordpress site',
+		outer_link: 'https://websitedemos.net/brandstore-02/',
+		link: 'ClothesStore',
+		img: require('@/assets/images/ClothesStore/1.webp'),
+		singleProjectHeader: {
+			singleProjectTitle: t("Clothes Store"),
+			singleProjectDate: "24 Sep 2022",
+			singleProjectTag: t("UI / Frontend"),
+		},
+		projectImages: [
+			{
+				id: 1,
+				title: "Project Image",
+				img: require("@/assets/images/ClothesStore/1.webp"),
+			},
+			{
+				id: 2,
+				title: "Project Image",
+				img: require("@/assets/images/ClothesStore/2.webp"),
+			},
+			{
+				id: 3,
+				title: "Project Image",
+				img: require("@/assets/images/ClothesStore/3.webp"),
+			},
+		],
+		projectInfo: {
+			clientHeading: t("About Client"),
+			companyInfos: [
+				{
+					id: 1,
+					title: t("Name"),
+					details: t("Clothes Store"),
+				},
+				{
+					id: 2,
+					title: t("Services"),
+					details: t("UI Design & Frontend Development"),
+				},
+				{
+					id: 3,
+					title: t("Website"),
+					details: "https://websitedemos.net/brandstore-02/",
+				},
+
+			],
+			objectivesHeading: t("Objective"),
+			objectivesDetails: t("Objective6"),
+			technologies: [
+				{
+					title: t("Tools & Technologies"),
+					techs: [
+						"Wordpress",
+						"PHP",
+						"HTML",
+						"CSS",
+						"JavaScript",
+						"jQuery",
+					],
+				},
+			],
+			projectDetailsHeading: t("Challenge"),
+			projectDetails: [
+				{
+					id: 1,
+					details: t("details6A"),
+				},
+				{
+					id: 2,
+					details: t("details6B"),
+				},
+				{
+					id: 3,
+					details: t("details6C"),
+				},
+				{
+					id: 4,
+					details: t("detailsCD"),
+				},
+			],
+			socialSharingsHeading: t("Share This"),
+			socialSharings: [
+				{
+					id: 1,
+					name: "Twitter",
+					icon: "twitter",
+					url: "https://twitter.com/",
+				},
+				{
+					id: 2,
+					name: "Instagram",
+					icon: "instagram",
+					url: "https://instagram.com/",
+				},
+				{
+					id: 3,
+					name: "Facebook",
+					icon: "facebook",
+					url: "https://facebook.com/",
+				},
+				{
+					id: 4,
+					name: "LinkedIn",
+					icon: "linkedin",
+					url: "https://linkedin.com/",
+				},
+				{
+					id: 5,
+					name: "Youtube",
+					icon: "youtube",
+					url: "https://www.youtube.com/",
+				},
+			],
+		},
+
+	},
+	{
+		id: 7,
+		title: 'Portfolio',
+		category: 'Vue App',
+		outer_link: 'https://webpress-annaba.netlify.app/',
+		link: 'Portfolio',
+		img: require('@/assets/images/Portfolio/1.webp'),
+		singleProjectHeader: {
+			singleProjectTitle: t("Portfolio"),
+			singleProjectDate: "20 Mar 2023",
+			singleProjectTag: t("UI / Frontend"),
+		},
+		projectImages: [
+			{
+				id: 1,
+				title: "Project Image",
+				img: require("@/assets/images/Portfolio/1.webp"),
+			},
+			{
+				id: 2,
+				title: "Project Image",
+				img: require("@/assets/images/Portfolio/2.webp"),
+			},
+			{
+				id: 3,
+				title: "Project Image",
+				img: require("@/assets/images/Portfolio/3.webp"),
+			},
+		],
+		projectInfo: {
+			clientHeading: t("About Client"),
+			companyInfos: [
+				{
+					id: 1,
+					title: t("Name"),
+					details: t("Portfolio"),
+				},
+				{
+					id: 2,
+					title: t("Services"),
+					details: t("UI Design & Frontend Development"),
+				},
+				{
+					id: 3,
+					title: t("Website"),
+					details: "https://webpress-annaba.netlify.app/",
+				},
+
+			],
+			objectivesHeading: t("Objective"),
+			objectivesDetails: t("Objective7"),
+			technologies: [
+				{
+					title: t("Tools & Technologies"),
+					techs: [
+						"Vue.js",
+						"HTML",
+						"CSS",
+						"JavaScript",
+						"TailwindCSS",
+					],
+				},
+			],
+			projectDetailsHeading: t("Challenge"),
+			projectDetails: [
+				{
+					id: 1,
+					details: t("details7A"),
+				},
+				{
+					id: 2,
+					details: t("details7B"),
+				},
+				{
+					id: 3,
+					details: t("details7C"),
+				},
+				{
+					id: 4,
+					details: t("details7D"),
+				},
+			],
+			socialSharingsHeading: t("Share This"),
+			socialSharings: [
+				{
+					id: 1,
+					name: "Twitter",
+					icon: "twitter",
+					url: "https://twitter.com/",
+				},
+				{
+					id: 2,
+					name: "Instagram",
+					icon: "instagram",
+					url: "https://instagram.com/",
+				},
+				{
+					id: 3,
+					name: "Facebook",
+					icon: "facebook",
+					url: "https://facebook.com/",
+				},
+				{
+					id: 4,
+					name: "LinkedIn",
+					icon: "linkedin",
+					url: "https://linkedin.com/",
+				},
+				{
+					id: 5,
+					name: "Youtube",
+					icon: "youtube",
+					url: "https://www.youtube.com/",
+				},
+			],
+		},
+
+	},
+	
+	{
+		id: 8,
+		title: 'Image Generator OpenAI',
+		category: 'Vue App',
+		outer_link: '#',
+		img: require('@/assets/images/ImageGeneratorOpenAI/1.png'),
+		link: 'ai-image-generation',
+		singleProjectHeader: {
+			singleProjectTitle: t("Image Generator OpenAI"),
+			singleProjectDate: "02 Apr 2023",
+			singleProjectTag: t("Frontend / API"),
+		},
+		projectImages: [
+			{
+				id: 1,
+				title: "Project Image",
+				img: require("@/assets/images/ImageGeneratorOpenAI/1.png"),
+			},
+			{
+				id: 2,
+				title: "Project Image",
+				img: require("@/assets/images/ImageGeneratorOpenAI/2.png"),
+			},
+			{
+				id: 3,
+				title: "Project Image",
+				img: require("@/assets/images/ImageGeneratorOpenAI/3.png"),
+			},
+		],
+		projectInfo: {
+			clientHeading: t("About Client"),
+			companyInfos: [
+				{
+					id: 1,
+					title: t("Name"),
+					details: t("Image Generator"),
+				},
+				{
+					id: 2,
+					title: t("Services"),
+					details: t("AI image generation"),
+				},
+				{
+					id: 3,
+					title: t("Website"),
+					details: "#",
+				},
+			],
+			objectivesHeading: t("Objective"),
+			objectivesDetails: t("Objective8"),
+			technologies: [
+				{
+					title: t("Tools & Technologies"),
+					techs: [
+						"Vue.js",
+						"API",
+						"JavaScript",
+						"TailwindCSS",
+						"CSS",
+						"HTML",
+					],
+				},
+			],
+			projectDetailsHeading: t("Challenge"),
+			projectDetails: [
+				{
+					id: 1,
+					details: t("details8A"),
+				},
+				{
+					id: 2,
+					details: t("details8B"),
+				},
+				{
+					id: 3,
+					details: t("details8C"),
+				},
+				{
+					id: 4,
+					details: t("details8D"),
+				},
+			],
+			socialSharingsHeading: t("Share This"),
+			socialSharings: [
+				{
+					id: 1,
+					name: "Twitter",
+					icon: "twitter",
+					url: "https://twitter.com/",
+				},
+				{
+					id: 2,
+					name: "Instagram",
+					icon: "instagram",
+					url: "https://instagram.com/",
+				},
+				{
+					id: 3,
+					name: "Facebook",
+					icon: "facebook",
+					url: "https://facebook.com/",
+				},
+				{
+					id: 4,
+					name: "LinkedIn",
+					icon: "linkedin",
+					url: "https://linkedin.com/",
+				},
+				{
+					id: 5,
+					name: "Youtube",
+					icon: "youtube",
+					url: "https://www.youtube.com/",
+				},
+			],
+		},
+	},
+	{
+		id: 9,
 		title: 'Laravel Vue Ecommerce Phone',
 		category: 'Laravel Vue Application',
 		outer_link: '#',
@@ -315,7 +1155,7 @@ const projects = [
 				{
 					id: 1,
 					title: t("Name"),
-					details: t("Company Ltd"),
+					details: t("eCommerce phone Store"),
 				},
 				{
 					id: 2,
@@ -325,26 +1165,22 @@ const projects = [
 				{
 					id: 3,
 					title: t("Website"),
-					details: "https://company.com",
+					details: "#",
 				},
-				{
-					id: 4,
-					title: t("Phone"),
-					details: "555 8888 888",
-				},
+
 			],
 			objectivesHeading: t("Objective"),
-			objectivesDetails: t("Objective1"),
+			objectivesDetails: t("Objective9"),
 			technologies: [
 				{
 					title: t("Tools & Technologies"),
 					techs: [
-						"HTML",
+						"Laravel",
+						"Vue.js",
 						"CSS",
 						"JavaScript",
-						"Vue.js",
-						"TailwindCSS",
-						"AdobeXD",
+						"Bootstrap",
+						"HTML",
 					],
 				},
 			],
@@ -352,19 +1188,23 @@ const projects = [
 			projectDetails: [
 				{
 					id: 1,
-					details: t("details1"),
+					details: t("details9A"),
 				},
 				{
 					id: 2,
-					details: t("details2"),
+					details: t("details9B"),
 				},
 				{
 					id: 3,
-					details: t("details3"),
+					details: t("details9C"),
 				},
 				{
 					id: 4,
-					details: t("details4"),
+					details: t("details9D"),
+				},
+				{
+					id: 5,
+					details: t("details9E"),
 				},
 			],
 			socialSharingsHeading: t("Share This"),
@@ -404,7 +1244,7 @@ const projects = [
 	},
 
 	{
-		id: 3,
+		id: 10,
 		title: 'Phones Store',
 		category: 'Wordpress site',
 		outer_link: '#',
@@ -453,7 +1293,7 @@ const projects = [
 				{
 					id: 1,
 					title: t("Name"),
-					details: t("Company Ltd"),
+					details: t("eCommerce phone Store"),
 				},
 				{
 					id: 2,
@@ -463,780 +1303,22 @@ const projects = [
 				{
 					id: 3,
 					title: t("Website"),
-					details: "https://company.com",
+					details: "#",
 				},
-				{
-					id: 4,
-					title: t("Phone"),
-					details: "555 8888 888",
-				},
-			],
-			objectivesHeading: t("Objective"),
-			objectivesDetails: t("Objective1"),
-			technologies: [
-				{
-					title: t("Tools & Technologies"),
-					techs: [
-						"HTML",
-						"CSS",
-						"JavaScript",
-						"Vue.js",
-						"TailwindCSS",
-						"AdobeXD",
-					],
-				},
-			],
-			projectDetailsHeading: t("Challenge"),
-			projectDetails: [
-				{
-					id: 1,
-					details: t("details1"),
-				},
-				{
-					id: 2,
-					details: t("details2"),
-				},
-				{
-					id: 3,
-					details: t("details3"),
-				},
-				{
-					id: 4,
-					details: t("details4"),
-				},
-			],
-			socialSharingsHeading: t("Share This"),
-			socialSharings: [
-				{
-					id: 1,
-					name: "Twitter",
-					icon: "twitter",
-					url: "https://twitter.com/",
-				},
-				{
-					id: 2,
-					name: "Instagram",
-					icon: "instagram",
-					url: "https://instagram.com/",
-				},
-				{
-					id: 3,
-					name: "Facebook",
-					icon: "facebook",
-					url: "https://facebook.com/",
-				},
-				{
-					id: 4,
-					name: "LinkedIn",
-					icon: "linkedin",
-					url: "https://linkedin.com/",
-				},
-				{
-					id: 5,
-					name: "Youtube",
-					icon: "youtube",
-					url: "https://www.youtube.com/",
-				},
-			],
-		},
-		
-	},
-	{
-		id: 4,
-		title: 'Business',
-		category: 'Wordpress site',
-		outer_link: 'https://websitedemos.net/kathryn-ebook-author-02/',
-		link: 'Business',
-		img: require('@/assets/images/Business/1.webp'),
-		singleProjectHeader: {
-			singleProjectTitle: t("Business"),
-			singleProjectDate: "18 Sep 2017",
-			singleProjectTag: t("UI / Frontend"),
-		},
-		projectImages: [
-			{
-				id: 1,
-				title: "Project Image",
-				img: require("@/assets/images/Business/1.webp"),
-			},
-			{
-				id: 2,
-				title: "Project Image",
-				img: require("@/assets/images/Business/2.webp"),
-			},
-			{
-				id: 3,
-				title: "Project Image",
-				img: require("@/assets/images/Business/3.webp"),
-			},
-		],
-		projectInfo: {
-			clientHeading: t("About Client"),
-			companyInfos: [
-				{
-					id: 1,
-					title: t("Name"),
-					details: t("Company Ltd"),
-				},
-				{
-					id: 2,
-					title: t("Services"),
-					details: t("UI Design & Frontend Development"),
-				},
-				{
-					id: 3,
-					title: t("Website"),
-					details: "https://company.com",
-				},
-				{
-					id: 4,
-					title: t("Phone"),
-					details: "555 8888 888",
-				},
-			],
-			objectivesHeading: t("Objective"),
-			objectivesDetails: t("Objective1"),
-			technologies: [
-				{
-					title: t("Tools & Technologies"),
-					techs: [
-						"HTML",
-						"CSS",
-						"JavaScript",
-						"Vue.js",
-						"TailwindCSS",
-						"AdobeXD",
-					],
-				},
-			],
-			projectDetailsHeading: t("Challenge"),
-			projectDetails: [
-				{
-					id: 1,
-					details: t("details1"),
-				},
-				{
-					id: 2,
-					details: t("details2"),
-				},
-				{
-					id: 3,
-					details: t("details3"),
-				},
-				{
-					id: 4,
-					details: t("details4"),
-				},
-			],
-			socialSharingsHeading: t("Share This"),
-			socialSharings: [
-				{
-					id: 1,
-					name: "Twitter",
-					icon: "twitter",
-					url: "https://twitter.com/",
-				},
-				{
-					id: 2,
-					name: "Instagram",
-					icon: "instagram",
-					url: "https://instagram.com/",
-				},
-				{
-					id: 3,
-					name: "Facebook",
-					icon: "facebook",
-					url: "https://facebook.com/",
-				},
-				{
-					id: 4,
-					name: "LinkedIn",
-					icon: "linkedin",
-					url: "https://linkedin.com/",
-				},
-				{
-					id: 5,
-					name: "Youtube",
-					icon: "youtube",
-					url: "https://www.youtube.com/",
-				},
-			],
-		},
-		
-	},
-	{
-		id: 5,
-		title: 'Blog',
-		category: 'Vue App',
-		outer_link: 'https://saadaahnews.com/',
-		link: 'Blog',
-		img: require('@/assets/images/Blog/1.webp'),
-		singleProjectHeader: {
-			singleProjectTitle: t("Blog"),
-			singleProjectDate: "08 Mar 2020",
-			singleProjectTag: t(" Frontend / Backend"),
-		},
-		projectImages: [
-			{
-				id: 1,
-				title: "Project Image",
-				img: require("@/assets/images/Blog/1.webp"),
-			},
-			{
-				id: 2,
-				title: "Project Image",
-				img: require("@/assets/images/Blog/2.webp"),
-			},
-			{
-				id: 3,
-				title: "Project Image",
-				img: require("@/assets/images/Blog/3.webp"),
-			},
-		],
-		projectInfo: {
-			clientHeading: t("About Client"),
-			companyInfos: [
-				{
-					id: 1,
-					title: t("Name"),
-					details: t("Company Ltd"),
-				},
-				{
-					id: 2,
-					title: t("Services"),
-					details: t("Blog Services"),
-				},
-				{
-					id: 3,
-					title: t("Website"),
-					details: "https://company.com",
-				},
-				{
-					id: 4,
-					title: t("Phone"),
-					details: "555 8888 888",
-				},
-			],
-			objectivesHeading: t("Objective"),
-			objectivesDetails: t("Objective1"),
-			technologies: [
-				{
-					title: t("Tools & Technologies"),
-					techs: [
-						"HTML",
-						"CSS",
-						"JavaScript",
-						"Vue.js",
-						"TailwindCSS",
-						"AdobeXD",
-					],
-				},
-			],
-			projectDetailsHeading: t("Challenge"),
-			projectDetails: [
-				{
-					id: 1,
-					details: t("details1"),
-				},
-				{
-					id: 2,
-					details: t("details2"),
-				},
-				{
-					id: 3,
-					details: t("details3"),
-				},
-				{
-					id: 4,
-					details: t("details4"),
-				},
-			],
-			socialSharingsHeading: t("Share This"),
-			socialSharings: [
-				{
-					id: 1,
-					name: "Twitter",
-					icon: "twitter",
-					url: "https://twitter.com/",
-				},
-				{
-					id: 2,
-					name: "Instagram",
-					icon: "instagram",
-					url: "https://instagram.com/",
-				},
-				{
-					id: 3,
-					name: "Facebook",
-					icon: "facebook",
-					url: "https://facebook.com/",
-				},
-				{
-					id: 4,
-					name: "LinkedIn",
-					icon: "linkedin",
-					url: "https://linkedin.com/",
-				},
-				{
-					id: 5,
-					name: "Youtube",
-					icon: "youtube",
-					url: "https://www.youtube.com/",
-				},
-			],
-		},
-		
-	},
-	{
-		id: 6,
-		title: 'Clothes Store',
-		category: 'Wordpress site',
-		outer_link: 'https://websitedemos.net/brandstore-02/',
-		link: 'ClothesStore',
-		img: require('@/assets/images/ClothesStore/1.webp'),
-		singleProjectHeader: {
-			singleProjectTitle: t("Clothes Store"),
-			singleProjectDate: "24 Sep 2022",
-			singleProjectTag: t("UI / Frontend"),
-		},
-		projectImages: [
-			{
-				id: 1,
-				title: "Project Image",
-				img: require("@/assets/images/ClothesStore/1.webp"),
-			},
-			{
-				id: 2,
-				title: "Project Image",
-				img: require("@/assets/images/ClothesStore/2.webp"),
-			},
-			{
-				id: 3,
-				title: "Project Image",
-				img: require("@/assets/images/ClothesStore/3.webp"),
-			},
-		],
-		projectInfo: {
-			clientHeading: t("About Client"),
-			companyInfos: [
-				{
-					id: 1,
-					title: t("Name"),
-					details: t("Company Ltd"),
-				},
-				{
-					id: 2,
-					title: t("Services"),
-					details: t("UI Design & Frontend Development"),
-				},
-				{
-					id: 3,
-					title: t("Website"),
-					details: "https://company.com",
-				},
-				{
-					id: 4,
-					title: t("Phone"),
-					details: "555 8888 888",
-				},
-			],
-			objectivesHeading: t("Objective"),
-			objectivesDetails: t("Objective1"),
-			technologies: [
-				{
-					title: t("Tools & Technologies"),
-					techs: [
-						"HTML",
-						"CSS",
-						"JavaScript",
-						"Vue.js",
-						"TailwindCSS",
-						"AdobeXD",
-					],
-				},
-			],
-			projectDetailsHeading: t("Challenge"),
-			projectDetails: [
-				{
-					id: 1,
-					details: t("details1"),
-				},
-				{
-					id: 2,
-					details: t("details2"),
-				},
-				{
-					id: 3,
-					details: t("details3"),
-				},
-				{
-					id: 4,
-					details: t("details4"),
-				},
-			],
-			socialSharingsHeading: t("Share This"),
-			socialSharings: [
-				{
-					id: 1,
-					name: "Twitter",
-					icon: "twitter",
-					url: "https://twitter.com/",
-				},
-				{
-					id: 2,
-					name: "Instagram",
-					icon: "instagram",
-					url: "https://instagram.com/",
-				},
-				{
-					id: 3,
-					name: "Facebook",
-					icon: "facebook",
-					url: "https://facebook.com/",
-				},
-				{
-					id: 4,
-					name: "LinkedIn",
-					icon: "linkedin",
-					url: "https://linkedin.com/",
-				},
-				{
-					id: 5,
-					name: "Youtube",
-					icon: "youtube",
-					url: "https://www.youtube.com/",
-				},
-			],
-		},
-		
-	},
-	{
-		id: 7,
-		title: 'Portfolio',
-		category: 'Vue App',
-		outer_link: 'https://webpress-annaba.netlify.app/',
-		link: 'Portfolio',
-		img: require('@/assets/images/Portfolio/1.webp'),
-		singleProjectHeader: {
-			singleProjectTitle: t("Portfolio"),
-			singleProjectDate: "20 Mar 2023",
-			singleProjectTag: t("UI / Frontend"),
-		},
-		projectImages: [
-			{
-				id: 1,
-				title: "Project Image",
-				img: require("@/assets/images/Portfolio/1.webp"),
-			},
-			{
-				id: 2,
-				title: "Project Image",
-				img: require("@/assets/images/Portfolio/2.webp"),
-			},
-			{
-				id: 3,
-				title: "Project Image",
-				img: require("@/assets/images/Portfolio/3.webp"),
-			},
-		],
-		projectInfo: {
-			clientHeading: t("About Client"),
-			companyInfos: [
-				{
-					id: 1,
-					title: t("Name"),
-					details: t("Company Ltd"),
-				},
-				{
-					id: 2,
-					title: t("Services"),
-					details: t("UI Design & Frontend Development"),
-				},
-				{
-					id: 3,
-					title: t("Website"),
-					details: "https://company.com",
-				},
-				{
-					id: 4,
-					title: t("Phone"),
-					details: "555 8888 888",
-				},
-			],
-			objectivesHeading: t("Objective"),
-			objectivesDetails: t("Objective1"),
-			technologies: [
-				{
-					title: t("Tools & Technologies"),
-					techs: [
-						"HTML",
-						"CSS",
-						"JavaScript",
-						"Vue.js",
-						"TailwindCSS",
-						"AdobeXD",
-					],
-				},
-			],
-			projectDetailsHeading: t("Challenge"),
-			projectDetails: [
-				{
-					id: 1,
-					details: t("details1"),
-				},
-				{
-					id: 2,
-					details: t("details2"),
-				},
-				{
-					id: 3,
-					details: t("details3"),
-				},
-				{
-					id: 4,
-					details: t("details4"),
-				},
-			],
-			socialSharingsHeading: t("Share This"),
-			socialSharings: [
-				{
-					id: 1,
-					name: "Twitter",
-					icon: "twitter",
-					url: "https://twitter.com/",
-				},
-				{
-					id: 2,
-					name: "Instagram",
-					icon: "instagram",
-					url: "https://instagram.com/",
-				},
-				{
-					id: 3,
-					name: "Facebook",
-					icon: "facebook",
-					url: "https://facebook.com/",
-				},
-				{
-					id: 4,
-					name: "LinkedIn",
-					icon: "linkedin",
-					url: "https://linkedin.com/",
-				},
-				{
-					id: 5,
-					name: "Youtube",
-					icon: "youtube",
-					url: "https://www.youtube.com/",
-				},
-			],
-		},
-		
-	},
-	{
-		id: 8,
-		title: 'Elearn',
-		category: 'Wordpress site',
-		outer_link: 'https://websitedemos.net/online-courses-02/',
-		link: 'Elearn',
-		img: require('@/assets/images/Elearn/1.webp'),
-		singleProjectHeader: {
-			singleProjectTitle: t("Elearn"),
-			singleProjectDate: "16 Jan 2023",
-			singleProjectTag: t("UI / Frontend"),
-		},
-		projectImages: [
-			{
-				id: 1,
-				title: "Project Image",
-				img: require("@/assets/images/Elearn/1.webp"),
-			},
-			{
-				id: 2,
-				title: "Project Image",
-				img: require("@/assets/images/Elearn/2.webp"),
-			},
-			{
-				id: 3,
-				title: "Project Image",
-				img: require("@/assets/images/Elearn/3.webp"),
-			},
-		],
-		projectInfo: {
-			clientHeading: t("About Client"),
-			companyInfos: [
-				{
-					id: 1,
-					title: t("Name"),
-					details: t("Company Ltd"),
-				},
-				{
-					id: 2,
-					title: t("Services"),
-					details: t("UI Design & Frontend Development"),
-				},
-				{
-					id: 3,
-					title: t("Website"),
-					details: "https://company.com",
-				},
-				{
-					id: 4,
-					title: t("Phone"),
-					details: "555 8888 888",
-				},
-			],
-			objectivesHeading: t("Objective"),
-			objectivesDetails: t("Objective1"),
-			technologies: [
-				{
-					title: t("Tools & Technologies"),
-					techs: [
-						"HTML",
-						"CSS",
-						"JavaScript",
-						"Vue.js",
-						"TailwindCSS",
-						"AdobeXD",
-					],
-				},
-			],
-			projectDetailsHeading: t("Challenge"),
-			projectDetails: [
-				{
-					id: 1,
-					details: t("details1"),
-				},
-				{
-					id: 2,
-					details: t("details2"),
-				},
-				{
-					id: 3,
-					details: t("details3"),
-				},
-				{
-					id: 4,
-					details: t("details4"),
-				},
-			],
-			socialSharingsHeading: t("Share This"),
-			socialSharings: [
-				{
-					id: 1,
-					name: "Twitter",
-					icon: "twitter",
-					url: "https://twitter.com/",
-				},
-				{
-					id: 2,
-					name: "Instagram",
-					icon: "instagram",
-					url: "https://instagram.com/",
-				},
-				{
-					id: 3,
-					name: "Facebook",
-					icon: "facebook",
-					url: "https://facebook.com/",
-				},
-				{
-					id: 4,
-					name: "LinkedIn",
-					icon: "linkedin",
-					url: "https://linkedin.com/",
-				},
-				{
-					id: 5,
-					name: "Youtube",
-					icon: "youtube",
-					url: "https://www.youtube.com/",
-				},
-			],
-		},
-		
-	},
 
-	{
-		id: 9,
-		title: 'iAuto Business Website',
-		category: 'Laravel Vue Application',
-		outer_link: 'https://iauto.no/',
-		img: require('@/assets/images/iauto/0.png'),
-		link: 'iauto',
-		singleProjectHeader: {
-			singleProjectTitle: t("iAuto Business Website"),
-			singleProjectDate: "04 mai 2023",
-			singleProjectTag: t(" Frontend / Backend"),
-		},
-		projectImages: [
-			{
-				id: 1,
-				title: "Project Image",
-				img: require("@/assets/images/iauto/1.png"),
-			},
-			{
-				id: 2,
-				title: "Project Image",
-				img: require("@/assets/images/iauto/2.png"),
-			},
-			{
-				id: 3,
-				title: "Project Image",
-				img: require("@/assets/images/iauto/3.png"),
-			},
-			{
-				id: 4,
-				title: "Project Image",
-				img: require("@/assets/images/iauto/4.png"),
-			},
-			{
-				id: 5,
-				title: "Project Image",
-				img: require("@/assets/images/iauto/5.png"),
-			},
-			{
-				id: 6,
-				title: "Project Image",
-				img: require("@/assets/images/iauto/6.png"),
-			},
-		],
-		projectInfo: {
-			clientHeading: t("About Client"),
-			companyInfos: [
-				{
-					id: 1,
-					title: t("Name"),
-					details: t("Company Ltd"),
-				},
-				{
-					id: 2,
-					title: t("Services"),
-					details: t("Phone store services"),
-				},
-				{
-					id: 3,
-					title: t("Website"),
-					details: "https://company.com",
-				},
-				{
-					id: 4,
-					title: t("Phone"),
-					details: "555 8888 888",
-				},
 			],
 			objectivesHeading: t("Objective"),
-			objectivesDetails: t("Objective1"),
+			objectivesDetails: t("Objective10"),
 			technologies: [
 				{
 					title: t("Tools & Technologies"),
 					techs: [
+						"Wordpress",
+						"PHP",
+						"jQuery",
 						"HTML",
 						"CSS",
 						"JavaScript",
-						"Vue.js",
-						"TailwindCSS",
-						"AdobeXD",
 					],
 				},
 			],
@@ -1244,19 +1326,19 @@ const projects = [
 			projectDetails: [
 				{
 					id: 1,
-					details: t("details1"),
+					details: t("details10A"),
 				},
 				{
 					id: 2,
-					details: t("details2"),
+					details: t("details10B"),
 				},
 				{
 					id: 3,
-					details: t("details3"),
+					details: t("details10C"),
 				},
 				{
 					id: 4,
-					details: t("details4"),
+					details: t("details10D"),
 				},
 			],
 			socialSharingsHeading: t("Share This"),
@@ -1293,133 +1375,7 @@ const projects = [
 				},
 			],
 		},
-	},
-	{
-		id: 10,
-		title: 'Popular Movie DB Website',
-		category: 'React App',
-		outer_link: 'https://popular-moviedb.vercel.app/',
-		img: require('@/assets/images/movie-db/0.png'),
-		link: 'movie-db',
-		singleProjectHeader: {
-			singleProjectTitle: t("Popular Movie DB Website"),
-			singleProjectDate: "09 august 2023",
-			singleProjectTag: t("Frontend"),
-		},
-		projectImages: [
-			{
-				id: 1,
-				title: "Project Image",
-				img: require("@/assets/images/movie-db/1.png"),
-			},
-			{
-				id: 2,
-				title: "Project Image",
-				img: require("@/assets/images/movie-db/2.png"),
-			},
-			{
-				id: 3,
-				title: "Project Image",
-				img: require("@/assets/images/movie-db/3.png"),
-			},
-			{
-				id: 4,
-				title: "Project Image",
-				img: require("@/assets/images/movie-db/4.png"),
-			},
-			
-		],
-		projectInfo: {
-			clientHeading: t("About Client"),
-			companyInfos: [
-				{
-					id: 1,
-					title: t("Name"),
-					details: t("Company Ltd"),
-				},
-				{
-					id: 2,
-					title: t("Services"),
-					details: t("Phone store services"),
-				},
-				{
-					id: 3,
-					title: t("Website"),
-					details: "https://company.com",
-				},
-				{
-					id: 4,
-					title: t("Phone"),
-					details: "555 8888 888",
-				},
-			],
-			objectivesHeading: t("Objective"),
-			objectivesDetails: t("Objective1"),
-			technologies: [
-				{
-					title: t("Tools & Technologies"),
-					techs: [
-						"HTML",
-						"CSS",
-						"JavaScript",
-						"React.js",
-						"Bootstrap5",
-					],
-				},
-			],
-			projectDetailsHeading: t("Challenge"),
-			projectDetails: [
-				{
-					id: 1,
-					details: t("details1"),
-				},
-				{
-					id: 2,
-					details: t("details2"),
-				},
-				{
-					id: 3,
-					details: t("details3"),
-				},
-				{
-					id: 4,
-					details: t("details4"),
-				},
-			],
-			socialSharingsHeading: t("Share This"),
-			socialSharings: [
-				{
-					id: 1,
-					name: "Twitter",
-					icon: "twitter",
-					url: "https://twitter.com/",
-				},
-				{
-					id: 2,
-					name: "Instagram",
-					icon: "instagram",
-					url: "https://instagram.com/",
-				},
-				{
-					id: 3,
-					name: "Facebook",
-					icon: "facebook",
-					url: "https://facebook.com/",
-				},
-				{
-					id: 4,
-					name: "LinkedIn",
-					icon: "linkedin",
-					url: "https://linkedin.com/",
-				},
-				{
-					id: 5,
-					name: "Youtube",
-					icon: "youtube",
-					url: "https://www.youtube.com/",
-				},
-			],
-		},
+
 	},
 ];
 
