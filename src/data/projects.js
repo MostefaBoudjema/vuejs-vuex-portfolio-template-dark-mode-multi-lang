@@ -5,6 +5,20 @@ const projects=[
 	{
 		id: 0,
 		title: 'Popular Movie DB Website',
+		smallImages: [
+			{
+				id: 1,
+				alt: "react",
+				src: require('@/assets/images/technology/react.png'),
+				width: '60px',
+			},
+			{
+				id: 2,
+				alt: "bootstrap",
+				src: require('@/assets/images/technology/bootstrap.png'),
+				width: '60px',
+			},
+		],
 		category: 'React App',
 		outer_link: 'https://popular-moviedb.vercel.app/',
 		img: require('@/assets/images/movie-db/0.png'),
@@ -132,6 +146,32 @@ const projects=[
 		outer_link: 'https://tamtamtools.com/',
 		img: require('@/assets/images/tamtamtools/0.png'),
 		link: 'tamtamtools',
+		smallImages: [
+			{
+				id: 1,
+				alt: "laravel",
+				src: require('@/assets/images/technology/laravel.png'),
+				width: '60px',
+			},
+			{
+				id: 2,
+				alt: "php",
+				src: require('@/assets/images/technology/php.png'),
+				width: '60px',
+			},
+			{
+				id: 3,
+				alt: "jquery",
+				src: require('@/assets/images/technology/jquery.png'),
+				width: '60px',
+			},
+			{
+				id: 4,
+				alt: "bootstrap",
+				src: require('@/assets/images/technology/bootstrap.png'),
+				width: '60px',
+			},
+		],
 		singleProjectHeader: {
 			singleProjectTitle: t("Tamtam Tools"),
 			singleProjectDate: "02 Apr 2023",
@@ -239,6 +279,26 @@ const projects=[
 		outer_link: 'https://websitedemos.net/online-courses-02/',
 		link: 'Elearn',
 		img: require('@/assets/images/Elearn/1.webp'),
+		smallImages: [
+			{
+				id: 1,
+				alt: "wordpress",
+				src: require('@/assets/images/technology/wordpress.png'),
+				width: '60px',
+			},
+			{
+				id: 2,
+				alt: "php",
+				src: require('@/assets/images/technology/php.png'),
+				width: '60px',
+			},
+			{
+				id: 3,
+				alt: "jquery",
+				src: require('@/assets/images/technology/jquery.png'),
+				width: '60px',
+			},
+		],
 		singleProjectHeader: {
 			singleProjectTitle: t("Elearn"),
 			singleProjectDate: "16 Jan 2023",
@@ -358,6 +418,33 @@ const projects=[
 		outer_link: 'https://iauto.no/',
 		img: require('@/assets/images/iauto/0.png'),
 		link: 'iauto',
+		smallImages: [
+			{
+				id: 1,
+				alt: "laravel",
+				src: require('@/assets/images/technology/laravel.png'),
+				width: '60px',
+			},
+			
+			{
+				id: 2,
+				alt: "php",
+				src: require('@/assets/images/technology/php.png'),
+				width: '60px',
+			},
+			{
+				id: 3,
+				alt: "vue",
+				src: require('@/assets/images/technology/vue.png'),
+				width: '60px',
+			},
+			{
+				id: 4,
+				alt: "bootstrap",
+				src: require('@/assets/images/technology/bootstrap.png'),
+				width: '60px',
+			},
+		],
 		singleProjectHeader: {
 			singleProjectTitle: t("iAuto Business Website"),
 			singleProjectDate: "04 mai 2023",
@@ -492,6 +579,26 @@ const projects=[
 		outer_link: 'https://websitedemos.net/kathryn-ebook-author-02/',
 		link: 'Business',
 		img: require('@/assets/images/Business/1.webp'),
+		smallImages: [
+			{
+				id: 1,
+				alt: "wordpress",
+				src: require('@/assets/images/technology/wordpress.png'),
+				width: '60px',
+			},
+			{
+				id: 2,
+				alt: "php",
+				src: require('@/assets/images/technology/php.png'),
+				width: '60px',
+			},
+			{
+				id: 3,
+				alt: "jquery",
+				src: require('@/assets/images/technology/jquery.png'),
+				width: '60px',
+			},
+		],
 		singleProjectHeader: {
 			singleProjectTitle: t("Business"),
 			singleProjectDate: "18 Sep 2017",
@@ -611,6 +718,20 @@ const projects=[
 		outer_link: 'https://saadaahnews.com/',
 		link: 'Blog',
 		img: require('@/assets/images/Blog/1.webp'),
+		smallImages: [
+			{
+				id: 1,
+				alt: "vue",
+				src: require('@/assets/images/technology/vue.png'),
+				width: '60px',
+			},
+			{
+				id: 2,
+				alt: "api",
+				src: require('@/assets/images/technology/api.png'),
+				width: '60px',
+			},
+		],
 		singleProjectHeader: {
 			singleProjectTitle: t("Blog"),
 			singleProjectDate: "08 Mar 2020",
@@ -733,6 +854,26 @@ const projects=[
 		outer_link: 'https://websitedemos.net/brandstore-02/',
 		link: 'ClothesStore',
 		img: require('@/assets/images/ClothesStore/1.webp'),
+		smallImages: [
+			{
+				id: 1,
+				alt: "wordpress",
+				src: require('@/assets/images/technology/wordpress.png'),
+				width: '60px',
+			},
+			{
+				id: 2,
+				alt: "php",
+				src: require('@/assets/images/technology/php.png'),
+				width: '60px',
+			},
+			{
+				id: 3,
+				alt: "jquery",
+				src: require('@/assets/images/technology/jquery.png'),
+				width: '60px',
+			},
+		],
 		singleProjectHeader: {
 			singleProjectTitle: t("Clothes Store"),
 			singleProjectDate: "24 Sep 2022",
@@ -852,6 +993,20 @@ const projects=[
 		outer_link: 'https://webpress-annaba.netlify.app/',
 		link: 'Portfolio',
 		img: require('@/assets/images/Portfolio/1.webp'),
+		smallImages: [
+			{
+				id: 1,
+				alt: "vue",
+				src: require('@/assets/images/technology/vue.png'),
+				width: '60px',
+			},
+			{
+				id: 2,
+				alt: "tailwind",
+				src: require('@/assets/images/technology/tailwind.png'),
+				width: '60px',
+			},
+		],
 		singleProjectHeader: {
 			singleProjectTitle: t("Portfolio"),
 			singleProjectDate: "20 Mar 2023",
@@ -963,7 +1118,7 @@ const projects=[
 		},
 
 	},
-	
+
 	{
 		id: 8,
 		title: 'Image Generator OpenAI',
@@ -971,6 +1126,26 @@ const projects=[
 		outer_link: '#',
 		img: require('@/assets/images/ImageGeneratorOpenAI/1.png'),
 		link: 'ai-image-generation',
+		smallImages: [
+			{
+				id: 1,
+				alt: "vue",
+				src: require('@/assets/images/technology/vue.png'),
+				width: '60px',
+			},
+			{
+				id: 2,
+				alt: "api",
+				src: require('@/assets/images/technology/api.png'),
+				width: '60px',
+			},
+			{
+				id: 2,
+				alt: "bootstrap",
+				src: require('@/assets/images/technology/bootstrap.png'),
+				width: '60px',
+			},
+		],
 		singleProjectHeader: {
 			singleProjectTitle: t("Image Generator OpenAI"),
 			singleProjectDate: "02 Apr 2023",
@@ -1088,6 +1263,33 @@ const projects=[
 		outer_link: '#',
 		link: 'LaravelVueEcommercePhone',
 		img: require('@/assets/images/LaravelVueEcommercePhone/A.png'),
+		smallImages: [
+			{
+				id: 1,
+				alt: "laravel",
+				src: require('@/assets/images/technology/laravel.png'),
+				width: '60px',
+			},
+			
+			{
+				id: 2,
+				alt: "php",
+				src: require('@/assets/images/technology/php.png'),
+				width: '60px',
+			},
+			{
+				id: 3,
+				alt: "vue",
+				src: require('@/assets/images/technology/vue.png'),
+				width: '60px',
+			},
+			{
+				id: 4,
+				alt: "bootstrap",
+				src: require('@/assets/images/technology/bootstrap.png'),
+				width: '60px',
+			},
+		],
 		singleProjectHeader: {
 			singleProjectTitle: t("Laravel Vue Ecommerce Phone"),
 			singleProjectDate: "26 Jul 2021",
@@ -1250,6 +1452,26 @@ const projects=[
 		outer_link: '#',
 		link: 'PhonesStore',
 		img: require('@/assets/images/PhonesStore/1.webp'),
+		smallImages: [
+			{
+				id: 1,
+				alt: "wordpress",
+				src: require('@/assets/images/technology/wordpress.png'),
+				width: '60px',
+			},
+			{
+				id: 2,
+				alt: "php",
+				src: require('@/assets/images/technology/php.png'),
+				width: '60px',
+			},
+			{
+				id: 3,
+				alt: "jquery",
+				src: require('@/assets/images/technology/jquery.png'),
+				width: '60px',
+			},
+		],
 		singleProjectHeader: {
 			singleProjectTitle: t("Phones Store"),
 			singleProjectDate: "26 Jul 2021",
