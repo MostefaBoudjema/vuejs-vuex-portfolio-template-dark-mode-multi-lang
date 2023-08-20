@@ -4,7 +4,8 @@ const { t }=i18n.global;
 const projects=[
 	{
 		id: 0,
-		title: 'Popular Movie DB Website',
+		title: 'Popular Movie DB Website',	
+		hide: false,	
 		smallImages: [
 			{
 				id: 1,
@@ -14,6 +15,12 @@ const projects=[
 			},
 			{
 				id: 2,
+				alt: "api",
+				src: require('@/assets/images/technology/api.png'),
+				width: '60px',
+			},
+			{
+				id: 3,
 				alt: "bootstrap",
 				src: require('@/assets/images/technology/bootstrap.png'),
 				width: '60px',
@@ -142,6 +149,7 @@ const projects=[
 	{
 		id: 1,
 		title: 'Business Website',
+		hide: false,	
 		category: 'Laravel Application',
 		outer_link: 'https://tamtamtools.com/',
 		img: require('@/assets/images/tamtamtools/0.png'),
@@ -275,6 +283,7 @@ const projects=[
 	{
 		id: 2,
 		title: 'Elearn',
+		hide: false,	
 		category: 'Wordpress site',
 		outer_link: 'https://websitedemos.net/online-courses-02/',
 		link: 'Elearn',
@@ -414,6 +423,7 @@ const projects=[
 	{
 		id: 3,
 		title: 'iAuto Business Website',
+		hide: false,	
 		category: 'Laravel Vue Application',
 		outer_link: 'https://iauto.no/',
 		img: require('@/assets/images/iauto/0.png'),
@@ -575,6 +585,7 @@ const projects=[
 	{
 		id: 4,
 		title: 'Business',
+		hide: false,	
 		category: 'Wordpress site',
 		outer_link: 'https://websitedemos.net/kathryn-ebook-author-02/',
 		link: 'Business',
@@ -715,6 +726,7 @@ const projects=[
 		id: 5,
 		title: 'Blog',
 		category: 'Vue App',
+		hide: false,	
 		outer_link: 'https://saadaahnews.com/',
 		link: 'Blog',
 		img: require('@/assets/images/Blog/1.webp'),
@@ -850,6 +862,7 @@ const projects=[
 	{
 		id: 6,
 		title: 'Clothes Store',
+		hide: false,	
 		category: 'Wordpress site',
 		outer_link: 'https://websitedemos.net/brandstore-02/',
 		link: 'ClothesStore',
@@ -989,6 +1002,7 @@ const projects=[
 	{
 		id: 7,
 		title: 'Portfolio',
+		hide: false,	
 		category: 'Vue App',
 		outer_link: 'https://webpress-annaba.netlify.app/',
 		link: 'Portfolio',
@@ -1122,6 +1136,7 @@ const projects=[
 	{
 		id: 8,
 		title: 'Image Generator OpenAI',
+		hide: true,	
 		category: 'Vue App',
 		outer_link: '#',
 		img: require('@/assets/images/ImageGeneratorOpenAI/1.png'),
@@ -1259,6 +1274,7 @@ const projects=[
 	{
 		id: 9,
 		title: 'Laravel Vue Ecommerce Phone',
+		hide: false,	
 		category: 'Laravel Vue Application',
 		outer_link: '#',
 		link: 'LaravelVueEcommercePhone',
@@ -1448,6 +1464,7 @@ const projects=[
 	{
 		id: 10,
 		title: 'Phones Store',
+		hide: false,	
 		category: 'Wordpress site',
 		outer_link: '#',
 		link: 'PhonesStore',

@@ -18,7 +18,7 @@ export default {
 </script>
 
 <template>
-    <div>
+    <div v-if="!project.hide">
         <div>
             <router-link :to="{ name: project.link }" :project="project.title" @click="setPageId(project.id)"
                 class="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark"

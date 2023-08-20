@@ -29,11 +29,10 @@ export default {
 				// t('Business Website'),
 				// t('Blogs'),
 				// t('Portfolio'),
-				'Laravel Application',
-				'Laravel Vue Application',
-				'Wordpress site',
-				'Vue App',
-				'React App',
+				'Laravel',
+				'Wordpress',
+				'Vue',
+				'React',
 			],
 		},
 	},
@@ -59,7 +58,7 @@ export default {
 				dark:text-ternary-light
 			"
 	>
-		<option value class="text-sm sm:text-md">{{t("All Projects")}}</option>
+		<option value class="text-sm sm:text-md ">{{t("All Projects")}}</option>
 		<option
 			v-for="option in selectOptions"
 			:key="option"
