@@ -1,75 +1,47 @@
-<script>
-import feather from "feather-icons";
-import ProjectsFilter from "./ProjectsFilter.vue";
-import ProjectSingle from "./ProjectSingle.vue";
-import projects from "../../data/projects";
+<script setup>
+import { ref, computed,  onMounted } from 'vue';
+import feather from 'feather-icons';
+import ProjectsFilter from './ProjectsFilter.vue';
+import ProjectSingle from './ProjectSingle.vue';
+import projects from '../../data/projects';
+import settings from '../../data/settings';
+import { useI18n } from 'vue-i18n';
 
-import { useI18n } from "vue-i18n";
-export default {
-    components: { ProjectSingle, ProjectsFilter },
-    setup() {
-        const { t }=useI18n({
-            inheritLocale: true,
-            useScope: "global",
-        });
+const { t } = useI18n({ inheritLocale: true, useScope: 'global' });
+const projectsHeading = t('Projects I worked On');
 
-        return { t };
-    },
-    props: ["full"],
-    data: () => {
-        const { t }=useI18n({
-            inheritLocale: true,
-            useScope: "local",
-        });
-        return {
-            projects,
-            projectsHeading: t("Projects I worked On"),
-            selectedCategory: "",
-            searchProject: "",
-        };
-    },
+const selectedCategory = ref('');
+const searchProject = ref('');
+const filteredProjects = computed(() => {
+  if (selectedCategory.value) {
+    return filterProjectsByCategory();
+  } else if (searchProject.value) {
+    return filterProjectsBySearch();
+  }
+  return projects;
+});
+const getShortList = computed(() => filteredProjects.value.slice(1, 10));
 
-    computed: {
-        // Get the filtered projects
-        filteredProjects() {
-            if (this.selectedCategory) {
-                return this.filterProjectsByCategory();
-            } else if (this.searchProject) {
-                return this.filterProjectsBySearch();
-            }
-            return this.projects;
-        },
-        getShortList() {
-            return this.filteredProjects.slice(1, 10);
-        },
-    },
-    methods: {
-        // Filter projects by category
-        filterProjectsByCategory() {
-            return this.projects.filter((item) => {
-                let category=
-                    item.category.charAt(0).toUpperCase()+
-                    item.category.slice(1);
-                return category.includes(this.selectedCategory);
-            });
-        },
-        // Filter projects by title search
-        filterProjectsBySearch() {
-            let project=new RegExp(this.searchProject, "i");
-            return this.projects.filter((el) => el.title.match(project));
-        },
-        // getProjectsList(i, n) {
-        //     return this.filteredProjects.slice(i, n);
-        // },
-        getSpecificProjectsList(indices) {
-            return indices.map(index => this.filteredProjects[index]);
-        }
-
-    },
-    mounted() {
-        feather.replace();
-    },
+const filterProjectsByCategory = () => {
+  return projects.filter((item) => {
+    const category =
+      item.category.charAt(0).toUpperCase() + item.category.slice(1);
+    return category.includes(selectedCategory.value);
+  });
 };
+
+const filterProjectsBySearch = () => {
+  const project = new RegExp(searchProject.value, 'i');
+  return projects.filter((el) => el.title.match(project));
+};
+
+const getSpecificProjectsList = (indices) => {
+  return indices.map((index) => filteredProjects.value[index]);
+};
+
+onMounted(() => {
+  feather.replace();
+});
 </script>
 
 <template>
@@ -105,11 +77,11 @@ export default {
         </div>
         <!-- Projects grid -->
         <div v-if="full" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
-            <ProjectSingle v-for="project in getSpecificProjectsList([3, 9, 1, 10, 0, 5, 2, 4, 6, 7, 8])" :key="project.id"
+            <ProjectSingle v-for="project in getSpecificProjectsList(settings.full_list)" :key="project.id"
                 :project="project" />
         </div>
         <div v-else class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 mt-6 sm:gap-10">
-            <ProjectSingle v-for="project in getSpecificProjectsList([3, 9, 1, 10, 0, 5])" :key="project.id"
+            <ProjectSingle v-for="project in getSpecificProjectsList(settings.home_list)" :key="project.id"
                 :project="project" />
         </div>
     </section>

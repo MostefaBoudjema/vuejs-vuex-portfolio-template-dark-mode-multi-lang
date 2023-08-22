@@ -57,7 +57,7 @@ export default defineComponent({
             >
                 {{ t("Job Title") }}
             </p>
-            <div class="flex justify-center sm:block">
+            <div class="flex justify-center sm:block" v-if="settings.show_cv">
 				<a
 					download="Mostefa-Boudjema-Resume.pdf"
 					:href="settings.cv_path"

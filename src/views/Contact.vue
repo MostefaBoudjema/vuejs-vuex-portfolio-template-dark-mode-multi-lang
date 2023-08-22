@@ -3,6 +3,7 @@ import feather from 'feather-icons';
 import ContactForm from '@/components/contact/ContactForm.vue';
 import ContactDetails from '@/components/contact/ContactDetails.vue';
 
+import settings from "../data/settings";
 export default {
 	components: {
 		ContactForm,
@@ -10,23 +11,7 @@ export default {
 	},
 	data: () => {
 		return {
-			contacts: [
-				{
-					id: 1,
-					name: 'Annaba, Algeria',
-					icon: 'map-pin',
-				},
-				{
-					id: 2,
-					name: 'Boudjema.Mustafa.big@gmail.com',
-					icon: 'mail',
-				},
-				{
-					id: 3,
-					name: '+213 793 692 2 89',
-					icon: 'phone',
-				},
-			],
+			settings,
 		};
 	},
 	mounted() {
@@ -44,9 +29,11 @@ export default {
 		class="container mx-auto flex flex-col-reverse md:flex-row py-5 md:py-10 md:mt-10"
 	>
 		<!-- Contact form -->
-		<ContactForm />
-
+		<ContactForm v-if="settings.show_contact_form"/>
+        <div v-else class="mr-16">
+            <img :src="settings.profile_photo" class="rounded-xl w-96" alt="" />
+        </div>
 		<!-- Contact details -->
-		<ContactDetails :contacts="contacts" />
+		<ContactDetails :contacts="settings.contacts" />
 	</div>
 </template>

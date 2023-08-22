@@ -21,40 +21,18 @@ export default {
             theme: "",
             lang: "",
             modal: false,
-            categories: [
-                {
-                    id: 1,
-                    value: "Laravel Application",
-                    name: "Laravel Application",
-                },
-                {
-                    id: 2,
-                    value: "Laravel Vue Application",
-                    name: "Laravel Vue Application",
-                },
-                {
-                    id: 3,
-                    value: "Wordpress site",
-                    name: "Wordpress site",
-                },
-                {
-                    id: 4,
-                    value: "Vue App",
-                    name: "Vue App",
-                },
-            ],
         };
     },
 
     created() {
         this.theme = localStorage.getItem("theme") || "light";
-        this.lang = localStorage.getItem("lang") || "ar";
+        this.lang = localStorage.getItem("lang") || "en";
     },
-    mounted() {
-        feather.replace();
-        this.theme = localStorage.getItem("theme") || "light";
-        this.lang = localStorage.getItem("lang") || "ar";
-    },
+    // mounted() {
+    //     feather.replace();
+    //     this.theme = localStorage.getItem("theme") || "light";
+    //     this.lang = localStorage.getItem("lang") || "ar";
+    // },
     methods: {
         updateTheme(theme) {
             this.theme = theme;
@@ -110,6 +88,7 @@ export default {
                 </div>
 
                 <language-switcher
+                v-if="settings.show_multi_lang"
                     :lang="lang"
                     :theme="theme"
                     @themeChanged="updateLang"
@@ -159,7 +138,7 @@ export default {
                 class="hidden sm:flex justify-between items-center flex-col md:flex-row"
             >
                 <!-- Hire me button -->
-                <div class="hidden md:block">
+                <div class="hidden md:block" v-if="settings.show_hire_me">
                     <Button
                         :title="$t('Hire Me')"
                         class="text-md font-general-medium bg-blue-500 hover:bg-blue-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
@@ -169,6 +148,7 @@ export default {
                 </div>
 
                 <language-switcher
+                v-if="settings.show_multi_lang"
                     :lang="lang"
                     :theme="theme"
                     @themeChanged="updateLang"
@@ -185,9 +165,10 @@ export default {
 
         <!-- Hire me modal -->
         <HireMeModal
+            v-if="settings.show_hire_me"
             :showModal="showModal"
             :modal="modal"
-            :categories="categories"
+            :categories="settings.categories"
             aria-modal="Hire Me Modal"
         />
     </nav>
