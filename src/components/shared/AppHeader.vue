@@ -5,7 +5,7 @@ import HireMeModal from "../HireMeModal.vue";
 import feather from "feather-icons";
 import AppHeaderLinks from "./AppHeaderLinks.vue";
 import Button from "../reusable/Button.vue";
-
+import settings from "../../data/settings";
 export default {
     components: {
         ThemeSwitcher,
@@ -17,6 +17,7 @@ export default {
     data() {
         return {
             isOpen: false,
+            settings,
             theme: "",
             lang: "",
             modal: false,
@@ -95,13 +96,13 @@ export default {
                     <router-link :to="{ name: 'Home' }"
                         ><img
                             v-if="theme === 'light'"
-                            src="@/assets/images/logo-dark.svg"
+                            :src="settings.logo_dark"
                             class="w-36"
                             alt="Dark Logo"
                         />
                         <img
-                            v-else
-                            src="@/assets/images/logo-light.svg"
+                            v-else                            
+                            :src="settings.logo_light"
                             class="w-36"
                             alt="Light Logo"
                         />

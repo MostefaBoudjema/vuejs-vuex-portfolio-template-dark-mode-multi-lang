@@ -2,6 +2,7 @@
 import { defineComponent } from "vue";
 import { useI18n } from "vue-i18n";
 
+import settings from "../data/settings";
 export default defineComponent({
     name: "PageNotfound",
     setup() {
@@ -9,7 +10,7 @@ export default defineComponent({
             inheritLocale: true,
             useScope: "global",
         });
-        return { t };
+        return { settings,t };
     },
 });
 </script>
@@ -21,10 +22,10 @@ export default defineComponent({
         <div class=" ">
             <img
                 v-if="theme === 'light'"
-                src="@/assets/images/404-page.png"
+                :src="settings.page_404"
                 alt="Developer"
             />
-            <img v-else src="@/assets/images/404-page.png" alt="Developer" />
+            <img v-else :src="settings.page_404" alt="Developer" />
         </div>
 
         <div class="Notfound md:w-1/2 ">

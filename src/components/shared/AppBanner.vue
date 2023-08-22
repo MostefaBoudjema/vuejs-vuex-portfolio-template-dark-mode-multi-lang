@@ -2,6 +2,7 @@
 import feather from "feather-icons";
 import { defineComponent } from "vue";
 import { useI18n } from "vue-i18n";
+import settings from "../../data/settings"
 export default defineComponent({
     name: "Home",
     setup() {
@@ -19,6 +20,7 @@ export default defineComponent({
         return {
             theme: "",
             lang: "",
+            settings
         };
     },
     created() {
@@ -58,7 +60,7 @@ export default defineComponent({
             <div class="flex justify-center sm:block">
 				<a
 					download="Mostefa-Boudjema-Resume.pdf"
-					href="/files/MostefaBoudjema-Resume.pdf"
+					:href="settings.cv_path"
 					class="flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-blue-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg bg-blue-50 focus:ring-1 focus:ring-blue-900 hover:bg-blue-500 text-gray-500 hover:text-white duration-500"
 					aria-label="Download Resume"
 				>
@@ -78,12 +80,12 @@ export default defineComponent({
         <div class="w-full md:w-2/3 text-right float-right">
             <img
                 v-if="theme === 'light'"
-                src="@/assets/images/developer.svg"
+                :src="settings.hero_image"
                 alt="Developer"
             />
             <img
                 v-else
-                src="@/assets/images/developer-dark.svg"
+                :src="settings.hero_image_dark"
                 alt="Developer"
             />
         </div>
