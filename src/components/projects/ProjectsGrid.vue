@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed,  onMounted } from 'vue';
+import { ref, computed,  onMounted,defineProps } from 'vue';
 import feather from 'feather-icons';
 import ProjectsFilter from './ProjectsFilter.vue';
 import ProjectSingle from './ProjectSingle.vue';
@@ -12,6 +12,9 @@ const projectsHeading = t('Projects I worked On');
 
 const selectedCategory = ref('');
 const searchProject = ref('');
+const props = defineProps({
+  full: String
+})
 const filteredProjects = computed(() => {
   if (selectedCategory.value) {
     return filterProjectsByCategory();
