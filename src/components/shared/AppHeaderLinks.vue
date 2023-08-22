@@ -1,5 +1,6 @@
 <script>
 import { useI18n } from "vue-i18n";
+import settings from "../../data/settings";
 export default {
     name: "Home",
     setup() {
@@ -10,7 +11,7 @@ export default {
 
         
 
-        return { t };
+        return { t,settings };
     },
     props: ["showModal", "isOpen"],
 };
@@ -41,7 +42,7 @@ export default {
             >{{ t("Contact") }}</router-link
         >
         <div
-            class="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark"
+           v-if="settings.show_hire_me" class="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark" 
         >
             <button
                 class="font-general-medium sm:hidden block text-left text-md font-medium bg-blue-500 hover:bg-blue-600 text-white shadow-sm rounded-sm px-4 py-2 mt-2 duration-500"

@@ -10,7 +10,7 @@ const settings=
 	full_list: [3, 9, 1, 10, 0, 5, 2, 4, 6, 7, 8],
 	home_list: [3, 9, 1, 10, 0, 5],
 	show_cv: true,
-	show_multi_lang: true,
+	show_multi_lang: false,
 	show_hire_me: false,
 	show_contact_form: false,
 	contacts: [
