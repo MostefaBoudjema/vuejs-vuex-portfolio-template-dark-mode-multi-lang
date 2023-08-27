@@ -3,7 +3,7 @@ export const socialLinks = [
 		id: 1,
 		name: 'Website',
 		icon: 'globe',
-		url: 'https://mostfaboudjema.netlify.app/',
+		url: 'https://mostefa-boudjema.vercel.app/',
 	},
 	{
 		id: 2,
