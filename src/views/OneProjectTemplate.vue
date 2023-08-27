@@ -58,6 +58,9 @@ export default defineComponent({
         projectInfoMethod() {
             return projects[this.pageid].projectInfo;
         },
+        smallImagesMethod() {
+            return projects[this.pageid].smallImages;
+        },
     },
     methods: {},
 });
@@ -71,7 +74,7 @@ export default defineComponent({
             :imgList="projectImagesMethod"
         />
         <!-- Project information -->
-        <ProjectInfo :projectInfo="projectInfoMethod" />
+        <ProjectInfo :projectInfo="projectInfoMethod" :smallImages="smallImagesMethod"/>
         <div class="block sm:flex gap-0 sm:gap-10 mt-14">
             <!-- Project related projects -->
             <ProjectRelatedProjects :relatedProject="relatedProject" />

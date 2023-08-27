@@ -37,6 +37,11 @@ const projects=[
 		},
 		projectImages: [
 			{
+				id: 0,
+				title: "Project Image",
+				img: require("@/assets/images/movie-db/0.png"),
+			},
+			{
 				id: 1,
 				title: "Project Image",
 				img: require("@/assets/images/movie-db/1.png"),
@@ -186,6 +191,11 @@ const projects=[
 			singleProjectTag: t(" Frontend / Backend"),
 		},
 		projectImages: [
+			{
+				id: 0,
+				title: "Project Image",
+				img: require("@/assets/images/tamtamtools/0.png"),
+			},
 			{
 				id: 1,
 				title: "Project Image",
@@ -461,6 +471,11 @@ const projects=[
 			singleProjectTag: t(" Frontend / Backend"),
 		},
 		projectImages: [
+			{
+				id: 0,
+				title: "Project Image",
+				img: require("@/assets/images/iauto/0.png"),
+			},
 			{
 				id: 1,
 				title: "Project Image",
@@ -1313,6 +1328,11 @@ const projects=[
 		},
 		projectImages: [
 			{
+				id: 0,
+				title: "Project Image",
+				img: require("@/assets/images/LaravelVueEcommercePhone/A.png"),
+			},
+			{
 				id: 1,
 				title: "Project Image",
 				img: require("@/assets/images/LaravelVueEcommercePhone/A (1).png"),
@@ -1578,6 +1598,154 @@ const projects=[
 				{
 					id: 4,
 					details: t("details10D"),
+				},
+			],
+			socialSharingsHeading: t("Share This"),
+			socialSharings: [
+				{
+					id: 1,
+					name: "Twitter",
+					icon: "twitter",
+					url: "https://twitter.com/",
+				},
+				{
+					id: 2,
+					name: "Instagram",
+					icon: "instagram",
+					url: "https://instagram.com/",
+				},
+				{
+					id: 3,
+					name: "Facebook",
+					icon: "facebook",
+					url: "https://facebook.com/",
+				},
+				{
+					id: 4,
+					name: "LinkedIn",
+					icon: "linkedin",
+					url: "https://linkedin.com/",
+				},
+				{
+					id: 5,
+					name: "Youtube",
+					icon: "youtube",
+					url: "https://www.youtube.com/",
+				},
+			],
+		},
+
+	},
+	{
+		id: 11,
+		title: 'Landing Page',
+		hide: false,	
+		category: 'React App',
+		outer_link: 'https://landing-page-next-react.netlify.app',
+		link: 'landing-page',
+		img: require('@/assets/images/react-landing/0.png'),
+		smallImages: [
+			{
+				id: 1,
+				alt: "next",
+				src: require('@/assets/images/technology/next.png'),
+				width: '60px',
+			},
+			{
+				id: 2,
+				alt: "react",
+				src: require('@/assets/images/technology/react.png'),
+				width: '60px',
+			},
+		],
+		singleProjectHeader: {
+			singleProjectTitle: t("Landing Page"),
+			singleProjectDate: "26 Aug 2023",
+			singleProjectTag: t("UI / Frontend"),
+		},
+		projectImages: [
+			{
+				id: 0,
+				title: "Project Image",
+				img: require("@/assets/images/react-landing/0.png"),
+			},
+			{
+				id: 1,
+				title: "Project Image",
+				img: require("@/assets/images/react-landing/1.png"),
+			},
+			{
+				id: 2,
+				title: "Project Image",
+				img: require("@/assets/images/react-landing/2.png"),
+			},
+			{
+				id: 3,
+				title: "Project Image",
+				img: require("@/assets/images/react-landing/3.png"),
+			},
+			{
+				id: 4,
+				title: "Project Image",
+				img: require("@/assets/images/react-landing/4.png"),
+			},
+			{
+				id: 5,
+				title: "Project Image",
+				img: require("@/assets/images/react-landing/5.png"),
+			},
+		],
+		projectInfo: {
+			clientHeading: t("About Client"),
+			companyInfos: [
+				{
+					id: 1,
+					title: t("Name"),
+					details: t("Landing Page"),
+				},
+				{
+					id: 2,
+					title: t("Services"),
+					details: t("Landing Page"),
+				},
+				{
+					id: 3,
+					title: t("Website"),
+					details: "https://landing-page-next-react.netlify.app/",
+				},
+
+			],
+			objectivesHeading: t("Objective"),
+			objectivesDetails: t("Objective11"),
+			technologies: [
+				{
+					title: t("Tools & Technologies"),
+					techs: [
+						"React",
+						"Next",
+						"HTML",
+						"CSS",
+						"JavaScript",
+					],
+				},
+			],
+			projectDetailsHeading: t("Challenge"),
+			projectDetails: [
+				{
+					id: 1,
+					details: t("details11A"),
+				},
+				{
+					id: 2,
+					details: t("details11B"),
+				},
+				{
+					id: 3,
+					details: t("details11C"),
+				},
+				{
+					id: 4,
+					details: t("details11D"),
 				},
 			],
 			socialSharingsHeading: t("Share This"),

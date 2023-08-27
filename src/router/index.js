@@ -174,6 +174,17 @@ const routes=[
 		},
 	},
 	{
+		path: '/projects/landing-page',
+		name: 'landing-page', id: '11',
+		component: () =>
+			import(
+				'../views/OneProjectTemplate.vue'
+			),
+		meta: {
+			title: generateMetaTitle('Landing Page'),
+		},
+	},
+	{
 		path: '/contact',
 		name: 'Contact',
 		component: () =>
