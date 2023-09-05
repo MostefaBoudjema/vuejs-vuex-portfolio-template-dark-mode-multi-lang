@@ -30,6 +30,7 @@
     </div>
     <!-- Projects grid -->
     <div v-if="full" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
+      
       <ProjectSingle v-for="project in filteredProjects" :key="project.id"
         :project="project" />
     </div>
