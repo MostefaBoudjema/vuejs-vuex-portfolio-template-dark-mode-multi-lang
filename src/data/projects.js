@@ -4,8 +4,8 @@ const { t }=i18n.global;
 const projects=[
 	{
 		id: 0,
-		title: 'Popular Movie DB Website',	
-		hide: false,	
+		title: 'Popular Movie DB Website',
+		hide: false,
 		smallImages: [
 			{
 				id: 1,
@@ -38,28 +38,27 @@ const projects=[
 		projectImages: [
 			{
 				id: 0,
-				title: "Project Image",
 				img: require("@/assets/images/movie-db/0.png"),
 			},
 			{
 				id: 1,
-				title: "Project Image",
 				img: require("@/assets/images/movie-db/1.png"),
 			},
 			{
 				id: 2,
-				title: "Project Image",
 				img: require("@/assets/images/movie-db/2.png"),
 			},
 			{
 				id: 3,
-				title: "Project Image",
 				img: require("@/assets/images/movie-db/3.png"),
 			},
 			{
 				id: 4,
-				title: "Project Image",
 				img: require("@/assets/images/movie-db/4.png"),
+			},
+			{
+				id: 5,
+				img: require("@/assets/images/movie-db/5.png"),
 			},
 
 		],
@@ -154,7 +153,7 @@ const projects=[
 	{
 		id: 1,
 		title: 'Business Website',
-		hide: false,	
+		hide: false,
 		category: 'Laravel Application',
 		outer_link: 'https://tamtamtools.com/',
 		img: require('@/assets/images/tamtamtools/0.png'),
@@ -193,22 +192,18 @@ const projects=[
 		projectImages: [
 			{
 				id: 0,
-				title: "Project Image",
 				img: require("@/assets/images/tamtamtools/0.png"),
 			},
 			{
 				id: 1,
-				title: "Project Image",
 				img: require("@/assets/images/tamtamtools/1.png"),
 			},
 			{
 				id: 2,
-				title: "Project Image",
 				img: require("@/assets/images/tamtamtools/2.png"),
 			},
 			{
 				id: 3,
-				title: "Project Image",
 				img: require("@/assets/images/tamtamtools/3.png"),
 			},
 		],
@@ -293,7 +288,7 @@ const projects=[
 	{
 		id: 2,
 		title: 'Elearn',
-		hide: false,	
+		hide: false,
 		category: 'Wordpress site',
 		outer_link: 'https://websitedemos.net/online-courses-02/',
 		link: 'Elearn',
@@ -326,17 +321,14 @@ const projects=[
 		projectImages: [
 			{
 				id: 1,
-				title: "Project Image",
 				img: require("@/assets/images/Elearn/1.webp"),
 			},
 			{
 				id: 2,
-				title: "Project Image",
 				img: require("@/assets/images/Elearn/2.webp"),
 			},
 			{
 				id: 3,
-				title: "Project Image",
 				img: require("@/assets/images/Elearn/3.webp"),
 			},
 		],
@@ -433,7 +425,7 @@ const projects=[
 	{
 		id: 3,
 		title: 'iAuto Business Website',
-		hide: false,	
+		hide: false,
 		category: 'Laravel Vue Application',
 		outer_link: 'https://iauto.no/',
 		img: require('@/assets/images/iauto/0.png'),
@@ -445,7 +437,7 @@ const projects=[
 				src: require('@/assets/images/technology/laravel.png'),
 				width: '60px',
 			},
-			
+
 			{
 				id: 2,
 				alt: "php",
@@ -473,37 +465,30 @@ const projects=[
 		projectImages: [
 			{
 				id: 0,
-				title: "Project Image",
 				img: require("@/assets/images/iauto/0.png"),
 			},
 			{
 				id: 1,
-				title: "Project Image",
 				img: require("@/assets/images/iauto/1.png"),
 			},
 			{
 				id: 2,
-				title: "Project Image",
 				img: require("@/assets/images/iauto/2.png"),
 			},
 			{
 				id: 3,
-				title: "Project Image",
 				img: require("@/assets/images/iauto/3.png"),
 			},
 			{
 				id: 4,
-				title: "Project Image",
 				img: require("@/assets/images/iauto/4.png"),
 			},
 			{
 				id: 5,
-				title: "Project Image",
 				img: require("@/assets/images/iauto/5.png"),
 			},
 			{
 				id: 6,
-				title: "Project Image",
 				img: require("@/assets/images/iauto/6.png"),
 			},
 		],
@@ -600,7 +585,7 @@ const projects=[
 	{
 		id: 4,
 		title: 'Business',
-		hide: false,	
+		hide: false,
 		category: 'Wordpress site',
 		outer_link: 'https://websitedemos.net/kathryn-ebook-author-02/',
 		link: 'Business',
@@ -633,17 +618,14 @@ const projects=[
 		projectImages: [
 			{
 				id: 1,
-				title: "Project Image",
 				img: require("@/assets/images/Business/1.webp"),
 			},
 			{
 				id: 2,
-				title: "Project Image",
 				img: require("@/assets/images/Business/2.webp"),
 			},
 			{
 				id: 3,
-				title: "Project Image",
 				img: require("@/assets/images/Business/3.webp"),
 			},
 		],
@@ -741,7 +723,7 @@ const projects=[
 		id: 5,
 		title: 'Blog',
 		category: 'Vue App',
-		hide: false,	
+		hide: false,
 		outer_link: 'https://saadaahnews.com/',
 		link: 'Blog',
 		img: require('@/assets/images/Blog/1.webp'),
@@ -767,17 +749,14 @@ const projects=[
 		projectImages: [
 			{
 				id: 1,
-				title: "Project Image",
 				img: require("@/assets/images/Blog/1.webp"),
 			},
 			{
 				id: 2,
-				title: "Project Image",
 				img: require("@/assets/images/Blog/2.webp"),
 			},
 			{
 				id: 3,
-				title: "Project Image",
 				img: require("@/assets/images/Blog/3.webp"),
 			},
 		],
@@ -877,7 +856,7 @@ const projects=[
 	{
 		id: 6,
 		title: 'Clothes Store',
-		hide: false,	
+		hide: false,
 		category: 'Wordpress site',
 		outer_link: 'https://websitedemos.net/brandstore-02/',
 		link: 'ClothesStore',
@@ -910,17 +889,14 @@ const projects=[
 		projectImages: [
 			{
 				id: 1,
-				title: "Project Image",
 				img: require("@/assets/images/ClothesStore/1.webp"),
 			},
 			{
 				id: 2,
-				title: "Project Image",
 				img: require("@/assets/images/ClothesStore/2.webp"),
 			},
 			{
 				id: 3,
-				title: "Project Image",
 				img: require("@/assets/images/ClothesStore/3.webp"),
 			},
 		],
@@ -1017,7 +993,7 @@ const projects=[
 	{
 		id: 7,
 		title: 'Portfolio',
-		hide: false,	
+		hide: false,
 		category: 'Vue App',
 		outer_link: 'https://webpress-annaba.netlify.app/',
 		link: 'Portfolio',
@@ -1044,17 +1020,14 @@ const projects=[
 		projectImages: [
 			{
 				id: 1,
-				title: "Project Image",
 				img: require("@/assets/images/Portfolio/1.webp"),
 			},
 			{
 				id: 2,
-				title: "Project Image",
 				img: require("@/assets/images/Portfolio/2.webp"),
 			},
 			{
 				id: 3,
-				title: "Project Image",
 				img: require("@/assets/images/Portfolio/3.webp"),
 			},
 		],
@@ -1151,7 +1124,7 @@ const projects=[
 	{
 		id: 8,
 		title: 'Image Generator OpenAI',
-		hide: true,	
+		hide: true,
 		category: 'Vue App',
 		outer_link: '#',
 		img: require('@/assets/images/ImageGeneratorOpenAI/1.png'),
@@ -1184,17 +1157,14 @@ const projects=[
 		projectImages: [
 			{
 				id: 1,
-				title: "Project Image",
 				img: require("@/assets/images/ImageGeneratorOpenAI/1.png"),
 			},
 			{
 				id: 2,
-				title: "Project Image",
 				img: require("@/assets/images/ImageGeneratorOpenAI/2.png"),
 			},
 			{
 				id: 3,
-				title: "Project Image",
 				img: require("@/assets/images/ImageGeneratorOpenAI/3.png"),
 			},
 		],
@@ -1289,7 +1259,7 @@ const projects=[
 	{
 		id: 9,
 		title: 'Laravel Vue Ecommerce Phone',
-		hide: false,	
+		hide: false,
 		category: 'Laravel Vue Application',
 		outer_link: '#',
 		link: 'LaravelVueEcommercePhone',
@@ -1301,7 +1271,7 @@ const projects=[
 				src: require('@/assets/images/technology/laravel.png'),
 				width: '60px',
 			},
-			
+
 			{
 				id: 2,
 				alt: "php",
@@ -1329,61 +1299,50 @@ const projects=[
 		projectImages: [
 			{
 				id: 0,
-				title: "Project Image",
 				img: require("@/assets/images/LaravelVueEcommercePhone/A.png"),
 			},
 			{
 				id: 1,
-				title: "Project Image",
 				img: require("@/assets/images/LaravelVueEcommercePhone/A (1).png"),
 			},
 			{
 				id: 2,
-				title: "Project Image",
 				img: require("@/assets/images/LaravelVueEcommercePhone/A (2).png"),
 			},
 			{
 				id: 3,
-				title: "Project Image",
 				img: require("@/assets/images/LaravelVueEcommercePhone/A (3).png"),
 			},
 			{
 				id: 4,
-				title: "Project Image",
 				img: require("@/assets/images/LaravelVueEcommercePhone/A (4).png"),
 			},
 			{
 				id: 5,
-				title: "Project Image",
 				img: require("@/assets/images/LaravelVueEcommercePhone/A (5).png"),
 			},
 			{
 				id: 6,
-				title: "Project Image",
 				img: require("@/assets/images/LaravelVueEcommercePhone/A (6).png"),
 			},
 			{
 				id: 7,
-				title: "Project Image",
 				img: require("@/assets/images/LaravelVueEcommercePhone/A (7).png"),
-			}, {
+			},
+			{
 				id: 1,
-				title: "Project Image",
 				img: require("@/assets/images/LaravelVueEcommercePhone/B (1).png"),
 			},
 			{
 				id: 2,
-				title: "Project Image",
 				img: require("@/assets/images/LaravelVueEcommercePhone/B (2).png"),
 			},
 			{
 				id: 3,
-				title: "Project Image",
 				img: require("@/assets/images/LaravelVueEcommercePhone/B (3).png"),
 			},
 			{
 				id: 4,
-				title: "Project Image",
 				img: require("@/assets/images/LaravelVueEcommercePhone/B (4).png"),
 			},
 		],
@@ -1484,7 +1443,7 @@ const projects=[
 	{
 		id: 10,
 		title: 'Phones Store',
-		hide: false,	
+		hide: false,
 		category: 'Wordpress site',
 		outer_link: '#',
 		link: 'PhonesStore',
@@ -1517,32 +1476,26 @@ const projects=[
 		projectImages: [
 			{
 				id: 1,
-				title: "Project Image",
 				img: require("@/assets/images/PhonesStore/1.webp"),
 			},
 			{
 				id: 2,
-				title: "Project Image",
 				img: require("@/assets/images/PhonesStore/2.webp"),
 			},
 			{
 				id: 3,
-				title: "Project Image",
 				img: require("@/assets/images/PhonesStore/3.webp"),
 			},
 			{
 				id: 4,
-				title: "Project Image",
 				img: require("@/assets/images/PhonesStore/4.webp"),
 			},
 			{
 				id: 5,
-				title: "Project Image",
 				img: require("@/assets/images/PhonesStore/5.webp"),
 			},
 			{
 				id: 6,
-				title: "Project Image",
 				img: require("@/assets/images/PhonesStore/6.webp"),
 			},
 		],
@@ -1639,7 +1592,7 @@ const projects=[
 	{
 		id: 11,
 		title: 'Landing Page',
-		hide: false,	
+		hide: false,
 		category: 'React App',
 		outer_link: 'https://landing-page-next-react.netlify.app',
 		link: 'landing-page',
@@ -1666,32 +1619,26 @@ const projects=[
 		projectImages: [
 			{
 				id: 0,
-				title: "Project Image",
 				img: require("@/assets/images/react-landing/0.png"),
 			},
 			{
 				id: 1,
-				title: "Project Image",
 				img: require("@/assets/images/react-landing/1.png"),
 			},
 			{
 				id: 2,
-				title: "Project Image",
 				img: require("@/assets/images/react-landing/2.png"),
 			},
 			{
 				id: 3,
-				title: "Project Image",
 				img: require("@/assets/images/react-landing/3.png"),
 			},
 			{
 				id: 4,
-				title: "Project Image",
 				img: require("@/assets/images/react-landing/4.png"),
 			},
 			{
 				id: 5,
-				title: "Project Image",
 				img: require("@/assets/images/react-landing/5.png"),
 			},
 		],

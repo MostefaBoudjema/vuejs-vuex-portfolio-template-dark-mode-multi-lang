@@ -30,12 +30,15 @@
     </div>
     <!-- Projects grid -->
     <div v-if="full" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
-      <ProjectSingle v-for="project in getSpecificProjectsList(settings.full_list)" :key="project.id"
+      <ProjectSingle v-for="project in filteredProjects" :key="project.id"
         :project="project" />
     </div>
-    <div v-else class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 mt-6 sm:gap-10">
+    <!-- <div v-else class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 mt-6 sm:gap-10">
       <ProjectSingle v-for="project in getSpecificProjectsList(settings.home_list)" :key="project.id"
         :project="project" />
+    </div> -->
+    <div v-else class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 mt-6 sm:gap-10">
+      <ProjectSingle v-for="project in getShortList" :key="project" :project="project" />
     </div>
   </section>
 </template>
@@ -64,7 +67,8 @@ const filteredProjects=computed(() => {
   }
   return projects;
 });
-const getShortList=computed(() => filteredProjects.value.slice(1, 10));
+
+const getShortList=computed(() => filteredProjects.value.slice(1, 5));
 
 const filterProjectsByCategory=() => {
   return projects.filter((item) => {
