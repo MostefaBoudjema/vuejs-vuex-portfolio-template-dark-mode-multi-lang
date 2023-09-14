@@ -5,7 +5,7 @@ const projects=[
 	{
 		id: 0,
 		title: 'Popular Movie DB Website',
-		hide: false,
+		hide: true,
 		smallImages: [
 			{
 				id: 1,
