@@ -69,7 +69,7 @@ const filteredProjects=computed(() => {
   return projects;
 });
 
-const getShortList=computed(() => filteredProjects.value.slice(1, 5));
+const getShortList=computed(() => filteredProjects.value.slice(1, 8));
 
 const filterProjectsByCategory=() => {
   return projects.filter((item) => {

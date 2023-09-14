@@ -153,7 +153,7 @@ const projects=[
 	{
 		id: 1,
 		title: 'Business Website',
-		hide: false,
+		hide: true,
 		category: 'Laravel Application',
 		outer_link: 'https://tamtamtools.com/',
 		img: require('@/assets/images/tamtamtools/0.png'),
@@ -288,7 +288,7 @@ const projects=[
 	{
 		id: 2,
 		title: 'Elearn',
-		hide: false,
+		hide: true,
 		category: 'Wordpress site',
 		outer_link: 'https://websitedemos.net/online-courses-02/',
 		link: 'Elearn',
@@ -585,7 +585,7 @@ const projects=[
 	{
 		id: 4,
 		title: 'Business',
-		hide: false,
+		hide: true,
 		category: 'Wordpress site',
 		outer_link: 'https://websitedemos.net/kathryn-ebook-author-02/',
 		link: 'Business',
