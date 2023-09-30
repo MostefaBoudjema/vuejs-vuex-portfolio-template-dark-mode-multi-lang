@@ -1,22 +1,3 @@
-<script>
-import counter from "vue3-autocounter";
-import i18n from '../../i18n';
-const { t } = i18n.global;
-
-export default {
-    components: {
-        counter,
-    },
-    data: () => {
-        return {
-            experienceTitle: t("Years of experience"),
-            githubTitle: t("Stars on GitHub"),
-            feedbackTitle: t("Positive feedback"),
-            projectsTitle: t("Projects completed"),
-        };
-    },
-};
-</script>
 
 <template>
     <div class="mt-10 sm:mt-20 bg-primary-light dark:bg-ternary-dark shadow-sm">
@@ -100,3 +81,23 @@ export default {
         </div>
     </div>
 </template>
+<script>
+import counter from "vue3-autocounter";
+import i18n from '../../i18n';
+const { t } = i18n.global;
+
+export default {
+    components: {
+        counter,
+    },
+    data: () => {
+        return {
+            experienceTitle: t("Years of experience"),
+            githubTitle: t("Stars on GitHub"),
+            feedbackTitle: t("Positive feedback"),
+            projectsTitle: t("Projects completed"),
+        };
+    },
+};
+</script>
+

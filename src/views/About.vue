@@ -1,3 +1,26 @@
+
+<template>
+	<div>
+		<!-- About me -->
+		<div class="container mx-auto">
+			<AboutMe />
+		</div>
+
+		<!-- About counter -->
+		<AboutCounter />
+
+		<!-- Abouts Skills -->
+			<AboutEmplymentHistory />
+
+		<!-- Abouts Skills -->
+			<AboutsSkills />
+
+		<!-- About counter -->
+		<div class="container mx-auto">
+			<AboutClients />
+		</div>
+	</div>
+</template>
 <script>
 import AboutMe from '@/components/about/AboutMe';
 import AboutCounter from '@/components/about/AboutCounter';
@@ -27,28 +50,4 @@ export default {
 	methods: {},
 };
 </script>
-
-<template>
-	<div>
-		<!-- About me -->
-		<div class="container mx-auto">
-			<AboutMe />
-		</div>
-
-		<!-- About counter -->
-		<AboutCounter />
-
-		<!-- Abouts Skills -->
-			<AboutEmplymentHistory />
-
-		<!-- Abouts Skills -->
-			<AboutsSkills />
-
-		<!-- About counter -->
-		<div class="container mx-auto">
-			<AboutClients />
-		</div>
-	</div>
-</template>
-
 <style scoped></style>
