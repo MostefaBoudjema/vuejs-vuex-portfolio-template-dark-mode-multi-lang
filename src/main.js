@@ -5,7 +5,9 @@ import store from "@/store";
 import './assets/css/app.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import BackToTop from 'vue-backtotop';
-import i18n from './i18n'
+import i18n from './i18n';
+
+import VueAnalytics from 'vue-analytics';
 
 const feather = require('feather-icons');
 feather.replace();
@@ -14,7 +16,11 @@ const app = createApp(App);
 app.use(i18n)
 	.use(router)
 	.use(store)
-	.use(BackToTop);
+	.use(BackToTop)
+	.use(VueAnalytics, {
+		id: 'G-459NGJ4ZD7', // Replace with your Google Analytics tracking code
+		router
+	  });
 
 app.config.devtools = true;
 window.i18n = i18n;
