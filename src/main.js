@@ -18,7 +18,7 @@ app.use(i18n)
 	.use(store)
 	.use(BackToTop)
 	// .use(VueAnalytics, {
-	// 	id: 'G-459NGJ4ZD7', 
+	// 	id: 'UA-287473301-1', 
 	// 	router
 	// })
 	;
