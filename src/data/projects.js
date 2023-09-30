@@ -153,7 +153,7 @@ const projects=[
 	{
 		id: 1,
 		title: 'Business Website',
-		hide: true,
+		hide: false,
 		category: 'Laravel Application',
 		outer_link: 'https://tamtamtools.com/',
 		img: require('@/assets/images/tamtamtools/0.png'),

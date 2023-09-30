@@ -30,9 +30,11 @@
     </div>
     <!-- Projects grid -->
     <div v-if="full" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
-      
+
       <ProjectSingle v-for="project in filteredProjects" :key="project.id"
         :project="project" />
+      <!-- <ProjectSingle v-for="index in selectedProjects" :key="index" :project="projects[index]" /> -->
+
     </div>
     <!-- <div v-else class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 mt-6 sm:gap-10">
       <ProjectSingle v-for="project in getSpecificProjectsList(settings.home_list)" :key="project.id"
@@ -55,6 +57,7 @@ import { useI18n } from 'vue-i18n';
 const { t }=useI18n({ inheritLocale: true, useScope: 'global' });
 const projectsHeading=t('Projects I worked On');
 
+const selectedProjects=ref([2, 3, 4, 5, 6, 7, 8, 0, 9]);
 const selectedCategory=ref('');
 const searchProject=ref('');
 const props=defineProps({
@@ -68,6 +71,28 @@ const filteredProjects=computed(() => {
   }
   return projects;
 });
+
+// const filteredProjects=computed(() => {
+//   const selectedProjects=[2, 3, 4, 5, 6, 7, 8, 0, 9]; 
+
+//   if (selectedCategory.value) {
+//     // Filter by category
+//     selectedProjects.push(...filterProjectsByCategory());
+//   }
+
+//   if (searchProject.value) {
+//     // Filter by search
+//     selectedProjects.push(...filterProjectsBySearch());
+//   }
+
+//   // Filter by selection
+//   if (selectedProjects.length>0) {
+//     return projects.filter(project => selectedProjects.includes(project.id));
+//   }
+
+//   // If no category, search, or selection filters are applied, return all projects
+//   return projects;
+// });
 
 const getShortList=computed(() => filteredProjects.value.slice(1, 8));
 
