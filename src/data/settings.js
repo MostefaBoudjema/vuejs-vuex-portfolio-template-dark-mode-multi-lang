@@ -8,6 +8,7 @@ const settings=
 	page_404: require("@/assets/images/404-page.png"),
 	profile_photo: require("@/assets/images/me2.jpg"),
 	whatsapp: require("@/assets/images/whatsapp.svg"),
+	whatsappNumber: "213793692289",
 	full_list: [3, 9, 1, 10, 0, 11, 5, 2, 4, 6, 7, 8],
 	home_list: [3, 9, 1, 10, 0, 11],
 	// home_list: [{

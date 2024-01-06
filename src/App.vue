@@ -2,6 +2,7 @@
 import feather from 'feather-icons';
 import AppHeader from './components/shared/AppHeader';
 import AppFooter from './components/shared/AppFooter';
+import WhatsApp from './components/shared/WhatsApp';
 import { defineComponent } from 'vue';
 import { useI18n } from 'vue-i18n';
 
@@ -16,6 +17,7 @@ export default defineComponent({
 	components: {
 		AppHeader,
 		AppFooter,
+		WhatsApp,
 	},
 	data: () => {
 		return {
@@ -39,6 +41,7 @@ export default defineComponent({
 		<!-- Render active component contents with vue transition -->
 		<transition name="fade" mode="out-in">
 			<router-view :theme="appTheme" />
+			
 		</transition>
 
 		<!-- Scroll to top -->
@@ -50,6 +53,7 @@ export default defineComponent({
 		>
 			<i data-feather="chevron-up"></i>
 		</back-to-top>
+		<whats-app/>
 
 		<!-- App footer -->
 		<AppFooter />

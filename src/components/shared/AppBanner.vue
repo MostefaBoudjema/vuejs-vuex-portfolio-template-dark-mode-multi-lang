@@ -67,11 +67,7 @@ export default defineComponent({
         <div class="w-full md:w-2/3 text-right float-right">
             <img v-if="theme === 'light'" :src="settings.hero_image" alt="Developer"  data-aos="fade-right" data-aos-delay="200"/>
             <img v-else :src="settings.hero_image_dark" alt="Developer"  data-aos="fade-right" data-aos-delay="200"/>
-            <div class="d-flex justify-content-end ">
-                <a id="whatsapp" class="mx-2" href="https://api.whatsapp.com/send?phone=213697663310">
-                    <img height={70} :src="settings.whatsapp" class="my-4"/>
-                </a>
-            </div>
+
         </div>
     </section>
 </template>
