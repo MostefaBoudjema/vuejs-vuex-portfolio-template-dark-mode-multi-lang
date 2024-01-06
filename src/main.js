@@ -7,8 +7,15 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import BackToTop from 'vue-backtotop';
 import i18n from './i18n';
 
+import AOS from "aos";
+import "aos/dist/aos.css";
 // import VueAnalytics from 'vue-analytics';
-
+AOS.init({
+	once: true,
+	disable: "phone",
+	duration: 600,
+	easing: "ease-out-sine",
+});
 const feather=require('feather-icons');
 feather.replace();
 

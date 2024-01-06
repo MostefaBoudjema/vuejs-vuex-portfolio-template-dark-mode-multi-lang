@@ -1,4 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const AUTHOR_NAME=process.env.VUE_APP_AUTHOR_NAME||'Mostefa Boudjema';
 
 // Function to generate meta title dynamically
@@ -214,7 +216,9 @@ const router=createRouter({
 
 export default router;
 
-
+// router.afterEach(() => {
+// 	AOS.refresh();
+// });
 // This callback runs before every route change, including on page load.
 router.beforeEach((to, from, next) => {
 	// This goes through the matched routes from last to first, finding the closest route with a title.

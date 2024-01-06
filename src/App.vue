@@ -2,8 +2,9 @@
 import feather from 'feather-icons';
 import AppHeader from './components/shared/AppHeader';
 import AppFooter from './components/shared/AppFooter';
-import { defineComponent } from 'vue'
-import { useI18n } from 'vue-i18n'
+import { defineComponent } from 'vue';
+import { useI18n } from 'vue-i18n';
+
 export default defineComponent({
   setup() {
     const { t } = useI18n({

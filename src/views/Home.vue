@@ -30,7 +30,7 @@ export default {
 		<AppBanner class="mb-5 sm:mb-8" />
 
 		<!-- Projects -->
-		<ProjectsGrid />
+		<ProjectsGrid   data-aos="fade-up" data-aos-delay="200"/>
 
 		<!-- Load more projects button -->
 		<div class="mt-10 sm:mt-20 flex justify-center">

@@ -19,7 +19,7 @@ export default {
 
 <template>
     <div v-if="!project.hide">
-        <div>
+        <div   data-aos="zoom-in" data-aos-delay="200">
             <router-link :to="{ name: project.link }" :project="project.title" @click="setPageId(project.id)"
                 class="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark"
                 aria-label="Single Project" style="position: relative; display: inline-block;">
