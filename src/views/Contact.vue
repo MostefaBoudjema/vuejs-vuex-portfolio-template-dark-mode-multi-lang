@@ -31,7 +31,7 @@ export default {
 		<!-- Contact form -->
 		<ContactForm v-if="settings.show_contact_form"/>
         <div v-else class="mr-16">
-            <img :src="settings.profile_photo" class="rounded-xl w-96" alt="" />
+            <img v-lazy="settings.profile_photo" class="rounded-xl w-96" alt="" />
         </div>
 		<!-- Contact details -->
 		<ContactDetails :contacts="settings.contacts" />

@@ -46,7 +46,7 @@ export default {
                     @click="setPageId(item.id)"
                 >
                     <img
-                        :src="item.img"
+                        v-lazy="item.img"
                         class="rounded-xl cursor-pointer h-70 w-96"
                         :alt="item.title"
                 /></router-link>

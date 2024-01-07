@@ -58,7 +58,7 @@ export default {
 				</p> -->
 				<div class="flex space-x-2">
 				<div v-for="(smallImg, index) in smallImages" :key="index">
-					<img :src="smallImg.src" :alt="smallImg.alt" :style="{
+					<img v-lazy="smallImg.src" :alt="smallImg.alt" :style="{
 						width: smallImg.width || '50px',
 						height: smallImg.height || '50px',
 					}" />

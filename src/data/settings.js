@@ -25,7 +25,7 @@ const settings=
 	// 	id: 11,
 	// }],
 	show_cv: true,
-	show_multi_lang: false,
+	show_multi_lang: true,
 	show_hire_me: false,
 	show_contact_form: false,
 	contacts: [

@@ -23,10 +23,10 @@ export default {
             <router-link :to="{ name: project.link }" :project="project.title" @click="setPageId(project.id)"
                 class="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark"
                 aria-label="Single Project" style="position: relative; display: inline-block;">
-                <img :src="project.img" :alt="project.title" class="rounded-t-xl border-none"
+                <img v-lazy="project.img" :alt="project.title" class="rounded-t-xl border-none"
                     style="width: 100%; height: auto;" />
                 <template v-for="(smallImg, index) in project.smallImages" :key="index">
-                    <img :src="smallImg.src" :alt="smallImg.alt" :style="{
+                    <img v-lazy="smallImg.src" :alt="smallImg.alt" :style="{
                         position: 'absolute',
                         top: index * 50 + 'px',
                         right: '0',

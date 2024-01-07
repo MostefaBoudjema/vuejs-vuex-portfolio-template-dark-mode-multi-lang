@@ -34,7 +34,7 @@ export default {
         <div class="p-8 rounded sm:border border-ternary-light dark:border-ternary-dark h-full">
             <div class="flex justify-center md:justify-between items-center">
                 <img class="w-24 py-3 px-2 border shadow-sm rounded-lg m-1 cursor-pointer dark:bg-secondary-light"
-                    :src="job.logo" alt="logo" />
+                    v-lazy="job.logo" alt="logo" />
                 <div class="flex-1 md:ml-4 mt-4 md:mt-0">
                     <h2 class="text-xl font-semibold">{{ job.title }}</h2>
                     <p class="">{{ job.company }}</p>

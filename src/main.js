@@ -1,37 +1,17 @@
 import { createApp } from 'vue';
 import App from './App.vue';
-import router from './router';
-import store from "@/store";
 import './assets/css/app.css';
-import 'bootstrap-icons/font/bootstrap-icons.css';
-import BackToTop from 'vue-backtotop';
-import i18n from './i18n';
 
-import AOS from "aos";
-import "aos/dist/aos.css";
-// import VueAnalytics from 'vue-analytics';
-AOS.init({
-	once: true,
-	disable: "phone",
-	duration: 600,
-	easing: "ease-out-sine",
-});
 const feather=require('feather-icons');
 feather.replace();
 
+import GlobalComponents from './mixin/globalComponents';
+
 const app=createApp(App);
-app.use(i18n)
-	.use(router)
-	.use(store)
-	.use(BackToTop)
-	// .use(VueAnalytics, {
-	// 	id: 'UA-287473301-1', 
-	// 	router
-	// })
-	;
+app
+	.use(GlobalComponents);
 
 app.config.devtools=true;
-window.i18n=i18n;
 app.mount('#app');
 
 const appTheme=localStorage.getItem('theme');

@@ -12,7 +12,7 @@ export default {
             :key="projectImage.id"
         >
             <img
-                :src="projectImage.img"
+                v-lazy="projectImage.img"
                 class="rounded-xl cursor-pointer shadow-lg sm:shadow-none h-70 w-96"
                 alt="{{ projectImage.title }}"
             />
