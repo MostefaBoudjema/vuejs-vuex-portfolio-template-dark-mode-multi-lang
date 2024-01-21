@@ -8,8 +8,7 @@ feather.replace();
 import GlobalComponents from './mixin/globalComponents';
 
 const app=createApp(App);
-app
-	.use(GlobalComponents);
+app.use(GlobalComponents);
 
 app.config.devtools=true;
 app.mount('#app');

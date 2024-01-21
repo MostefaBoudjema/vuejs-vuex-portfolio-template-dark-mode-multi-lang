@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-	<div>
+	<div  data-aos="zoom-in-up">
 		<!-- Check if client.link is not empty -->
 		<a v-if="client.link" :href="client.link" target="_blank" rel="noopener noreferrer">
 			<img v-lazy="client.img" :alt="client.title"

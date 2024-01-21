@@ -1,11 +1,11 @@
 <template>
-    <div class="bg-primary-light dark:bg-ternary-dark mx-auto py-12">
+    <div class="bg-primary-light dark:bg-ternary-dark mx-auto py-12" >
         <div class="flex justify-center pt-1 pb-8">
             <p class="font-general-medium text-2xl sm:text-3xl text-primary-dark dark:text-primary-light">
                 {{ t("Skills") }}
             </p>
         </div>
-        <div class="container mx-auto">
+        <div class="container mx-auto"  data-aos="fade-right">
             <transition-group name="fade" tag="div" class="flex flex-wrap">
                 <button v-for="skill in skillsWithDelay" :key="skill.id"
                     class="m-3 px-4 sm:px-6 py-2 sm:py-2.5 bg-transparent border rounded-md focus:ring-1"

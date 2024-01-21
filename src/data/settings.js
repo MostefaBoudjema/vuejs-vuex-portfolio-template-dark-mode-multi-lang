@@ -41,7 +41,7 @@ const settings=
 		},
 		{
 			id: 3,
-			name: '+213 793 692 2 89',
+			name: '+213 793 692 289',
 			icon: 'phone',
 		},
 	],
