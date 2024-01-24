@@ -10,20 +10,7 @@ const settings=
 	whatsapp: require("@/assets/images/whatsapp2.svg"),
 	whatsappNumber: "213793692289",
 	full_list: [3, 9, 1, 10, 0, 11, 5, 2, 4, 6, 7, 8],
-	home_list: [3, 9, 1, 10, 0, 11],
-	// home_list: [{
-	// 	id: 3,
-	// }, {
-	// 	id: 9,
-	// }, {
-	// 	id: 1,
-	// }, {
-	// 	id: 10,
-	// }, {
-	// 	id: 0,
-	// }, {
-	// 	id: 11,
-	// }],
+	home_list: [3, 9, 1, 10, 0, 11, 12],
 	show_cv: true,
 	show_multi_lang: true,
 	show_hire_me: false,
@@ -43,6 +30,14 @@ const settings=
 			id: 3,
 			name: '+213 793 692 289',
 			icon: 'phone',
+		},
+	],
+	socials: [
+		{
+			id: 1,
+			name: 'Telegram',
+			link: 'Telegram',
+			icon: 'map-pin',
 		},
 	],
 	categories: [

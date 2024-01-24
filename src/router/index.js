@@ -175,6 +175,7 @@ const routes=[
 			title: generateMetaTitle('Movie db'),
 		},
 	},
+
 	{
 		path: '/projects/landing-page',
 		name: 'landing-page', id: '11',
@@ -184,6 +185,17 @@ const routes=[
 			),
 		meta: {
 			title: generateMetaTitle('Landing Page'),
+		},
+	},
+	{
+		path: '/projects/infogate',
+		name: 'infogate', id: '12',
+		component: () =>
+			import(
+				'../views/OneProjectTemplate.vue'
+			),
+		meta: {
+			title: generateMetaTitle('infogate'),
 		},
 	},
 	{

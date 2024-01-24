@@ -8,7 +8,7 @@ export default new Vuex.Store({
     pageid: parseInt(initialPageId)
   },
   mutations: {
-    setPageId(state, id) {
+    SET_PAGE_ID(state, id) {
       state.pageid = id;
       // Save the updated pageid to LocalStorage
       localStorage.setItem('pageid', id);
@@ -17,7 +17,7 @@ export default new Vuex.Store({
   actions: {
     setPageId: (context, id) => {
       setTimeout(function () { // reach out for data
-        context.commit('setPageId', id);
+        context.commit('SET_PAGE_ID', id);
       }, 10);
     }
   }

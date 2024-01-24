@@ -1731,6 +1731,158 @@ const projects=[
 		},
 
 	},
+	{
+		id: 12,
+		title: 'Bash Gate Landing Page',
+		hide: false,
+		category: 'React App',
+		outer_link: 'https://infogate.sa',
+		link: 'infogate',
+		img: require('@/assets/images/infogate/0.png'),
+		smallImages: [
+			{
+				id: 1,
+				alt: "react",
+				src: require('@/assets/images/technology/react.png'),
+				width: '60px',
+			},
+			{
+				id: 2,
+				alt: "laravel",
+				src: require('@/assets/images/technology/laravel.png'),
+				width: '60px',
+			},
+			{
+				id: 3,
+				alt: "php",
+				src: require('@/assets/images/technology/php.png'),
+				width: '60px',
+			},
+			{
+				id: 4,
+				alt: "bootstrap",
+				src: require('@/assets/images/technology/bootstrap.png'),
+				width: '60px',
+			},
+		],
+		singleProjectHeader: {
+			singleProjectTitle: t("Bash Gate"),
+			singleProjectDate: "31 Dec 2023",
+			singleProjectTag: t("UI / Frontend"),
+		},
+		projectImages: [
+			{
+				id: 0,
+				img: require("@/assets/images/infogate/0.png"),
+			},
+			{
+				id: 1,
+				img: require("@/assets/images/infogate/1.png"),
+			},
+			{
+				id: 2,
+				img: require("@/assets/images/infogate/2.png"),
+			},
+			{
+				id: 3,
+				img: require("@/assets/images/infogate/3.png"),
+			},
+			{
+				id: 4,
+				img: require("@/assets/images/infogate/4.png"),
+			},
+			{
+				id: 5,
+				img: require("@/assets/images/infogate/5.png"),
+			},
+			{
+				id: 6,
+				img: require("@/assets/images/infogate/6.png"),
+			},
+		],
+		projectInfo: {
+			clientHeading: t("About Client"),
+			companyInfos: [
+				{
+					id: 1,
+					title: t("Name"),
+					details: t("Bash Gate"),
+				},
+				{
+					id: 2,
+					title: t("Services"),
+					details: t("Online Services"),
+				},
+				{
+					id: 3,
+					title: t("Website"),
+					details: "https://infogate.sa",
+				},
+
+			],
+			objectivesHeading: t("Objective"),
+			objectivesDetails: t("Objective12"),
+			technologies: [
+				{
+					title: t("Tools & Technologies"),
+					techs: [
+						"React",
+						"Laravel",
+						"PHP",
+						"Bootstrap",
+						"JavaScript",
+					],
+				},
+			],
+			projectDetailsHeading: t("Challenge"),
+			projectDetails: [
+				{
+					id: 1,
+					details: t("details12A"),
+				},
+				{
+					id: 2,
+					details: t("details12B"),
+				},
+				{
+					id: 3,
+					details: t("details12C"),
+				},
+				{
+					id: 4,
+					details: t("details12D"),
+				},
+			],
+			socialSharingsHeading: t("Share This"),
+			socialSharings: [
+				{
+					id: 1,
+					name: "Twitter",
+					icon: "twitter",
+					url: "https://twitter.com/BashGateSa",
+				},
+				{
+					id: 2,
+					name: "Instagram",
+					icon: "instagram",
+					url: "https://www.instagram.com/bashgatesa",
+				},
+				{
+					id: 3,
+					name: "Facebook",
+					icon: "facebook",
+					url: "https://www.facebook.com/bashgatesa",
+				},
+				{
+					id: 4,
+					name: "Whatsapp",
+					icon: "phone",
+					url: "https://api.whatsapp.com/send?phone=966503003675",
+				},
+			],
+		},
+
+	},
 ];
 
 export default projects;

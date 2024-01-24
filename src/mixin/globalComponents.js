@@ -19,8 +19,8 @@ const GlobalComponents={
     Vue.use(store)
     Vue.use(VueLazyload, {
       preLoad: 1.3,
-      error: '../assets/images/error.png',
-      loading: '../assets/images/fading-loader.gif',
+      error: require('../assets/images/error.png'),
+      loading: require('../assets/images/fading-loader.gif'),
       attempt: 1,
     })
   }
