@@ -73,7 +73,7 @@ const projects=[
 				{
 					id: 2,
 					title: t("Services"),
-					details: t("Phone store services"),
+					details: t("movie ranking services"),
 				},
 				{
 					id: 3,
@@ -503,7 +503,7 @@ const projects=[
 				{
 					id: 2,
 					title: t("Services"),
-					details: t("Phone store services"),
+					details: t("Car store services"),
 				},
 				{
 					id: 3,
@@ -1730,7 +1730,8 @@ const projects=[
 			],
 		},
 
-	},
+	}
+	,
 	{
 		id: 12,
 		title: 'Bash Gate Landing Page',
@@ -1878,6 +1879,436 @@ const projects=[
 					name: "Whatsapp",
 					icon: "phone",
 					url: "https://api.whatsapp.com/send?phone=966503003675",
+				},
+			],
+		},
+
+	},
+	{
+		id: 13,
+		title: 'Stockifly - Stock management system',
+		hide: false,
+		category: 'Laravel Vue Application',
+		outer_link: '#',
+		link: 'stockifly',
+		img: require('@/assets/images/stockifly/0.png'),
+		smallImages: [
+			{
+				id: 1,
+				alt: "laravel",
+				src: require('@/assets/images/technology/laravel.png'),
+				width: '60px',
+			},
+			{
+				id: 2,
+				alt: "vue",
+				src: require('@/assets/images/technology/vue.png'),
+				width: '60px',
+			},
+			{
+				id: 3,
+				alt: "php",
+				src: require('@/assets/images/technology/php.png'),
+				width: '60px',
+			},
+			{
+				id: 4,
+				alt: "bootstrap",
+				src: require('@/assets/images/technology/bootstrap.png'),
+				width: '60px',
+			},
+		],
+		singleProjectHeader: {
+			singleProjectTitle: t("Stockifly"),
+			singleProjectDate: "16 Oct 2022",
+			singleProjectTag: t("UI / Frontend"),
+		},
+		projectImages: [
+			{
+				id: 0,
+				img: require("@/assets/images/stockifly/0.png"),
+			},
+			{
+				id: 1,
+				img: require("@/assets/images/stockifly/1.png"),
+			},
+			{
+				id: 2,
+				img: require("@/assets/images/stockifly/2.png"),
+			},
+			{
+				id: 3,
+				img: require("@/assets/images/stockifly/3.png"),
+			},
+			{
+				id: 4,
+				img: require("@/assets/images/stockifly/4.png"),
+			},
+			{
+				id: 5,
+				img: require("@/assets/images/stockifly/5.png"),
+			}
+		],
+		projectInfo: {
+			clientHeading: t("About Client"),
+			companyInfos: [
+				{
+					id: 1,
+					title: t("Name"),
+					details: t("Stockifly"),
+				},
+				{
+					id: 2,
+					title: t("Services"),
+					details: t("Online Services"),
+				},
+				{
+					id: 3,
+					title: t("Website"),
+					details: "#",
+				},
+
+			],
+			objectivesHeading: t("Objective"),
+			objectivesDetails: t("Objective13"),
+			technologies: [
+				{
+					title: t("Tools & Technologies"),
+					techs: [
+						"Laravel",
+						"Vue",
+						"PHP",
+						"Bootstrap",
+						"JavaScript",
+					],
+				},
+			],
+			projectDetailsHeading: t("Challenge"),
+			projectDetails: [
+				{
+					id: 1,
+					details: t("details13A"),
+				},
+				{
+					id: 2,
+					details: t("details13B"),
+				},
+				{
+					id: 3,
+					details: t("details13C"),
+				},
+				{
+					id: 4,
+					details: t("details13D"),
+				},
+			],
+			socialSharingsHeading: t("Share This"),
+			socialSharings: [
+				{
+					id: 1,
+					name: "Twitter",
+					icon: "twitter",
+					url: "https://twitter.com",
+				},
+				{
+					id: 2,
+					name: "Instagram",
+					icon: "instagram",
+					url: "https://www.instagram.com",
+				},
+				{
+					id: 3,
+					name: "Facebook",
+					icon: "facebook",
+					url: "https://www.facebook.com",
+				},
+				{
+					id: 4,
+					name: "Whatsapp",
+					icon: "phone",
+					url: "https://api.whatsapp.com/",
+				},
+			],
+		},
+
+	},
+	{
+		id: 14,
+		title: 'Roxboro - Content Management System',
+		hide: false,
+		category: 'Laravel Application',
+		outer_link: 'https://roxboro.ca',
+		link: 'roxboro',
+		img: require('@/assets/images/roxboro/0.png'),
+		smallImages: [
+			{
+				id: 1,
+				alt: "laravel",
+				src: require('@/assets/images/technology/laravel.png'),
+				width: '60px',
+			},
+			{
+				id: 2,
+				alt: "php",
+				src: require('@/assets/images/technology/php.png'),
+				width: '60px',
+			},
+			{
+				id: 3,
+				alt: "bootstrap",
+				src: require('@/assets/images/technology/bootstrap.png'),
+				width: '60px',
+			},
+		],
+		singleProjectHeader: {
+			singleProjectTitle: t("Roxboro"),
+			singleProjectDate: "03 Mar 2024",
+			singleProjectTag: t("UI / Frontend"),
+		},
+		projectImages: [
+			{
+				id: 0,
+				img: require("@/assets/images/roxboro/0.png"),
+			},
+			{
+				id: 1,
+				img: require("@/assets/images/roxboro/1.png"),
+			},
+			{
+				id: 2,
+				img: require("@/assets/images/roxboro/2.png"),
+			},
+			{
+				id: 3,
+				img: require("@/assets/images/roxboro/3.png"),
+			},
+			{
+				id: 4,
+				img: require("@/assets/images/roxboro/4.png"),
+			},
+			{
+				id: 5,
+				img: require("@/assets/images/roxboro/5.png"),
+			},
+			{
+				id: 6,
+				img: require("@/assets/images/roxboro/6.png"),
+			},
+		],
+		projectInfo: {
+			clientHeading: t("About Client"),
+			companyInfos: [
+				{
+					id: 1,
+					title: t("Name"),
+					details: t("Roxboro"),
+				},
+				{
+					id: 2,
+					title: t("Services"),
+					details: t("Online Services"),
+				},
+				{
+					id: 3,
+					title: t("Website"),
+					details: "https://roxboro.ca",
+				},
+
+			],
+			objectivesHeading: t("Objective"),
+			objectivesDetails: t("Objective14"),
+			technologies: [
+				{
+					title: t("Tools & Technologies"),
+					techs: [
+						"Laravel",
+						"PHP",
+						"Bootstrap",
+						"JavaScript",
+					],
+				},
+			],
+			projectDetailsHeading: t("Challenge"),
+			projectDetails: [
+				{
+					id: 1,
+					details: t("details14A"),
+				},
+				{
+					id: 2,
+					details: t("details14B"),
+				},
+				{
+					id: 3,
+					details: t("details14C"),
+				},
+				{
+					id: 4,
+					details: t("details14D"),
+				},
+			],
+			socialSharingsHeading: t("Share This"),
+			socialSharings: [
+				{
+					id: 1,
+					name: "Twitter",
+					icon: "twitter",
+					url: "https://twitter.com",
+				},
+				{
+					id: 2,
+					name: "Instagram",
+					icon: "instagram",
+					url: "https://www.instagram.com",
+				},
+				{
+					id: 3,
+					name: "Facebook",
+					icon: "facebook",
+					url: "https://www.facebook.com",
+				},
+				{
+					id: 4,
+					name: "Whatsapp",
+					icon: "phone",
+					url: "https://api.whatsapp.com/",
+				},
+			],
+		},
+
+	},
+	{
+		id: 15,
+		title: 'Stock management SaaS Garage',
+		hide: false,
+		category: 'Laravel Application',
+		outer_link: '#',
+		link: 'garage',
+		img: require('@/assets/images/garage/0.png'),
+		smallImages: [
+			{
+				id: 1,
+				alt: "laravel",
+				src: require('@/assets/images/technology/laravel.png'),
+				width: '60px',
+			},
+			{
+				id: 2,
+				alt: "php",
+				src: require('@/assets/images/technology/php.png'),
+				width: '60px',
+			},
+			{
+				id: 3,
+				alt: "bootstrap",
+				src: require('@/assets/images/technology/bootstrap.png'),
+				width: '60px',
+			},
+		],
+		singleProjectHeader: {
+			singleProjectTitle: t("Garage"),
+			singleProjectDate: "29 Nov 2023",
+			singleProjectTag: t("UI / Frontend"),
+		},
+		projectImages: [
+			{
+				id: 0,
+				img: require("@/assets/images/garage/0.png"),
+			},
+			{
+				id: 1,
+				img: require("@/assets/images/garage/1.png"),
+			},
+			{
+				id: 2,
+				img: require("@/assets/images/garage/2.png"),
+			},
+			{
+				id: 3,
+				img: require("@/assets/images/garage/3.png"),
+			},
+			{
+				id: 4,
+				img: require("@/assets/images/garage/4.png"),
+			},
+		],
+		projectInfo: {
+			clientHeading: t("About Client"),
+			companyInfos: [
+				{
+					id: 1,
+					title: t("Name"),
+					details: t("Garage"),
+				},
+				{
+					id: 2,
+					title: t("Services"),
+					details: t("Online Services"),
+				},
+				{
+					id: 3,
+					title: t("Website"),
+					details: "#",
+				},
+
+			],
+			objectivesHeading: t("Objective"),
+			objectivesDetails: t("Objective15"),
+			technologies: [
+				{
+					title: t("Tools & Technologies"),
+					techs: [
+						"Laravel",
+						"PHP",
+						"Bootstrap",
+						"JavaScript",
+					],
+				},
+			],
+			projectDetailsHeading: t("Challenge"),
+			projectDetails: [
+				{
+					id: 1,
+					details: t("details15A"),
+				},
+				{
+					id: 2,
+					details: t("details15B"),
+				},
+				{
+					id: 3,
+					details: t("details15C"),
+				},
+				{
+					id: 4,
+					details: t("details15D"),
+				},
+			],
+			socialSharingsHeading: t("Share This"),
+			socialSharings: [
+				{
+					id: 1,
+					name: "Twitter",
+					icon: "twitter",
+					url: "https://twitter.com",
+				},
+				{
+					id: 2,
+					name: "Instagram",
+					icon: "instagram",
+					url: "https://www.instagram.com",
+				},
+				{
+					id: 3,
+					name: "Facebook",
+					icon: "facebook",
+					url: "https://www.facebook.com",
+				},
+				{
+					id: 4,
+					name: "Whatsapp",
+					icon: "phone",
+					url: "https://api.whatsapp.com/",
 				},
 			],
 		},

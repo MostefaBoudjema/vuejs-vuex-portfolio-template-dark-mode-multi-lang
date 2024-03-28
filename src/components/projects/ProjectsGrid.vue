@@ -57,7 +57,6 @@ import { useI18n } from 'vue-i18n';
 const { t }=useI18n({ inheritLocale: true, useScope: 'global' });
 const projectsHeading=t('Projects I worked On');
 
-const selectedProjects=ref([2, 3, 4, 5, 6, 7, 8, 0, 9]);
 const selectedCategory=ref('');
 const searchProject=ref('');
 const props=defineProps({
@@ -72,29 +71,12 @@ const filteredProjects=computed(() => {
   return projects;
 });
 
-// const filteredProjects=computed(() => {
-//   const selectedProjects=[2, 3, 4, 5, 6, 7, 8, 0, 9]; 
 
-//   if (selectedCategory.value) {
-//     // Filter by category
-//     selectedProjects.push(...filterProjectsByCategory());
-//   }
-
-//   if (searchProject.value) {
-//     // Filter by search
-//     selectedProjects.push(...filterProjectsBySearch());
-//   }
-
-//   // Filter by selection
-//   if (selectedProjects.length>0) {
-//     return projects.filter(project => selectedProjects.includes(project.id));
-//   }
-
-//   // If no category, search, or selection filters are applied, return all projects
-//   return projects;
-// });
-
-const getShortList=computed(() => filteredProjects.value.slice(3, 11));
+const getShortList = computed(() => {
+    const selectedIds = settings.home_list;
+    // const selectedIds = [3, 4, 5, 6, 7, 14, 15];
+    return filteredProjects.value.filter(project => selectedIds.includes(project.id));
+});
 
 const filterProjectsByCategory=() => {
   return projects.filter((item) => {

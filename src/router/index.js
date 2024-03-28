@@ -37,7 +37,6 @@ const routes=[
 	{
 		path: '/projects/LaravelVueEcommercePhone',
 		name: 'LaravelVueEcommercePhone',
-		id: '1',
 		component: () =>
 			import(
 				'../views/OneProjectTemplate.vue'
@@ -49,7 +48,6 @@ const routes=[
 	{
 		path: '/projects/ai-image-generation',
 		name: 'ai-image-generation',
-		id: '2',
 		component: () =>
 			import(
 				'../views/OneProjectTemplate.vue'
@@ -58,22 +56,9 @@ const routes=[
 			title: generateMetaTitle('Phones Blog'),
 		},
 	},
-	// {
-	// 	path: '/projects/LaravelExpenseManager',
-	// 	name: 'LaravelExpenseManager',
-	// 	id: '3',
-	// 	component: () =>
-	// 		import(
-	// 			'../views/OneProjectTemplate.vue'
-	// 		),
-	// 	meta: {
-	// 		title: generateMetaTitle('Business'),
-	// 	},
-	// },
 	{
 		path: '/projects/PhonesStore',
 		name: 'PhonesStore',
-		id: '1',
 		component: () =>
 			import(
 				'../views/OneProjectTemplate.vue'
@@ -85,7 +70,6 @@ const routes=[
 	{
 		path: '/projects/Blog',
 		name: 'Blog',
-		id: '2',
 		component: () =>
 			import(
 				'../views/OneProjectTemplate.vue'
@@ -97,7 +81,6 @@ const routes=[
 	{
 		path: '/projects/Business',
 		name: 'Business',
-		id: '3',
 		component: () =>
 			import(
 				'../views/OneProjectTemplate.vue'
@@ -109,7 +92,6 @@ const routes=[
 	{
 		path: '/projects/Portfolio',
 		name: 'Portfolio',
-		id: '4',
 		component: () =>
 			import(
 				'../views/OneProjectTemplate.vue'
@@ -121,7 +103,6 @@ const routes=[
 	{
 		path: '/projects/Elearn',
 		name: 'Elearn',
-		id: '5',
 		component: () =>
 			import(
 				'../views/OneProjectTemplate.vue'
@@ -133,7 +114,6 @@ const routes=[
 	{
 		path: '/projects/ClothesStore',
 		name: 'ClothesStore',
-		id: '6',
 		component: () =>
 			import(
 				'../views/OneProjectTemplate.vue'
@@ -144,7 +124,7 @@ const routes=[
 	},
 	{
 		path: '/projects/tamtamtools',
-		name: 'tamtamtools', id: '7',
+		name: 'tamtamtools', 
 		component: () =>
 			import(
 				'../views/OneProjectTemplate.vue'
@@ -155,7 +135,7 @@ const routes=[
 	},
 	{
 		path: '/projects/iauto',
-		name: 'iauto', id: '8',
+		name: 'iauto', 
 		component: () =>
 			import(
 				'../views/OneProjectTemplate.vue'
@@ -166,7 +146,7 @@ const routes=[
 	},
 	{
 		path: '/projects/movie-db',
-		name: 'movie-db', id: '10',
+		name: 'movie-db', 
 		component: () =>
 			import(
 				'../views/OneProjectTemplate.vue'
@@ -178,7 +158,7 @@ const routes=[
 
 	{
 		path: '/projects/landing-page',
-		name: 'landing-page', id: '11',
+		name: 'landing-page', 
 		component: () =>
 			import(
 				'../views/OneProjectTemplate.vue'
@@ -189,13 +169,46 @@ const routes=[
 	},
 	{
 		path: '/projects/infogate',
-		name: 'infogate', id: '12',
+		name: 'infogate', 
 		component: () =>
 			import(
 				'../views/OneProjectTemplate.vue'
 			),
 		meta: {
 			title: generateMetaTitle('infogate'),
+		},
+	},
+	{
+		path: '/projects/stockifly',
+		name: 'stockifly',
+		component: () =>
+			import(
+				'../views/OneProjectTemplate.vue'
+			),
+		meta: {
+			title: generateMetaTitle('stockifly'),
+		},
+	},
+	{
+		path: '/projects/roxboro',
+		name: 'roxboro',
+		component: () =>
+			import(
+				'../views/OneProjectTemplate.vue'
+			),
+		meta: {
+			title: generateMetaTitle('roxboro'),
+		},
+	},
+	{
+		path: '/projects/garage',
+		name: 'garage',
+		component: () =>
+			import(
+				'../views/OneProjectTemplate.vue'
+			),
+		meta: {
+			title: generateMetaTitle('garage'),
 		},
 	},
 	{
