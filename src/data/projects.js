@@ -2283,6 +2283,10 @@ const projects=[
 					id: 4,
 					details: t("details15D"),
 				},
+				{
+					id: 5,
+					details: t("details15E"),
+				},
 			],
 			socialSharingsHeading: t("Share This"),
 			socialSharings: [

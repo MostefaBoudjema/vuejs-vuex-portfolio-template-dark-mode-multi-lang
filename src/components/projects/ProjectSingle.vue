@@ -37,8 +37,7 @@ export default {
             </router-link>
         </div>
         <div class="text-center px-4 py-6 d-flex justify-content-center align-items-center">
-            <p class="font-general-semibold text-xl text-ternary-dark dark:text-ternary-light font-semibold mb-2">
-                <!-- {{ project.title }} -->
+            <p class="font-general-semibold text-xl text-ternary-dark dark:text-ternary-light font-semibold mb-2">                
                 {{ t(project.title) }} <a class="text-lg text-center text-link d-flex"
                     v-if="project.projectInfo.companyInfos[2].details != '#'"
                     :href="project.projectInfo.companyInfos[2].details" target="_blank">
@@ -49,24 +48,6 @@ export default {
             }}</span>
             <br v-if="project.projectInfo.companyInfos[2].details != '#'" /><br
                 v-if="project.projectInfo.companyInfos[2].details != '#'" />
-
-            <!-- <br v-if="project.outer_link != '#'" /><br
-                v-if="project.outer_link != '#'"
-            />
-
-            <a
-                class="text-lg text-center text-link d-flex"
-                v-if="project.outer_link != '#'"
-                :href="project.outer_link" target="_blank"
-            >
-
-                <i
-                    data-feather="external-link"
-                    id="my-link"
-                    class=""
-                    stroke-width="3"
-                ></i>
-            </a> -->
         </div>
     </div>
 </template>
