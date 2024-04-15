@@ -2207,7 +2207,7 @@ const projects=[
 		],
 		singleProjectHeader: {
 			singleProjectTitle: t("Garage"),
-			singleProjectDate: "29 Nov 2023",
+			singleProjectDate: "05 Dec 2023",
 			singleProjectTag: t("UI / Frontend"),
 		},
 		projectImages: [
@@ -2230,6 +2230,10 @@ const projects=[
 			{
 				id: 4,
 				img: require("@/assets/images/garage/4.png"),
+			},
+			{
+				id: 5,
+				img: require("@/assets/images/garage/5.png"),
 			},
 		],
 		projectInfo: {
