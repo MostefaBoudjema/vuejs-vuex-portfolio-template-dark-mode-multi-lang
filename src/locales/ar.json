@@ -157,7 +157,17 @@
     "JobStartDate3": "ديسمبر  2017",
     "JobEndDate3": "جانفي 2020",
     "JobDescription3": "بصفتي مطور Java EE يتمتع بخبرة في ExtJS ، فإن دوري يدور حول تنفيذ ميزات جديدة وحل الأخطاء لتطبيقات الويب. مع خلفية قوية في تطوير Java Enterprise Edition (Java EE) وإطار عمل ExtJS ، أتفوق في إنشاء واجهات مستخدم ديناميكية وتفاعلية مع ضمان التكامل السلس مع الواجهة الخلفية. أنا متحمس لتقديم حلول عالية الجودة تعزز وظائف وتجربة المستخدم لمشاريع الويب. سواء أكان الأمر يتعلق ببناء ميزات مبتكرة أو معالجة المشكلات لتحسين أداء التطبيق ، فأنا ملتزم بتحقيق التميز.",
-    "Services": "الخدمات",
+    "JobTitle4": "Laravel React Web Developer",
+    "JobCompany4": "Info Gate",
+    "JobStartDate4": "October 2023",
+    "JobEndDate4": "March 2024",
+    "JobDescription4": "As a Full Stack Developer at Info Gate, I contributed to the development and maintenance of the Info Gate platform, specializing in Laravel PHP and React. Working collaboratively with a diverse team, I played a key role in all stages of the software development lifecycle, from conception to deployment, ensuring high performance and scalability of the platform. I implemented new features, optimized codebase, and resolved bugs to enhance user experience. My proactive approach and commitment to excellence contributed to the success of the project.",
+    "JobTitle5": "Laravel Vue Web Developer",
+    "JobCompany5": "Futuriva Marketing Agency",
+    "JobStartDate5": "April 2024",
+    "JobEndDate5": "Today",
+    "JobDescription5": "As a Laravel Vue Web Developer at Futuriva Marketing Agency, I specialized in building and maintaining web applications, leveraging Laravel PHP framework and Vue.js frontend technology. With a focus on Vuetify for responsive design and Vuexy template for efficient state management, I collaborated closely with cross-functional teams to deliver high-quality solutions within project deadlines. My responsibilities included customizing features, conducting code reviews, and optimizing frontend performance to ensure exceptional user experience.",
+    
     "Employment History": "تاريخ التوظيف",
     "Services": "الخدمات"
 }

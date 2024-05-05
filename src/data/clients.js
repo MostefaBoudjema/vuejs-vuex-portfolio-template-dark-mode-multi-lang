@@ -44,6 +44,18 @@ const clients = [
         link: 'https://Mesnja.com',
         img: require('@/assets/images/brands/mesnja_color.png'),
     },
+    {
+        id: 8,
+        title: 'Info Gate',
+        link: 'https://infogate.sa/',
+        img: require('@/assets/images/brands/infogate_color.png'),
+    },
+    {
+        id: 9,
+        title: 'Futuriva Marketing Agency',
+        link: 'https://futurivadigital.com/',
+        img: require('@/assets/images/brands/futuriva_color.png'),
+    },
 ];
 
 export default clients;
