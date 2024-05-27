@@ -9,7 +9,7 @@ export const socialLinks = [
 		id: 2,
 		name: 'GitHub',
 		icon: 'github',
-		url: 'https://github.com/mostfa16',
+		url: 'https://github.com/MostefaBoudjema',
 	},
 	{
 		id: 3,
