@@ -1,34 +1,25 @@
-<script>
-import { defineComponent } from "vue";
+<script setup>
 import { useI18n } from "vue-i18n";
+import { ref } from "vue";
 
 import settings from "../data/settings";
-export default defineComponent({
-    name: "PageNotfound",
-    setup() {
-        const { t } = useI18n({
-            inheritLocale: true,
-            useScope: "global",
-        });
-        return { settings,t };
-    },
+
+const { t }=useI18n({
+    inheritLocale: true,
+    useScope: "global",
 });
+
+const theme=ref("light"); // Assuming theme is a reactive property; adjust if it's sourced differently
 </script>
 
 <template>
-    <div
-        class="flex flex-col sm:justify-between items-center sm:flex-row mt-12 sm:mt-10 p-10"
-    >
-        <div class=" ">
-            <img
-                v-if="theme === 'light'"
-                :src="settings.page_404"
-                alt="Developer"
-            />
+    <div class="flex flex-col sm:justify-between items-center sm:flex-row mt-12 sm:mt-10 p-10">
+        <div>
+            <img v-if="theme === 'light'" :src="settings.page_404" alt="Developer" />
             <img v-else :src="settings.page_404" alt="Developer" />
         </div>
 
-        <div class="Notfound md:w-1/2 ">
+        <div class="Notfound md:w-1/2">
             <h1 class="text-blue-300">{{ t("404 Page Not found") }}</h1>
         </div>
     </div>

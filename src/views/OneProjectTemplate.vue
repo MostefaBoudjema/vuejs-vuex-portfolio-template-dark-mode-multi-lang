@@ -1,4 +1,4 @@
-<script>
+<script setup>
 import feather from "feather-icons";
 import ProjectHeader from "../components/projects/ProjectHeader.vue";
 // import ProjectGallery from "../components/projects/ProjectGallery.vue";
@@ -9,60 +9,38 @@ import relatedProject from "../data/relatedProjects";
 import projects from "../data/projects";
 
 // import { blog } from "../../data/projectInfos";
-import { defineComponent } from "vue";
 import { useI18n } from "vue-i18n";
-import { mapState } from "vuex";
-export default defineComponent({
-    name: "Blog",
-    setup() {
-        const { t } = useI18n({
-            inheritLocale: true,
-            useScope: "global",
-        });
-        return { t };
-    },
-    components: {
-        ProjectHeader,
-        // ProjectGallery,
-        ProjectInfo,
-        ProjectRelatedProjects,
-    },
-    data: () => {
-        let id = 0;
-        return {
-            singleProjectHeader: projects[id].singleProjectHeader,
-            projectImages: projects[id].projectImages,
-            projectInfo: projects[id].projectInfo,
-            img: projects[id].img,
-            relatedProject,
-        };
-    },
-    mounted() {
-        feather.replace();
-    },
-    updated() {
-        feather.replace();
-    },
-    computed: {
-        ...mapState(["pageid"]),
+import { useStore } from "vuex";
+import { computed, onMounted, onUpdated, ref } from "vue";
 
-        ImgMethod() {
-            return projects[this.pageid].img;
-        },
-        singleProjectHeaderMethod() {
-            return projects[this.pageid].singleProjectHeader;
-        },
-        projectImagesMethod() {
-            return projects[this.pageid].projectImages;
-        },
-        projectInfoMethod() {
-            return projects[this.pageid].projectInfo;
-        },
-        smallImagesMethod() {
-            return projects[this.pageid].smallImages;
-        },
-    },
-    methods: {},
+const { t } = useI18n({
+    inheritLocale: true,
+    useScope: "global",
+});
+
+const id = 0;
+
+const singleProjectHeader = ref(projects[id].singleProjectHeader);
+const projectImages = ref(projects[id].projectImages);
+const projectInfo = ref(projects[id].projectInfo);
+const img = ref(projects[id].img);
+const relatedProjectRef = ref(relatedProject);
+
+const store = useStore();
+const pageid = computed(() => store.state.pageid);
+
+const ImgMethod = computed(() => projects[pageid.value].img);
+const singleProjectHeaderMethod = computed(() => projects[pageid.value].singleProjectHeader);
+const projectImagesMethod = computed(() => projects[pageid.value].projectImages);
+const projectInfoMethod = computed(() => projects[pageid.value].projectInfo);
+const smallImagesMethod = computed(() => projects[pageid.value].smallImages);
+
+onMounted(() => {
+    feather.replace();
+});
+
+onUpdated(() => {
+    feather.replace();
 });
 </script>
 

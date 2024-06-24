@@ -22,6 +22,7 @@
     "core-js": "^3.27.2",
     "express": "^4.18.2",
     "feather-icons": "^4.29.0",
+    "gsap": "^3.12.5",
     "jquery": "^3.6.4",
     "nodemailer": "^6.9.4",
     "postcss-flexbugs-fixes": "^5.0.2",

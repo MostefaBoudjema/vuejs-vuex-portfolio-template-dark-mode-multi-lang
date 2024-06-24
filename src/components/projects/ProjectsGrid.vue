@@ -36,13 +36,13 @@
       <!-- <ProjectSingle v-for="index in selectedProjects" :key="index" :project="projects[index]" /> -->
 
     </div>
+    <div v-else class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
+      <ProjectSingle v-for="project in getShortList" :key="project" :project="project" />
+    </div>
     <!-- <div v-else class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 mt-6 sm:gap-10">
       <ProjectSingle v-for="project in getSpecificProjectsList(settings.home_list)" :key="project.id"
         :project="project" />
     </div> -->
-    <div v-else class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
-      <ProjectSingle v-for="project in getShortList" :key="project" :project="project" />
-    </div>
   </section>
 </template>
 <script setup>

@@ -7,36 +7,30 @@
 		</div>
 		<!-- Contact details -->
 		<ContactDetails :contacts="settings.contacts" />
-		<!-- <contact-socials :socials="socials" /> -->
+		<!-- <ContactSocials :socials="socials" /> -->
 	</div>
 </template>
-<script>
+
+<script setup>
 import feather from 'feather-icons';
+import { ref, onMounted, onUpdated } from 'vue';
 import ContactForm from '@/components/contact/ContactForm.vue';
 import ContactDetails from '@/components/contact/ContactDetails.vue';
 
-import settings from "../data/settings";
-import { socialLinks } from "../data/socialLinks";
-import ContactSocials from '../components/contact/ContactSocials.vue';
-export default {
-	components: {
-		ContactForm,
-		ContactDetails,
-		// ContactSocials,
-	},
-	data: () => {
-		return {
-			settings,
-			socials: socialLinks,
-		};
-	},
-	mounted() {
-		feather.replace();
-	},
-	updated() {
-		feather.replace();
-	},
-	methods: {},
-};
+import settingsData from '../data/settings';
+import { socialLinks } from '../data/socialLinks';
+// import ContactSocials from '../components/contact/ContactSocials.vue';
+
+const settings=ref(settingsData);
+const socials=ref(socialLinks);
+
+onMounted(() => {
+	feather.replace();
+});
+
+onUpdated(() => {
+	feather.replace();
+});
 </script>
 
+<style scoped></style>
