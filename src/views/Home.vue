@@ -21,8 +21,8 @@
 </template>
 <script setup>
 import AppBanner from '@/components/shared/AppBanner';
-import ProjectsGrid from '../components/projects/ProjectsGrid.vue';
-import Button from '../components/reusable/Button.vue';
+import ProjectsGrid from '@/components/projects/ProjectsGrid.vue';
+import Button from '@/components/reusable/Button.vue';
 
 import { useI18n } from "vue-i18n";
 

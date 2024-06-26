@@ -1,11 +1,11 @@
 <script>
-import ThemeSwitcher from "../ThemeSwitcher";
-import LanguageSwitcher from "../LanguageSwitcher";
-import HireMeModal from "../HireMeModal.vue";
+import ThemeSwitcher from "@/components/ThemeSwitcher";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
+import HireMeModal from "@/components/HireMeModal.vue";
 import feather from "feather-icons";
 import AppHeaderLinks from "./AppHeaderLinks.vue";
-import Button from "../reusable/Button.vue";
-import settings from "../../data/settings";
+import Button from "@/components/reusable/Button.vue";
+import settings from "@/data/settings";
 export default {
     components: {
         ThemeSwitcher,

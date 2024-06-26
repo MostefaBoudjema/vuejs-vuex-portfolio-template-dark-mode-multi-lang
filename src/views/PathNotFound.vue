@@ -2,7 +2,7 @@
 import { useI18n } from "vue-i18n";
 import { ref } from "vue";
 
-import settings from "../data/settings";
+import settings from "@/data/settings";
 
 const { t }=useI18n({
     inheritLocale: true,

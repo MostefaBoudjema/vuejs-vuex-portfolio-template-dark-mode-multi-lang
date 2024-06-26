@@ -22,9 +22,9 @@
 </template>
   
 <script>
-import Button from '../reusable/Button.vue';
-import FormInput from '../reusable/FormInput.vue';
-import FormTextarea from '../reusable/FormTextarea.vue';
+import Button from '@/components/reusable/Button.vue';
+import FormInput from '@/components/reusable/FormInput.vue';
+import FormTextarea from '@/components/reusable/FormTextarea.vue';
 
 export default {
 	components: { Button, FormInput, FormTextarea },

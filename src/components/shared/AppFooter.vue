@@ -37,7 +37,7 @@
 <script>
 import feather from "feather-icons";
 // import FooterCopyright from './FooterCopyright.vue';
-import { socialLinks } from "../../data/socialLinks";
+import { socialLinks } from "@/data/socialLinks";
 
 import { useI18n } from "vue-i18n";
 export default {

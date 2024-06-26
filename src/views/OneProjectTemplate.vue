@@ -1,14 +1,14 @@
 <script setup>
 import feather from "feather-icons";
-import ProjectHeader from "../components/projects/ProjectHeader.vue";
-// import ProjectGallery from "../components/projects/ProjectGallery.vue";
-import ProjectInfo from "../components/projects/ProjectInfo.vue";
-import ProjectRelatedProjects from "../components/projects/ProjectRelatedProjects.vue";
+import ProjectHeader from "@/components/projects/ProjectHeader.vue";
+// import ProjectGallery from "@/components/projects/ProjectGallery.vue";
+import ProjectInfo from "@/components/projects/ProjectInfo.vue";
+import ProjectRelatedProjects from "@/components/projects/ProjectRelatedProjects.vue";
 
-import relatedProject from "../data/relatedProjects";
-import projects from "../data/projects";
+import relatedProject from "@/data/relatedProjects";
+import projects from "@/data/projects";
 
-// import { blog } from "../../data/projectInfos";
+// import { blog } from "@/data/projectInfos";
 import { useI18n } from "vue-i18n";
 import { useStore } from "vuex";
 import { computed, onMounted, onUpdated, ref } from "vue";

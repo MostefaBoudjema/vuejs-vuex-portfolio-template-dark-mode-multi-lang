@@ -1,5 +1,5 @@
 <script setup>
-import ProjectsGrid from '../components/projects/ProjectsGrid.vue';
+import ProjectsGrid from '@/components/projects/ProjectsGrid.vue';
 </script>
 
 <template>

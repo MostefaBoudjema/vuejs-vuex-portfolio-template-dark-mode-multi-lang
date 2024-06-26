@@ -1,5 +1,5 @@
 <script>
-import Slide from "../reusable/Slide.vue";
+import Slide from "@/components/reusable/Slide.vue";
 export default {
     components: { Slide },
     props: ["singleProjectHeader", "imgList"],

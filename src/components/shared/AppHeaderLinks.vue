@@ -1,6 +1,6 @@
 <script>
 import { useI18n } from "vue-i18n";
-import settings from "../../data/settings";
+import settings from "@/data/settings";
 export default {
     name: "Home",
     setup() {

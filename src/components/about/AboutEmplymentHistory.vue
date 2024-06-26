@@ -2,7 +2,7 @@
 
 import { useI18n } from "vue-i18n";
 
-import EmplymentHistory from '../../data/EmplymentHistory';
+import EmplymentHistory from '@/data/EmplymentHistory';
 export default {
     data() {
         return {

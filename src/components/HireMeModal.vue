@@ -71,8 +71,8 @@ import Button from './reusable/Button.vue';
 import FormInput from './reusable/FormInput.vue';
 import FormTextarea from './reusable/FormTextarea.vue';
 
-import settingsData from '../data/settings';
-import { socialLinks } from '../data/socialLinks';
+import settingsData from '@/data/settings';
+import { socialLinks } from '@/data/socialLinks';
 
 const { t }=useI18n({
 	inheritLocale: true,
