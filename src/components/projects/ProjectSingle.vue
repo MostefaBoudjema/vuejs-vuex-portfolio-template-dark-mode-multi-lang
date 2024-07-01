@@ -25,21 +25,32 @@ onMounted(() => {
     let mm=gsap.matchMedia();
     mm.add("(min-width: 991px)", () => {
 
-        let tween=gsap.fromTo(".single", {
-            opacity: 0,
-            y: 80
-        }, {
-            scrollTrigger: {
-                trigger: ".single",
-                start: "top 80%",
+
+        let tween=gsap.fromTo(".single",
+            {
+                opacity: 0,
+                y: 80
             },
-            opacity: 1,
-            y: 0,
-            duration: 1.5,
-            delay: 0.3,
-            stagger: 0.2,
-            ease: "elastic",
-        });
+            {
+                opacity: 1,
+                y: 0,
+                duration: 1.5,
+                delay: 0.3,
+                stagger: 0.2,
+                ease: "elastic",
+                scrollTrigger: {
+                    trigger: ".single",
+                    start: "top 80%",
+                    end: "top 30%",
+                    toggleActions: "restart none none none",
+                    // toggleActions: "restart pause resume complete",
+                    // play pause resume reverse restart reset complete none
+                    scrub: true,
+                    // markers: true,
+                },
+            }
+        );
+
     });
 });
 </script>
