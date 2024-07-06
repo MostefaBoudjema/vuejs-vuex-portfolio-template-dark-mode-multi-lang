@@ -36,16 +36,16 @@ onMounted(() => {
                 y: 0,
                 duration: 1.5,
                 delay: 0.3,
-                stagger: 0.2,
+                stagger: 0.9,
                 ease: "elastic",
                 scrollTrigger: {
                     trigger: ".single",
                     start: "top 80%",
-                    end: "top 30%",
+                    end: "end 10%",
                     toggleActions: "restart none none none",
                     // toggleActions: "restart pause resume complete",
                     // play pause resume reverse restart reset complete none
-                    scrub: true,
+                    scrub: 5,
                     // markers: true,
                 },
             }
