@@ -23,7 +23,7 @@ const settings=
 		},
 		{
 			id: 2,
-			name: 'Boudjema.Mustafa.big@gmail.com',
+			name: 'mostefa.boudjema.dev@gmail.com',
 			icon: 'mail',
 		},
 		{
