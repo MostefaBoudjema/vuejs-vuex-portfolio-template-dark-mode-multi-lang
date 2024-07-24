@@ -137,29 +137,40 @@ export default {
             <div
                 class="hidden sm:flex justify-between items-center flex-col md:flex-row"
             >
-                <!-- Hire me button -->
-                <div class="hidden md:block" v-if="settings.show_hire_me">
-                    <Button
-                        :title="$t('Hire Me')"
-                        class="text-md font-general-medium bg-blue-500 hover:bg-blue-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
-                        @click="showModal()"
-                        aria-label="Hire Me Button"
-                    />
-                </div>
+
 
                 <language-switcher
                 v-if="settings.show_multi_lang"
                     :lang="lang"
                     :theme="theme"
                     @themeChanged="updateLang"
-                    class="ml-8 bg-primary-light dark:bg-ternary-dark px-3 py-2 shadow-sm rounded-xl cursor-pointer"
+                    class="bg-primary-light dark:bg-ternary-dark px-3 py-2 shadow-sm rounded-xl cursor-pointer"
                 />
-                <!-- Theme switcher large screen -->
-                <theme-switcher
+
+                                <!-- Hire me button -->
+                <!-- <div class="hidden md:block" v-if="settings.show_hire_me">
+                    <Button
+                        :title="$t('Hire Me')"
+                        class="text-md font-general-medium bg-blue-500 hover:bg-blue-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
+                        @click="showModal()"
+                        aria-label="Hire Me Button"
+                    />
+                </div> -->
+                                <!-- Theme switcher large screen -->
+                                <theme-switcher
                     :theme="theme"
                     @themeChanged="updateTheme"
                     class="ml-8 bg-primary-light dark:bg-ternary-dark px-3 py-2 shadow-sm rounded-xl cursor-pointer"
                 />
+                <div class="hidden md:block" v-if="settings.show_hire_me">
+                   <a href="https://www.upwork.com/freelancers/~01f935691600ba7d83" target="_blank"><Button
+                        :title="$t('Hire Me')"
+                        class="ml-8 text-md font-general-medium bg-blue-500 hover:bg-blue-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
+                        @click="showModal()"
+                        aria-label="Hire Me Button"
+                    ></Button></a> 
+                </div>
+
             </div>
         </div>
 

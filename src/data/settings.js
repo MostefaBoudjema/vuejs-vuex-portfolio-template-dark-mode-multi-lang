@@ -13,7 +13,7 @@ const settings=
 	home_list: [3, 14, 15, 6, 9, 10],
 	show_cv: true,
 	show_multi_lang: true,
-	show_hire_me: false,
+	show_hire_me: true,
 	show_contact_form: false,
 	contacts: [
 		{
