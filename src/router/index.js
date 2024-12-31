@@ -212,6 +212,17 @@ const routes=[
 		},
 	},
 	{
+		path: '/projects/alphanex',
+		name: 'Alphanex',
+		component: () =>
+			import(
+				'../views/OneProjectTemplate.vue'
+			),
+		meta: {
+			title: generateMetaTitle('Alphanex'),
+		},
+	},
+	{
 		path: '/contact',
 		name: 'Contact',
 		component: () =>

@@ -14,9 +14,13 @@
   
       <!-- Banner right illustration -->
       <div class="w-full md:w-2/3 text-right float-right">
+        <DotLottieVue style="height: 600px;" autoplay loop src="https://lottie.host/e3d2a44b-7d02-4b19-8d05-e90af78f1571/FGAlWtRxOu.lottie" />
+        <!-- <DotLottieVue style="height: 600px;" autoplay loop src="https://lottie.host/92926995-bda3-46ba-943f-51ae646541df/0E3TNpU72O.lottie" /> -->
+      </div>
+      <!-- <div class="w-full md:w-2/3 text-right float-right">
         <img v-if="theme === 'light'" :src="settings.hero_image" alt="Developer" data-aos="fade-right" data-aos-delay="200" />
         <img v-else :src="settings.hero_image_dark" alt="Developer" data-aos="fade-right" data-aos-delay="200" />
-      </div>
+      </div> -->
     </section>
   </template>
   
@@ -24,6 +28,7 @@
   import { onMounted, onUpdated, ref } from 'vue';
   import feather from 'feather-icons';
   import { useI18n } from 'vue-i18n';
+  import { DotLottieVue } from '@lottiefiles/dotlottie-vue'
   import settings from '@/data/settings';
   import DownloadCv from './DownloadCv.vue';
   
