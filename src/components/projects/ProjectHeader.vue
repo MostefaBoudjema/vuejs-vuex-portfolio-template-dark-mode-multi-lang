@@ -2,7 +2,7 @@
 import Slide from "@/components/reusable/Slide.vue";
 export default {
     components: { Slide },
-    props: ["singleProjectHeader", "imgList"],
+    props: ["singleProjectHeader", "imgList","video"],
 };
 // console.log(imgList);
 </script>
@@ -41,7 +41,8 @@ export default {
                     </div>
                 </div>
             </div>
-            <slide :imgList="imgList" />
+
+            <slide :video="video" :imgList="imgList" />
         </div>
     </div>
 </template>

@@ -32,6 +32,7 @@ const pageid = computed(() => store.state.pageid);
 const ImgMethod = computed(() => projects[pageid.value].img);
 const singleProjectHeaderMethod = computed(() => projects[pageid.value].singleProjectHeader);
 const projectImagesMethod = computed(() => projects[pageid.value].projectImages);
+const projectvideosMethod = computed(() => projects[pageid.value].video);
 const projectInfoMethod = computed(() => projects[pageid.value].projectInfo);
 const smallImagesMethod = computed(() => projects[pageid.value].smallImages);
 
@@ -50,6 +51,7 @@ onUpdated(() => {
         <ProjectHeader
             :singleProjectHeader="singleProjectHeaderMethod"
             :imgList="projectImagesMethod"
+            :video="projectvideosMethod"
         />
         <!-- Project information -->
         <ProjectInfo :projectInfo="projectInfoMethod" :smallImages="smallImagesMethod"/>

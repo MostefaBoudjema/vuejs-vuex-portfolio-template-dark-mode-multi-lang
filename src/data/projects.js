@@ -406,6 +406,7 @@ const projects=[{
 	hide: false,
 	category: 'Laravel Vue Application',
 	outer_link: 'https://iauto.no/',
+	// video: require('@/assets/videos/iauto/0.mp4'),
 	img: require('@/assets/images/iauto/0.png'),
 	link: 'iauto',
 	smallImages: [{
