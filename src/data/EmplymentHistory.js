@@ -2,6 +2,14 @@ import i18n from '../i18n';
 const { t }=i18n.global;
 
 const EmplymentHistory=[
+    // {
+    //     title: t("JobTitle6"),
+    //     company: t("JobCompany6"),
+    //     startDate: t("JobStartDate6"),
+    //     endDate: t("JobEndDate6"),
+    //     logo: require('@/assets/images/brands/newdayagency_color.png'),
+    //     description: t("JobDescription6")
+    // },
     {
         title: t("JobTitle5"),
         company: t("JobCompany5"),

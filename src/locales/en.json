@@ -81,8 +81,15 @@
     "JobTitle5": "Laravel Vue Web Developer",
     "JobCompany5": "Futuriva Marketing Agency",
     "JobStartDate5": "April 2024",
-    "JobEndDate5": "Today",
+    "JobEndDate5": "July 2024",
     "JobDescription5": "As a Laravel Vue Web Developer at Futuriva Marketing Agency, I specialized in building and maintaining web applications, leveraging Laravel PHP framework and Vue.js frontend technology. With a focus on Vuetify for responsive design and Vuexy template for efficient state management, I collaborated closely with cross-functional teams to deliver high-quality solutions within project deadlines. My responsibilities included customizing features, conducting code reviews, and optimizing frontend performance to ensure exceptional user experience.",
+    
+    "JobTitle6": "Laravel React Web Developer",
+    "JobCompany6": "Newday Agency",
+    "JobStartDate6": "March 2025",
+    "JobEndDate6": "Today",
+    "JobDescription6": "As a Laravel React Developer at NewDay Agency, I develop and maintain web applications using Laravel for the backend and React.js for the frontend. I focus on building intuitive, responsive interfaces and optimizing state management. Collaborating with cross-functional teams, I ensure high-quality deliverables within deadlines. My role also includes customizing features, reviewing code, and improving frontend performance to enhance the overall user experience.",
+    
     "Hire Me": "Hire Me",
     "Projects I worked On": "Projects I worked On",
     "Search projects by title or filter by category": "Search projects by title or filter by category",
@@ -196,5 +203,5 @@
     "details16E": "Laravel PHP Framework\nMySQL Database\nHTML, CSS, JavaScript Bootstrap\nAJAX for real-time updates\nLaravel Eloquent ORM",
     "Objective16": "The objective of the Laravel PHP Stock Management System is to provide businesses with a comprehensive and efficient solution for managing their inventory and supply chain operations. By offering features such as real-time stock tracking, order processing, supplier management, and reporting/analytics tools, the system aims to streamline processes, reduce manual errors, and improve overall operational efficiency. The system is designed to be user-friendly, scalable, and customizable to meet the diverse needs of businesses across different industries. Ultimately, the objective is to empower organizations to make informed decisions, optimize inventory levels, and enhance customer satisfaction.",
 
-    "Job Title": "Laravel VueJS Web developer"
+    "Job Title": "Laravel Vue Web Developer"
 }
