@@ -223,6 +223,17 @@ const routes=[
 		},
 	},
 	{
+		path: '/projects/event-management',
+		name: 'event-management',
+		component: () =>
+			import(
+				'../views/OneProjectTemplate.vue'
+			),
+		meta: {
+			title: generateMetaTitle('Event management'),
+		},
+	},
+	{
 		path: '/contact',
 		name: 'Contact',
 		component: () =>

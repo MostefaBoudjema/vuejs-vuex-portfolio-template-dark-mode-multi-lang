@@ -1815,7 +1815,7 @@ const projects=[{
 {
 	id: 13,
 	title: 'Stockifly - Stock management system',
-	hide: false,
+	hide: true,
 	category: 'Laravel Vue Application',
 	outer_link: '#',
 	link: 'stockifly',
@@ -2324,6 +2324,182 @@ const projects=[{
 		{
 			id: 4,
 			details: t("details16D"),
+		},
+		],
+		socialSharingsHeading: t("Share This"),
+		socialSharings: [{
+			id: 1,
+			name: "Twitter",
+			icon: "twitter",
+			url: "https://twitter.com/",
+		},
+		{
+			id: 2,
+			name: "Instagram",
+			icon: "instagram",
+			url: "https://instagram.com/",
+		},
+		{
+			id: 3,
+			name: "Facebook",
+			icon: "facebook",
+			url: "https://facebook.com/",
+		},
+		{
+			id: 4,
+			name: "LinkedIn",
+			icon: "linkedin",
+			url: "https://linkedin.com/",
+		},
+		],
+	},
+
+},
+{
+	id: 17,
+	title: 'Event Management',
+	hide: false,
+	category: 'Laravel React Web App',
+	outer_link: '#',
+	link: 'event-management',
+	img: require('@/assets/images/event-management/0.png'),
+	smallImages: [{
+		id: 1,
+		alt: "react",
+		src: require('@/assets/images/technology/react.png'),
+		width: '60px',
+	},
+	{
+		id: 2,
+		alt: "laravel",
+		src: require('@/assets/images/technology/laravel.png'),
+		width: '60px',
+	},
+	{
+		id: 3,
+		alt: "php",
+		src: require('@/assets/images/technology/php.png'),
+		width: '60px',
+	},
+	{
+		id: 4,
+		alt: "tailwind",
+		src: require('@/assets/images/technology/tailwind.png'),
+		width: '60px',
+	},
+	],
+	singleProjectHeader: {
+		singleProjectTitle: t("Event Management"),
+		singleProjectDate: "22 Feb 2025",
+		singleProjectTag: t("Backend / Frontend"),
+	},
+	projectImages: [{
+		id: 1,
+		img: require("@/assets/images/event-management/1.png"),
+	},
+	{
+		id: 2,
+		img: require("@/assets/images/event-management/2.png"),
+	},
+	{
+		id: 3,
+		img: require("@/assets/images/event-management/3.png"),
+	},
+	{
+		id: 4,
+		img: require("@/assets/images/event-management/4.png"),
+	},
+	{
+		id: 5,
+		img: require("@/assets/images/event-management/5.png"),
+	},
+	{
+		id: 6,
+		img: require("@/assets/images/event-management/6.png"),
+	},
+	{
+		id: 7,
+		img: require("@/assets/images/event-management/7.png"),
+	},
+	{
+		id: 8,
+		img: require("@/assets/images/event-management/8.png"),
+	},
+	{
+		id: 9,
+		img: require("@/assets/images/event-management/9.png"),
+	},
+	{
+		id: 10,
+		img: require("@/assets/images/event-management/10.png"),
+	},
+	{
+		id: 11,
+		img: require("@/assets/images/event-management/11.png"),
+	},
+	{
+		id: 12,
+		img: require("@/assets/images/event-management/12.png"),
+	},
+	{
+		id: 13,
+		img: require("@/assets/images/event-management/13.png"),
+	},
+	{
+		id: 14,
+		img: require("@/assets/images/event-management/14.png"),
+	},
+	{
+		id: 15,
+		img: require("@/assets/images/event-management/15.png"),
+	},
+	],
+	projectInfo: {
+		clientHeading: t("About Client"),
+		companyInfos: [{
+			id: 1,
+			title: t("Name"),
+			details: t("NewDay"),
+		},
+		{
+			id: 2,
+			title: t("Services"),
+			details: t("Backend & Frontend Development"),
+		},
+		{
+			id: 3,
+			title: t("Website"),
+			details: "#",
+		},
+
+		],
+		objectivesHeading: t("Objective"),
+		objectivesDetails: t("Objective17"),
+		technologies: [{
+			title: t("Tools & Technologies"),
+			techs: [
+				"React",
+				"Laravel",
+				"Tailwind CSS",
+				"PHP",
+			],
+		},],
+		projectDetailsHeading: t("Challenge"),
+		projectDetails: [{
+			id: 1,
+			details: t("details17A"),
+		},
+		{
+			id: 2,
+			details: t("details17B"),
+		},
+		{
+			id: 3,
+			details: t("details17C"),
+		},
+		{
+			id: 4,
+			details: t("details17D"),
 		},
 		],
 		socialSharingsHeading: t("Share This"),

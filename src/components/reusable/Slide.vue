@@ -85,7 +85,7 @@ export default {
             <div class="Carousel-controls">
                 <div></div>
                 <div></div>
-                <svg @click="prev" width="48" height="48" viewBox="0 0 24 24" fill="gold" stroke="currentColor"
+                <svg @click="prev" width="48" height="48" viewBox="0 0 24 24" fill="%23051c28" stroke="currentColor"
                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="12" cy="12" r="10"></circle>
                     <polyline points="12 8 8 12 12 16"></polyline>
@@ -95,7 +95,7 @@ export default {
                     :key="dot.id" @click="goToChunk(i)">
                     {{ i + 1 }}
                 </div>
-                <svg @click="next" width="48" height="48" viewBox="0 0 24 24" fill="gold" stroke="currentColor"
+                <svg @click="next" width="48" height="48" viewBox="0 0 24 24" fill="%23051c28" stroke="currentColor"
                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="12" cy="12" r="10"></circle>
                     <polyline points="12 16 16 12 12 8"></polyline>
@@ -278,7 +278,7 @@ svg:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #616574 url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 10 10' fill='none' stroke-linecap='round' stroke-linejoin='round' stroke='gold'><line x1='4' y1='4' x2='6' y2='6' /><line x1='6' y1='4' x2='4' y2='6' /></svg>") top right no-repeat;
+    background: #616574 url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 10 10' fill='none' stroke-linecap='round' stroke-linejoin='round' stroke='%23051c28'><line x1='4' y1='4' x2='6' y2='6' /><line x1='6' y1='4' x2='4' y2='6' /></svg>") top right no-repeat;
     display: flex;
 }
 
@@ -296,7 +296,7 @@ svg:hover {
     width: 40px;
     height: 60px;
     margin: -30px 4% 0;
-    background: #444 url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10' fill='none' stroke-linecap='round' stroke-linejoin='round'><path stroke='gold' d='M6,2 L4,5 L6,8'/></svg>") center/cover no-repeat;
+    background: #444 url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10' fill='none' stroke-linecap='round' stroke-linejoin='round'><path stroke='%23051c28' d='M6,2 L4,5 L6,8'/></svg>") center/cover no-repeat;
 }
 
 .prev:hover,
@@ -305,9 +305,10 @@ svg:hover {
 }
 
 .next {
-    right: 0;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10' fill='none' stroke-linecap='round' stroke-linejoin='round'><path stroke='gold' d='M4,2 L6,5 L4,8'/></svg>");
+  right: 0;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10' fill='none' stroke-linecap='round' stroke-linejoin='round'><path stroke='%23051c28' d='M4,2 L6,5 L4,8'/></svg>");
 }
+
 
 .video-style {
 margin-left: auto;
