@@ -75,7 +75,9 @@ export default {
 					message: this.message,
 				};
 
-				const response = await fetch('http://localhost:3000/send-email', {
+				// const apiUrl = import.meta.env.VITE_API_URL || 'https://backend-one-ivory-50.vercel.app';
+				const apiUrl = 'https://backend-one-ivory-50.vercel.app';
+				const response = await fetch(`${apiUrl}/send-email`, {
 					method: 'POST',
 					headers: {
 						'Content-Type': 'application/json',
