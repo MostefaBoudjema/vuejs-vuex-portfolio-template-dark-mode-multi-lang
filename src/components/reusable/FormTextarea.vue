@@ -9,7 +9,7 @@ export default {
 			type: String,
 			default: '',
 		},
-		val: {
+		modelValue: {
 			type: [String, Number],
 			default: '',
 		},
@@ -30,8 +30,9 @@ export default {
 			:name="textareaIdentifier"
 			:aria-label="textareaIdentifier"
 			:placeholder="label"
+			:value="modelValue"
 			v-bind="$attrs"
-			@input="$emit('update:val', $event.target.value)"
+			@input="$emit('update:modelValue', $event.target.value)"
 			cols="14"
 			rows="6"
 		></textarea>

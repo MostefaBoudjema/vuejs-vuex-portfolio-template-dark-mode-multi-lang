@@ -8,13 +8,14 @@ const settings=
 	page_404: require("@/assets/images/404-page.png"),
 	profile_photo: require("@/assets/images/me2.jpg"),
 	whatsapp: require("@/assets/images/whatsapp2.svg"),
+	videoLinkEn: "https://www.youtube.com/embed/CMu_27ZURwA?si=sriXHIbvcos5620e",
 	whatsappNumber: "213793692289",
 	full_list: [3, 9, 1, 10, 0, 11, 5, 2, 4, 6, 7, 8],
 	home_list: [3, 14, 15, 6, 9, 10],
 	show_cv: true,
 	show_multi_lang: false,
 	show_hire_me: true,
-	show_contact_form: false,
+	show_contact_form: true,
 	contacts: [
 		{
 			id: 1,
