@@ -1,6 +1,7 @@
 <template>
 	<div>
 		<!-- About me -->
+		<!-- <AboutVideo /> -->
 		<div class="container mx-auto">
 			<AboutMe />
 		</div>
@@ -27,6 +28,7 @@ import AboutCounter from '@/components/about/AboutCounter';
 import AboutClients from '@/components/about/AboutClients';
 import AboutEmplymentHistory from '@/components/about/AboutEmplymentHistory';
 import AboutsSkills from '@/components/about/AboutsSkills.vue';
+import AboutVideo from '@/components/about/AboutVideo';
 import feather from 'feather-icons';
 
 import { onMounted, onUpdated } from 'vue';
