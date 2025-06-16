@@ -1195,7 +1195,7 @@ const projects=[{
 },
 {
 	id: 9,
-	title: 'Laravel Vue Ecommerce Phone',
+	title: 'Ecommerce Phone Store',
 	hide: false,
 	category: 'Laravel Vue Application',
 	outer_link: '#',

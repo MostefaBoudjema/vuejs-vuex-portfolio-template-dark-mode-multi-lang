@@ -41,15 +41,17 @@
 					<FormInput 
 						v-if="currentQuestion.type === 'text' || currentQuestion.type === 'email' || currentQuestion.type === 'phone'"
 						v-model="formData[currentQuestion.field]"
-						:label="currentQuestion.placeholder"
+						:placeholder="currentQuestion.placeholder"
 						:inputIdentifier="currentQuestion.field"
 						:inputType="currentQuestion.type"
+						:hideLabel="true"
 					/>
 					<FormTextarea 
 						v-else-if="currentQuestion.type === 'textarea'"
 						v-model="formData[currentQuestion.field]"
-						:label="currentQuestion.placeholder"
+						:placeholder="currentQuestion.placeholder"
 						:textareaIdentifier="currentQuestion.field"
+						:hideLabel="true"
 					/>
 					<select
 						v-else-if="currentQuestion.type === 'select'"
@@ -62,6 +64,15 @@
 							{{ option.label }}
 						</option>
 					</select>
+					<FormInput 
+						v-if="currentQuestion.type === 'select' && formData[currentQuestion.field] === 'other'"
+						v-model="formData[currentQuestion.field + 'Custom']"
+						:placeholder="'Please specify your ' + currentQuestion.field"
+						:inputIdentifier="currentQuestion.field + 'Custom'"
+						inputType="text"
+						:hideLabel="true"
+						class="mt-2"
+					/>
 				</div>
 
 				<!-- Navigation buttons -->
@@ -119,7 +130,9 @@ export default {
 				subject: '',
 				projectType: '',
 				budget: '',
+				budgetCustom: '',
 				timeline: '',
+				timelineCustom: '',
 				message: '',
 			},
 			steps: [
@@ -171,16 +184,32 @@ export default {
 				{
 					label: 'What is your budget range?',
 					field: 'budget',
-					type: 'text',
-					placeholder: 'e.g., $1000-$5000, $5000-$10000, etc.',
-					validation: (value) => value.length >= 2
+					type: 'select',
+					placeholder: 'Select budget range',
+					options: [
+						{ value: 'under-1000', label: 'Under $1,000' },
+						{ value: '1000-5000', label: '$1,000 - $5,000' },
+						{ value: '5000-10000', label: '$5,000 - $10,000' },
+						{ value: '10000-25000', label: '$10,000 - $25,000' },
+						{ value: '25000-plus', label: '$25,000+' },
+						{ value: 'other', label: 'Other' }
+					],
+					validation: (value) => value !== ''
 				},
 				{
 					label: 'What is your timeline?',
 					field: 'timeline',
-					type: 'text',
-					placeholder: 'e.g., ASAP, 1-2 months, 3-6 months, etc.',
-					validation: (value) => value.length >= 2
+					type: 'select',
+					placeholder: 'Select timeline',
+					options: [
+						{ value: 'asap', label: 'ASAP' },
+						{ value: '1-2-weeks', label: '1-2 weeks' },
+						{ value: '1-month', label: '1 month' },
+						{ value: '2-3-months', label: '2-3 months' },
+						{ value: '3-6-months', label: '3-6 months' },
+						{ value: 'other', label: 'Other' }
+					],
+					validation: (value) => value !== ''
 				},
 				{
 					label: 'What would you like to tell us?',
@@ -233,13 +262,20 @@ export default {
 			}
 
 			try {
+				// Prepare form data, using custom values if "other" is selected
+				const formDataToSend = {
+					...this.formData,
+					budget: this.formData.budget === 'other' ? this.formData.budgetCustom : this.formData.budget,
+					timeline: this.formData.timeline === 'other' ? this.formData.timelineCustom : this.formData.timeline
+				};
+
 				const apiUrl = process.env.VUE_APP_API_URL || 'http://localhost:3000';
 				const response = await fetch(`${apiUrl}/send-email`, {
 					method: 'POST',
 					headers: {
 						'Content-Type': 'application/json',
 					},
-					body: JSON.stringify(this.formData),
+					body: JSON.stringify(formDataToSend),
 				});
 
 				const data = await response.json();
@@ -258,7 +294,9 @@ export default {
 						subject: '',
 						projectType: '',
 						budget: '',
+						budgetCustom: '',
 						timeline: '',
+						timelineCustom: '',
 						message: '',
 					};
 					this.currentStep = 0;
