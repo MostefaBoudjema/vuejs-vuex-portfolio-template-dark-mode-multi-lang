@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-	<div class="w-full md:w-1/2">
+	<div class="w-full md:w-1/3">
 		<div class="text-left max-w-xl px-6">
 			<h2
 				class="font-general-medium text-2xl text-primary-dark dark:text-primary-light mt-12 mb-8"
