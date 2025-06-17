@@ -137,27 +137,6 @@ export default {
 			},
 			steps: [
 				{
-					label: 'What is your name?',
-					field: 'fullName',
-					type: 'text',
-					placeholder: 'Enter your full name',
-					validation: (value) => value.length >= 2
-				},
-				{
-					label: 'What is your email address?',
-					field: 'email',
-					type: 'email',
-					placeholder: 'Enter your email',
-					validation: (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)
-				},
-				{
-					label: 'What is your phone number?',
-					field: 'phone',
-					type: 'phone',
-					placeholder: 'Enter your phone number',
-					validation: (value) => value.length >= 10
-				},
-				{
 					label: 'What is this regarding?',
 					field: 'subject',
 					type: 'text',
@@ -171,8 +150,6 @@ export default {
 					placeholder: 'Select project type',
 					options: [
 						{ value: 'web-development', label: 'Web Development' },
-						{ value: 'mobile-app', label: 'Mobile App Development' },
-						{ value: 'ui-design', label: 'UI/UX Design' },
 						{ value: 'ecommerce', label: 'E-commerce Solution' },
 						{ value: 'cms', label: 'Content Management System' },
 						{ value: 'api-development', label: 'API Development' },
@@ -197,10 +174,10 @@ export default {
 					validation: (value) => value !== ''
 				},
 				{
-					label: 'What is your timeline?',
+					label: 'What is your timeframe?',
 					field: 'timeline',
 					type: 'select',
-					placeholder: 'Select timeline',
+					placeholder: 'Select timeframe',
 					options: [
 						{ value: 'asap', label: 'ASAP' },
 						{ value: '1-2-weeks', label: '1-2 weeks' },
@@ -217,6 +194,27 @@ export default {
 					type: 'textarea',
 					placeholder: 'Enter your message',
 					validation: (value) => value.length >= 10
+				},
+				{
+					label: 'What is your name?',
+					field: 'fullName',
+					type: 'text',
+					placeholder: 'Enter your full name',
+					validation: (value) => value.length >= 2
+				},
+				{
+					label: 'What is your email address?',
+					field: 'email',
+					type: 'email',
+					placeholder: 'Enter your email',
+					validation: (value) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)
+				},
+				{
+					label: 'What is your phone number?',
+					field: 'phone',
+					type: 'phone',
+					placeholder: 'Enter your phone number',
+					validation: (value) => /^[0-9+\s]{10,}$/.test(value)
 				}
 			],
 			isSubmitting: false,
@@ -282,10 +280,11 @@ export default {
 
 				if (response.ok) {
 					this.submissionSuccess = true;
-					// Set timeout to hide success message after 5 seconds
+					// Set timeout to hide success message and redirect to home page
 					this.successTimeout = setTimeout(() => {
 						this.submissionSuccess = false;
-					}, 5000);
+						this.$router.push('/');
+					}, 2000);
 					// Reset form
 					this.formData = {
 						fullName: '',
