@@ -284,7 +284,7 @@ export default {
 					this.successTimeout = setTimeout(() => {
 						this.submissionSuccess = false;
 						this.$router.push('/');
-					}, 2000);
+					}, 5000);
 					// Reset form
 					this.formData = {
 						fullName: '',
