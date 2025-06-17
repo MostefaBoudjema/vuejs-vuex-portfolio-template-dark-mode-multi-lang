@@ -10,7 +10,7 @@
 
 <script setup>
 
-import settings from '@/data/settings';
+import settings from '@/data/configs';
 
 import { useI18n } from 'vue-i18n';
 const { t }=useI18n({

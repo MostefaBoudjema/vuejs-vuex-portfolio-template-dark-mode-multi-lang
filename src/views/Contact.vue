@@ -18,7 +18,7 @@ import { ref, onMounted, onUpdated } from 'vue';
 import ContactForm from '@/components/contact/ContactForm.vue';
 import ContactDetails from '@/components/contact/ContactDetails.vue';
 
-import settingsData from '@/data/settings';
+import settingsData from '@/data/configs';
 import { socialLinks } from '@/data/socialLinks';
 // import ContactSocials from '@/components/contact/ContactSocials.vue';
 

@@ -71,7 +71,7 @@ import Button from './reusable/Button.vue';
 import FormInput from './reusable/FormInput.vue';
 import FormTextarea from './reusable/FormTextarea.vue';
 
-import settingsData from '@/data/settings';
+import settingsData from '@/data/configs';
 import { socialLinks } from '@/data/socialLinks';
 
 const { t }=useI18n({

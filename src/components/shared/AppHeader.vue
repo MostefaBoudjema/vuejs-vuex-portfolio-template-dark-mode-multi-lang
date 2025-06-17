@@ -5,7 +5,7 @@ import HireMeModal from "@/components/HireMeModal.vue";
 import feather from "feather-icons";
 import AppHeaderLinks from "./AppHeaderLinks.vue";
 import Button from "@/components/reusable/Button.vue";
-import settings from "@/data/settings";
+import settings from "@/data/configs";
 import upwork from "@/assets/images/upworkIcon.png";
 export default {
     components: {

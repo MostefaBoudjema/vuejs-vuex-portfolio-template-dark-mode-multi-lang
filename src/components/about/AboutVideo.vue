@@ -16,7 +16,7 @@
 
 <script setup>
 import i18n from '@/i18n';
-import settings from '@/data/settings';
+import settings from '@/data/configs';
 
 const { t }=i18n.global;
 

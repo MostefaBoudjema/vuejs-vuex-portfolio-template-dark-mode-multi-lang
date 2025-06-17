@@ -27,7 +27,7 @@
 
 <script setup>
 import i18n from '@/i18n';
-import settings from '@/data/settings';
+import settings from '@/data/configs';
 import DownloadCv from '@/components/shared/DownloadCv.vue';
 import ContactBtn from '@/components/shared/ContactBtn.vue';
 
