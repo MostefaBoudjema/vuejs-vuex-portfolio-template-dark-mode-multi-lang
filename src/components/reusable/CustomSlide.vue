@@ -1,5 +1,6 @@
 <script>
 export default {
+    name: "CustomSlide",
     data() {
         return {
             chunkSize: 4,

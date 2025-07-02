@@ -1,7 +1,7 @@
 <script>
-import Slide from "@/components/reusable/Slide.vue";
+import CustomSlide from "@/components/reusable/CustomSlide.vue";
 export default {
-    components: { Slide },
+    components: { CustomSlide },
     props: ["singleProjectHeader", "imgList","video"],
 };
 // console.log(imgList);
@@ -42,7 +42,7 @@ export default {
                 </div>
             </div>
 
-            <slide :video="video" :imgList="imgList" />
+            <CustomSlide :video="video" :imgList="imgList" />
         </div>
     </div>
 </template>
