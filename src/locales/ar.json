@@ -36,7 +36,7 @@
     "Blogs": "المدونات",
     "Related Projects": "مشاريع ذات صلة",
     "Project Management UI": "واجهة مستخدم إدارة المشروع",
-    "UI / Frontend": "واجهة المستخدم / الواجهة الأمامية",
+    "UI / Frontend": "الواجهة الأمامية / الواجهة الأمامية",
     "Challenge": "التحديات",
     "About Client": "حول العميل",
     "Objective": "الأهداف",
@@ -234,4 +234,13 @@
     "Frontend / API": "الواجهة الأمامية / API",
     "Image Generator": "مولد الصور",
     "AI image generation": "توليد الصور بالذكاء الاصطناعي",
+    "Testimonials": "التعليقات",
+    "Project Manager": "مدير المشروع",
+    "Lead Developer": "مطور الرئيسي",
+    "UI/UX Designer": "مصمم واجهة المستخدم",
+    "CTO": "مدير التكنولوجيا",
+    "Marketing Specialist": "خبير تسويق",
+    "Product Owner": "مالك المنتج",
+    "QA Engineer": "مهندس ضمان الجودة",
+    "Business Analyst": "خبير تحليل الأعمال"
  }

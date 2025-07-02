@@ -1,10 +1,12 @@
 <template>
 	<div>
 		<!-- About me -->
-		<!-- <AboutVideo /> -->
 		<div class="container mx-auto">
 			<AboutMe />
 		</div>
+
+		<!-- About video (optional, uncomment if needed) -->
+		<!-- <AboutVideo /> -->
 
 		<!-- About counter -->
 		<AboutCounter />
@@ -19,6 +21,9 @@
 		<div class="container mx-auto">
 			<AboutClients />
 		</div>
+
+		<!-- About testimonials -->
+		<AboutTestimonials />
 	</div>
 </template>
 
@@ -29,6 +34,7 @@ import AboutClients from '@/components/about/AboutClients';
 import AboutEmplymentHistory from '@/components/about/AboutEmplymentHistory';
 import AboutsSkills from '@/components/about/AboutsSkills.vue';
 import AboutVideo from '@/components/about/AboutVideo';
+import AboutTestimonials from '@/components/about/AboutTestimonials.vue';
 import feather from 'feather-icons';
 
 import { onMounted, onUpdated } from 'vue';
