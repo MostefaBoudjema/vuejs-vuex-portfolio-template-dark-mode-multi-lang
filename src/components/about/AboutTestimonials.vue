@@ -6,9 +6,19 @@
 			</p>
 		</div>
 
-		<Carousel :itemsToShow="3.5" :wrapAround="true" :mouseDrag="true" :autoplay="4000" 
-			
-			class="max-w-6xl mx-auto">
+		<Carousel :itemsToShow="1.5" :wrapAround="true" :mouseDrag="true" :autoplay="4000" 
+			:breakpoints="{
+				640: {
+					itemsToShow: 1.5
+				},
+				768: {
+					itemsToShow: 2.5
+				},
+				1024: {
+					itemsToShow: 3.5
+				}
+			}"
+			class="container mx-auto">
 			<Slide v-for="(testimonial, idx) in testimonials" :key="idx">
 				<div
 					class="testimonial-slide bg-white dark:bg-secondary-dark shadow rounded-lg p-6 flex flex-col items-center text-center border border-gray-100 dark:border-ternary-dark mx-2 h-full">
